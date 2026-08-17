@@ -550,7 +550,7 @@
       ],
       "passage": {
         "title": "A toast, briefly",
-        "setting": "A short toast at a colleague's farewell dinner",
+        "setting": "A retirement lunch, with orders to keep it under a minute",
         "text": "I was told to keep this under a minute, and he would want that. For nine years his wry comment at the end of a long meeting did more good than the meeting. He is droll in a way that takes a second to land, and the new staff always laughed late. He was irreverent about every title in this building, including his own, and never once about the work. That is the balance most of us miss. To a good colleague, and a rare one.",
         "deliveryCue": "Toasts live on pauses. Stop after 'including his own', let it sit for a beat, then finish and raise the glass without hurrying."
       },
@@ -789,7 +789,7 @@
           "tier": "flourish",
           "ipa": "/ˈʌm.brɪdʒ/",
           "respell": "UM·brij",
-          "definition": "Offense or resentment at a slight, real or imagined, used almost only in the phrase 'take umbrage at'.",
+          "definition": "Offense or resentment at a slight, real or imagined.",
           "nuance": "Umbrage is personal rather than moral: the pride is wounded, not the principle. It carries a dry irony too, hinting that the offense was taken more readily than it was given, which makes it perfect for admitting your own thin skin with a smile.",
           "etymology": "From Latin umbra, shade or shadow, the same umbra behind umbrella and penumbra. To take umbrage is to feel a shadow pass over you, and the word meant shade in English long before it meant offense.",
           "examples": {
@@ -800,7 +800,7 @@
           "collocations": [
             "take umbrage at",
             "took umbrage",
-            "give umbrage",
+            "takes umbrage at the suggestion",
             "no umbrage taken"
           ],
           "nearSynonyms": [
@@ -846,7 +846,7 @@
           "respell": "ri·FYN",
           "definition": "To improve something by removing what is coarse, impure or unnecessary, usually in small steps.",
           "nuance": "Refining works by subtraction: the thing gets better because something has been taken out of it. That makes it the honest word for second and third drafts, where the gain comes from cutting rather than adding.",
-          "etymology": "Built in English from re- plus fine, on the model of French raffiner. It was first a word for metals and sugar: heat the thing, take out what does not belong, keep what does.",
+          "etymology": "Built in English from re- plus fine, on the model of French raffiner. It was first a word for metals: heat the thing, take out what does not belong, keep what does.",
           "examples": {
             "conversational": "I have been refining that story for years, mostly by leaving parts out.",
             "professional": "We refined the proposal down to four pages, and it won on the fourth version, not the first.",
@@ -1239,7 +1239,7 @@
       ],
       "passage": {
         "title": "The introduction",
-        "setting": "Introducing a guest speaker at a professional association evening",
+        "setting": "Bringing the keynote speaker to the stage at a conference dinner",
         "text": "I will keep this short, because you came for her and not for me. Her career has been singular: not simply successful, but unlike anyone else's in this field. She is a consummate teacher, and I say that as a man who sat in her workshop eleven years ago and still uses what he learned there on a Tuesday morning. In one thing she is peerless, and it is not the thing you expect. She listens. Please welcome her.",
         "deliveryCue": "Warm and unhurried. Put a real pause before 'She listens' and let the room get there a moment before you do."
       },

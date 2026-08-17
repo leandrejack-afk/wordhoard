@@ -20,11 +20,26 @@
             "professional": "The pilot results are promising enough to justify a second site, though not yet a full rollout.",
             "elevated": "I would not call it a success, not yet. I would call it the most promising thing to cross my desk this year."
           },
-          "collocations": ["a promising start", "a promising candidate", "look promising", "a promising line of inquiry", "showing promising signs"],
+          "collocations": [
+            "a promising start",
+            "a promising candidate",
+            "look promising",
+            "a promising line of inquiry",
+            "showing promising signs"
+          ],
           "nearSynonyms": [
-            { "word": "hopeful", "distinction": "describes the person doing the hoping as much as the thing hoped for" },
-            { "word": "auspicious", "distinction": "frames the sign as an omen and belongs at a beginning" },
-            { "word": "encouraging", "distinction": "about the effect on morale rather than the potential itself" }
+            {
+              "word": "hopeful",
+              "distinction": "describes the person doing the hoping as much as the thing hoped for"
+            },
+            {
+              "word": "auspicious",
+              "distinction": "frames the sign as an omen and belongs at a beginning"
+            },
+            {
+              "word": "encouraging",
+              "distinction": "about the effect on morale rather than the potential itself"
+            }
           ],
           "registerNote": "Safe in any register, but never use it about finished work: calling a completed report promising is faint praise, and it tells the writer you found potential where you wanted results."
         },
@@ -43,12 +58,30 @@
             "professional": "Our lawyers are sanguine about the appeal, which is more than they were saying in March.",
             "elevated": "I remain sanguine, not because the risks are small, but because I have watched this team handle larger ones."
           },
-          "collocations": ["sanguine about the outcome", "remain sanguine", "less sanguine", "a sanguine view", "sanguine prospects"],
+          "collocations": [
+            "sanguine about the outcome",
+            "remain sanguine",
+            "less sanguine",
+            "a sanguine view",
+            "sanguine prospects"
+          ],
           "nearSynonyms": [
-            { "word": "optimistic", "distinction": "broader, and can suggest the optimism has not been tested" },
-            { "word": "hopeful", "distinction": "wants the good outcome, where sanguine expects it" },
-            { "word": "confident", "distinction": "points at ability, while sanguine points at the outcome" },
-            { "word": "buoyant", "distinction": "about mood and energy rather than expectation" }
+            {
+              "word": "optimistic",
+              "distinction": "broader, and can suggest the optimism has not been tested"
+            },
+            {
+              "word": "hopeful",
+              "distinction": "wants the good outcome, where sanguine expects it"
+            },
+            {
+              "word": "confident",
+              "distinction": "points at ability, while sanguine points at the outcome"
+            },
+            {
+              "word": "buoyant",
+              "distinction": "about mood and energy rather than expectation"
+            }
           ],
           "registerNote": "Slightly bookish but at home in a meeting. Older writing uses sanguine for blood-red or bloodthirsty, so keep it attached to a mood or an expectation and the modern sense stays clear."
         },
@@ -67,19 +100,37 @@
             "professional": "Falling rates and a quiet competitor make this a propitious moment to move on the acquisition.",
             "elevated": "I have waited three years for conditions this propitious, and I do not intend to spend them cautiously."
           },
-          "collocations": ["a propitious moment", "propitious circumstances", "propitious timing", "less than propitious", "propitious conditions"],
+          "collocations": [
+            "a propitious moment",
+            "propitious circumstances",
+            "propitious timing",
+            "less than propitious",
+            "propitious conditions"
+          ],
           "nearSynonyms": [
-            { "word": "auspicious", "distinction": "reads the signs at a beginning and predicts success" },
-            { "word": "favorable", "distinction": "plain and neutral, with no sense of good fortune" },
-            { "word": "opportune", "distinction": "purely about the timing being right" },
-            { "word": "timely", "distinction": "about arriving at the right moment rather than about conditions" }
+            {
+              "word": "auspicious",
+              "distinction": "reads the signs at a beginning and predicts success"
+            },
+            {
+              "word": "favorable",
+              "distinction": "plain and neutral, with no sense of good fortune"
+            },
+            {
+              "word": "opportune",
+              "distinction": "purely about the timing being right"
+            },
+            {
+              "word": "timely",
+              "distinction": "about arriving at the right moment rather than about conditions"
+            }
           ],
           "registerNote": "Formal and faintly ceremonial. It belongs in a speech, a proposal or a written case; in ordinary talk, a good moment says the same thing without the robes."
         }
       ],
       "passage": {
         "title": "The first morning",
-        "setting": "Opening remarks to your team on the first morning of a new department.",
+        "setting": "Opening remarks to your team on the first morning of a new department",
         "text": "I will not pretend the timing was ours to choose. But a quiet market, a small team and a year with nothing to defend: that is a more propitious start than any of us would have written for ourselves. The first numbers are promising. I am sanguine about the rest, and I want you to hear exactly what that means. Not that I expect the work to be easy. That I expect us to be standing here in a year, and busier.",
         "deliveryCue": "Let the last two words stand alone. Say and busier quietly, almost as an afterthought, then stop."
       },
@@ -105,12 +156,30 @@
             "professional": "The department has been frugal for two years, and that is precisely why we can fund this now.",
             "elevated": "I was raised by frugal people, and what they taught me was not how to save money but how to know what a thing is worth."
           },
-          "collocations": ["a frugal household", "frugal habits", "frugal by nature", "a frugal meal", "frugal with resources"],
+          "collocations": [
+            "a frugal household",
+            "frugal habits",
+            "frugal by nature",
+            "a frugal meal",
+            "frugal with resources"
+          ],
           "nearSynonyms": [
-            { "word": "thrifty", "distinction": "warmer and more domestic, with a hint of clever management" },
-            { "word": "economical", "distinction": "about the efficient use of anything, not only money" },
-            { "word": "parsimonious", "distinction": "frugality carried to a fault, and unkind" },
-            { "word": "stingy", "distinction": "plainly an insult about meanness" }
+            {
+              "word": "thrifty",
+              "distinction": "warmer and more domestic, with a hint of clever management"
+            },
+            {
+              "word": "economical",
+              "distinction": "about the efficient use of anything, not only money"
+            },
+            {
+              "word": "parsimonious",
+              "distinction": "frugality carried to a fault, and unkind"
+            },
+            {
+              "word": "stingy",
+              "distinction": "plainly an insult about meanness"
+            }
           ],
           "registerNote": "Safe in any register and generally a compliment. If you actually mean that someone is mean with money, the words are stingy or parsimonious, and both are insults; do not reach for frugal to soften them."
         },
@@ -129,12 +198,30 @@
             "professional": "It would be prudent to hold three months of costs in reserve before we sign anything.",
             "elevated": "I am not asking anyone to be timid. I am asking us to be prudent, which is a far more demanding thing."
           },
-          "collocations": ["a prudent decision", "prudent management", "it would be prudent to", "prudent reserves", "fiscally prudent"],
+          "collocations": [
+            "a prudent decision",
+            "prudent management",
+            "it would be prudent to",
+            "prudent reserves",
+            "fiscally prudent"
+          ],
           "nearSynonyms": [
-            { "word": "cautious", "distinction": "emphasizes the fear of loss, where prudent emphasizes the judgment behind it" },
-            { "word": "judicious", "distinction": "about the wisdom of a choice, not about guarding against the future" },
-            { "word": "circumspect", "distinction": "about looking around for hazards before acting" },
-            { "word": "wise", "distinction": "broader and more moral, with no particular link to risk" }
+            {
+              "word": "cautious",
+              "distinction": "emphasizes the fear of loss, where prudent emphasizes the judgment behind it"
+            },
+            {
+              "word": "judicious",
+              "distinction": "about the wisdom of a choice, not about guarding against the future"
+            },
+            {
+              "word": "circumspect",
+              "distinction": "about looking around for hazards before acting"
+            },
+            {
+              "word": "wise",
+              "distinction": "broader and more moral, with no particular link to risk"
+            }
           ],
           "registerNote": "Safe in any register, and useful precisely because it lets you refuse a risk without sounding nervous. Used too often about spending, it can start to sound like a polite word for no."
         },
@@ -153,19 +240,37 @@
             "professional": "The foundation has been munificent with this program, and we should say so by name at the opening.",
             "elevated": "You have been munificent tonight, and I want to name it plainly, because generosity is easier to repeat when someone has noticed it."
           },
-          "collocations": ["a munificent gift", "a munificent donor", "munificent hospitality", "a munificent bequest", "munificent support"],
+          "collocations": [
+            "a munificent gift",
+            "a munificent donor",
+            "munificent hospitality",
+            "a munificent bequest",
+            "munificent support"
+          ],
           "nearSynonyms": [
-            { "word": "generous", "distinction": "the everyday word, and it works at any scale" },
-            { "word": "lavish", "distinction": "stresses the sheer scale of the spending and can imply excess" },
-            { "word": "bountiful", "distinction": "of nature and provision rather than of a person's giving" },
-            { "word": "liberal", "distinction": "free-handed in the older sense, and now easily misread" }
+            {
+              "word": "generous",
+              "distinction": "the everyday word, and it works at any scale"
+            },
+            {
+              "word": "lavish",
+              "distinction": "stresses the sheer scale of the spending and can imply excess"
+            },
+            {
+              "word": "bountiful",
+              "distinction": "of nature and provision rather than of a person's giving"
+            },
+            {
+              "word": "liberal",
+              "distinction": "free-handed in the older sense, and now easily misread"
+            }
           ],
           "registerNote": "Praise register only. Munificent is what you call another person's giving, in a toast or a letter of thanks; used about your own it is boasting."
         }
       ],
       "passage": {
         "title": "Three ways to spend a good year",
-        "setting": "Advising a client in a year-end review, when the numbers came in better than anyone forecast.",
+        "setting": "Advising a client in a year-end review, when the numbers came in better than anyone forecast",
         "text": "You have had a very good year, and there are three ways to spend it. You can be frugal, keep the office exactly as it is, and bank the difference. You can be prudent, which is not the same thing: put a year of salaries aside first, then spend what is left without flinching. Or you can be munificent, and put your name on something. I would do the second. The third is far more enjoyable, and it keeps until next year.",
         "deliveryCue": "Mark the three options with three small pauses, then drop your voice on the final sentence so it lands as an aside."
       },
@@ -191,12 +296,30 @@
             "professional": "Two of the committee are undecided, and the case study is what will sway them.",
             "elevated": "I did not come here to sway anyone. I came to put the facts in one place and let them do their own work."
           },
-          "collocations": ["sway the committee", "sway public opinion", "easily swayed", "swayed by emotion", "sway the room"],
+          "collocations": [
+            "sway the committee",
+            "sway public opinion",
+            "easily swayed",
+            "swayed by emotion",
+            "sway the room"
+          ],
           "nearSynonyms": [
-            { "word": "persuade", "distinction": "implies deliberate argument aimed at a particular person" },
-            { "word": "influence", "distinction": "broader and slower, often with no single moment you can point to" },
-            { "word": "convince", "distinction": "about producing belief, where sway is about moving a decision" },
-            { "word": "win over", "distinction": "about affection and trust as much as about reasoning" }
+            {
+              "word": "persuade",
+              "distinction": "implies deliberate argument aimed at a particular person"
+            },
+            {
+              "word": "influence",
+              "distinction": "broader and slower, often with no single moment you can point to"
+            },
+            {
+              "word": "convince",
+              "distinction": "about producing belief, where sway is about moving a decision"
+            },
+            {
+              "word": "win over",
+              "distinction": "about affection and trust as much as about reasoning"
+            }
           ],
           "registerNote": "Safe in any register. Note that easily swayed is a criticism, meaning no firm view of one's own, and that the noun sway (as in hold sway) means dominion rather than motion."
         },
@@ -215,12 +338,30 @@
             "professional": "The audit findings galvanized the board into approving a system we had asked for twice.",
             "elevated": "It took a public failure to galvanize us, and I would rather admit that than pretend we moved out of foresight."
           },
-          "collocations": ["galvanize the team", "galvanized into action", "galvanize support", "a galvanizing moment", "galvanize public opinion"],
+          "collocations": [
+            "galvanize the team",
+            "galvanized into action",
+            "galvanize support",
+            "a galvanizing moment",
+            "galvanize public opinion"
+          ],
           "nearSynonyms": [
-            { "word": "motivate", "distinction": "steady and internal, where galvanize is a jolt from outside" },
-            { "word": "energize", "distinction": "raises energy without implying that anything had stalled" },
-            { "word": "rally", "distinction": "about gathering people together around a cause" },
-            { "word": "spur", "distinction": "a single prod toward one specific action" }
+            {
+              "word": "motivate",
+              "distinction": "steady and internal, where galvanize is a jolt from outside"
+            },
+            {
+              "word": "energize",
+              "distinction": "raises energy without implying that anything had stalled"
+            },
+            {
+              "word": "rally",
+              "distinction": "about gathering people together around a cause"
+            },
+            {
+              "word": "spur",
+              "distinction": "a single prod toward one specific action"
+            }
           ],
           "registerNote": "Safe in any register, but it says the group was doing nothing until something shocked it. Said to a team that has been working hard, it lands as an insult."
         },
@@ -239,19 +380,37 @@
             "professional": "Publishing the methodology would engender the confidence we have been asking clients to take on trust.",
             "elevated": "Rules do not engender honesty. They only make dishonesty inconvenient, which is a different and much weaker thing."
           },
-          "collocations": ["engender trust", "engender loyalty", "engender goodwill", "engender resentment", "engender debate"],
+          "collocations": [
+            "engender trust",
+            "engender loyalty",
+            "engender goodwill",
+            "engender resentment",
+            "engender debate"
+          ],
           "nearSynonyms": [
-            { "word": "create", "distinction": "works for physical things too, where engender does not" },
-            { "word": "produce", "distinction": "neutral and mechanical, with no sense of something growing" },
-            { "word": "foster", "distinction": "nurtures something that already exists" },
-            { "word": "breed", "distinction": "more physical, and usually reserved for bad outcomes" }
+            {
+              "word": "create",
+              "distinction": "works for physical things too, where engender does not"
+            },
+            {
+              "word": "produce",
+              "distinction": "neutral and mechanical, with no sense of something growing"
+            },
+            {
+              "word": "foster",
+              "distinction": "nurtures something that already exists"
+            },
+            {
+              "word": "breed",
+              "distinction": "more physical, and usually reserved for bad outcomes"
+            }
           ],
           "registerNote": "Formal and written-sounding, and it must take an abstract object: you engender confidence, you do not engender a report. In casual speech, build or create carries the same meaning with less starch."
         }
       ],
       "passage": {
         "title": "Before the board",
-        "setting": "A quiet word with a junior colleague ten minutes before they present to the board.",
+        "setting": "A quiet word with a junior colleague ten minutes before they present to the board",
         "text": "Here is what I have learned about that room. You will not sway them with volume. The chair decides in the first two minutes, and what they are deciding is whether you believe your own numbers. So do not try to galvanize anybody. Speak slowly, name the risk before they find it, and let the plan do the work. Trust is what you are there to engender. Win that, and the money follows in a later meeting, quietly, when nobody is watching.",
         "deliveryCue": "Keep it low and unhurried. Put the smallest pause before quietly, when nobody is watching, and let the sentence trail off."
       },
@@ -277,12 +436,30 @@
             "professional": "I have kept this to one page, and the brevity is deliberate: everything I cut was detail we cannot yet defend.",
             "elevated": "Brevity is not a style I was born with. It is what is left after twenty years of being edited by people with better things to do."
           },
-          "collocations": ["for the sake of brevity", "brevity and clarity", "admirable brevity", "with characteristic brevity", "the brevity of the reply"],
+          "collocations": [
+            "for the sake of brevity",
+            "brevity and clarity",
+            "admirable brevity",
+            "with characteristic brevity",
+            "the brevity of the reply"
+          ],
           "nearSynonyms": [
-            { "word": "conciseness", "distinction": "saying everything necessary in few words, where brevity is only about being short" },
-            { "word": "terseness", "distinction": "short to the point of curtness" },
-            { "word": "economy", "distinction": "about waste, and usually paired with of words" },
-            { "word": "concision", "distinction": "the formal twin of conciseness, common in editing" }
+            {
+              "word": "conciseness",
+              "distinction": "saying everything necessary in few words, where brevity is only about being short"
+            },
+            {
+              "word": "terseness",
+              "distinction": "short to the point of curtness"
+            },
+            {
+              "word": "economy",
+              "distinction": "about waste, and usually paired with of words"
+            },
+            {
+              "word": "concision",
+              "distinction": "the formal twin of conciseness, common in editing"
+            }
           ],
           "registerNote": "Safe in any register. The word has a second life in the brevity of human life, which is why it can sound faintly elegiac when it stands alone at the end of a sentence."
         },
@@ -301,12 +478,30 @@
             "professional": "Your summary was succinct, and that is why the client read it on the first pass.",
             "elevated": "I will try to be succinct, which in my case takes considerably longer to prepare than being thorough."
           },
-          "collocations": ["a succinct summary", "succinct and clear", "keep it succinct", "put it succinctly", "a succinct answer"],
+          "collocations": [
+            "a succinct summary",
+            "succinct and clear",
+            "keep it succinct",
+            "put it succinctly",
+            "a succinct answer"
+          ],
           "nearSynonyms": [
-            { "word": "concise", "distinction": "nearly identical: concise stresses cutting the unnecessary, succinct stresses how compact what remains is" },
-            { "word": "brief", "distinction": "only about length, and says nothing about completeness" },
-            { "word": "pithy", "distinction": "short and memorable, with a point that stings a little" },
-            { "word": "terse", "distinction": "short and possibly curt, with an edge to it" }
+            {
+              "word": "concise",
+              "distinction": "nearly identical: concise stresses cutting the unnecessary, succinct stresses how compact what remains is"
+            },
+            {
+              "word": "brief",
+              "distinction": "only about length, and says nothing about completeness"
+            },
+            {
+              "word": "pithy",
+              "distinction": "short and memorable, with a point that stings a little"
+            },
+            {
+              "word": "terse",
+              "distinction": "short and possibly curt, with an edge to it"
+            }
           ],
           "registerNote": "Safe in any register and a genuine compliment. Asking someone to be succinct while they are already speaking is heard as a rebuke, so say it before they start or not at all."
         },
@@ -325,19 +520,37 @@
             "professional": "The reply was laconic, which I have learned is how that office says yes.",
             "elevated": "I have worked with laconic people all my life, and I have never once found one of them short of an opinion."
           },
-          "collocations": ["a laconic reply", "laconic wit", "characteristically laconic", "a laconic nod", "laconic to the point of rudeness"],
+          "collocations": [
+            "a laconic reply",
+            "laconic wit",
+            "characteristically laconic",
+            "a laconic nod",
+            "laconic to the point of rudeness"
+          ],
           "nearSynonyms": [
-            { "word": "succinct", "distinction": "a compliment about efficiency, where laconic describes character" },
-            { "word": "terse", "distinction": "short with an edge of impatience" },
-            { "word": "taciturn", "distinction": "habitually silent, where laconic is about how few words you use once you do speak" },
-            { "word": "reticent", "distinction": "unwilling to say what one thinks, which is about disclosure rather than length" }
+            {
+              "word": "succinct",
+              "distinction": "a compliment about efficiency, where laconic describes character"
+            },
+            {
+              "word": "terse",
+              "distinction": "short with an edge of impatience"
+            },
+            {
+              "word": "taciturn",
+              "distinction": "habitually silent, where laconic is about how few words you use once you do speak"
+            },
+            {
+              "word": "reticent",
+              "distinction": "unwilling to say what one thinks, which is about disclosure rather than length"
+            }
           ],
           "registerNote": "Mildly literary and never quite neutral: calling someone laconic suggests they are holding something back. Use succinct when you mean to praise, and keep laconic for describing a manner."
         }
       ],
       "passage": {
         "title": "How I run a meeting",
-        "setting": "Answering a question about your working style in a job interview.",
+        "setting": "Answering a question about your working style in a job interview",
         "text": "You asked how I run a meeting. Short, mostly. I write the decision at the top of the page, and everything under it earns its place or comes out. My last chair told me that brevity is a courtesy, and I have never found a case against it. I try to be succinct rather than laconic, because the difference matters. Laconic makes people guess what you meant. Succinct means you said the whole thing, and then stopped talking.",
         "deliveryCue": "Say Short, mostly and then actually stop for a beat. The pause is the demonstration."
       },
@@ -363,12 +576,30 @@
             "professional": "We are hiring for an inquisitive mind; the technical parts can be taught in a month.",
             "elevated": "An inquisitive junior costs you an hour a week and saves you a year, and I have never known that trade to run the other way."
           },
-          "collocations": ["an inquisitive mind", "inquisitive by nature", "an inquisitive look", "restlessly inquisitive", "inquisitive children"],
+          "collocations": [
+            "an inquisitive mind",
+            "inquisitive by nature",
+            "an inquisitive look",
+            "restlessly inquisitive",
+            "inquisitive children"
+          ],
           "nearSynonyms": [
-            { "word": "curious", "distinction": "the inward feeling, where inquisitive is the outward behavior" },
-            { "word": "questioning", "distinction": "suggests doubt as much as interest" },
-            { "word": "probing", "distinction": "about the sharpness of the questions themselves" },
-            { "word": "nosy", "distinction": "plainly negative, and about other people's business" }
+            {
+              "word": "curious",
+              "distinction": "the inward feeling, where inquisitive is the outward behavior"
+            },
+            {
+              "word": "questioning",
+              "distinction": "suggests doubt as much as interest"
+            },
+            {
+              "word": "probing",
+              "distinction": "about the sharpness of the questions themselves"
+            },
+            {
+              "word": "nosy",
+              "distinction": "plainly negative, and about other people's business"
+            }
           ],
           "registerNote": "Warm praise when it points at ideas and work. Turned on a person's private life it means prying, so keep the object of the curiosity in the sentence: inquisitive about the numbers, not simply inquisitive."
         },
@@ -387,12 +618,30 @@
             "professional": "We want the paper accurate and readable, not erudite; the audience are practitioners.",
             "elevated": "The most erudite people I have met are the ones who explain things in short words, having earned the right to."
           },
-          "collocations": ["an erudite scholar", "erudite and witty", "an erudite address", "deeply erudite", "an erudite footnote"],
+          "collocations": [
+            "an erudite scholar",
+            "erudite and witty",
+            "an erudite address",
+            "deeply erudite",
+            "an erudite footnote"
+          ],
           "nearSynonyms": [
-            { "word": "learned", "distinction": "the plain English twin, pronounced as two syllables in this sense" },
-            { "word": "scholarly", "distinction": "about method and rigor rather than breadth" },
-            { "word": "well-read", "distinction": "about reading only, with no claim about depth" },
-            { "word": "knowledgeable", "distinction": "about a domain, with no implication of study behind it" }
+            {
+              "word": "learned",
+              "distinction": "the plain English twin, pronounced as two syllables in this sense"
+            },
+            {
+              "word": "scholarly",
+              "distinction": "about method and rigor rather than breadth"
+            },
+            {
+              "word": "well-read",
+              "distinction": "about reading only, with no claim about depth"
+            },
+            {
+              "word": "knowledgeable",
+              "distinction": "about a domain, with no implication of study behind it"
+            }
           ],
           "registerNote": "Praise you give to others and never to yourself. Applied to a simple explanation it reads as sarcasm, and applied to your own memo it reads as a boast."
         },
@@ -411,19 +660,37 @@
             "professional": "The role needs a voracious learner, because the regulations change faster than we can write training for them.",
             "elevated": "I have a voracious appetite for other people's mistakes, which remains the cheapest education available to any of us."
           },
-          "collocations": ["a voracious reader", "a voracious appetite", "voracious curiosity", "read voraciously", "a voracious learner"],
+          "collocations": [
+            "a voracious reader",
+            "a voracious appetite",
+            "voracious curiosity",
+            "read voraciously",
+            "a voracious learner"
+          ],
           "nearSynonyms": [
-            { "word": "insatiable", "distinction": "stresses that nothing ever satisfies it" },
-            { "word": "avid", "distinction": "keen and enthusiastic, with no suggestion of devouring" },
-            { "word": "ravenous", "distinction": "physical hunger, and almost always literal" },
-            { "word": "greedy", "distinction": "wants more than a fair share, and is a moral charge" }
+            {
+              "word": "insatiable",
+              "distinction": "stresses that nothing ever satisfies it"
+            },
+            {
+              "word": "avid",
+              "distinction": "keen and enthusiastic, with no suggestion of devouring"
+            },
+            {
+              "word": "ravenous",
+              "distinction": "physical hunger, and almost always literal"
+            },
+            {
+              "word": "greedy",
+              "distinction": "wants more than a fair share, and is a moral charge"
+            }
           ],
           "registerNote": "Keep it on reading, learning and curiosity, where the hunger flatters. Applied to an appetite for money, food or power it edges toward greed, and listeners hear the criticism even when you did not intend one."
         }
       ],
       "passage": {
         "title": "Introducing a friend",
-        "setting": "Introducing a guest speaker at a professional association evening.",
+        "setting": "Introducing a guest speaker at a professional association evening",
         "text": "I have known tonight's speaker for eleven years, and in all that time I have never seen them come to a meeting without a question already written down. They are the most inquisitive person in this room, and I am counting myself. They are also erudite in the useful way: they read voraciously, then hide the reading, so that what reaches you is only the clear part. That is harder than it sounds. Give them your attention, and your questions. They will enjoy the second more.",
         "deliveryCue": "Warm and unhurried. Land and I am counting myself with a smile in the voice, then pick the pace back up."
       },
@@ -449,12 +716,30 @@
             "professional": "The bank has been steadfast with us since 2019, and that counts for more than a slightly better rate elsewhere.",
             "elevated": "I have had clever allies and I have had steadfast ones, and only one of those two kinds was still there in the second year."
           },
-          "collocations": ["a steadfast friend", "steadfast support", "remain steadfast", "steadfast in that belief", "steadfast loyalty"],
+          "collocations": [
+            "a steadfast friend",
+            "steadfast support",
+            "remain steadfast",
+            "steadfast in that belief",
+            "steadfast loyalty"
+          ],
           "nearSynonyms": [
-            { "word": "loyal", "distinction": "about allegiance to a person or a side" },
-            { "word": "constant", "distinction": "about not changing at all, often of affection" },
-            { "word": "unwavering", "distinction": "about not faltering in one particular moment" },
-            { "word": "faithful", "distinction": "carries a promise kept, and often a moral weight" }
+            {
+              "word": "loyal",
+              "distinction": "about allegiance to a person or a side"
+            },
+            {
+              "word": "constant",
+              "distinction": "about not changing at all, often of affection"
+            },
+            {
+              "word": "unwavering",
+              "distinction": "about not faltering in one particular moment"
+            },
+            {
+              "word": "faithful",
+              "distinction": "carries a promise kept, and often a moral weight"
+            }
           ],
           "registerNote": "Warm and slightly old-fashioned, in a way that reads as sincere rather than stiff. It suits people, not positions: a policy is firm, a friend is steadfast."
         },
@@ -473,12 +758,30 @@
             "professional": "We are resolute on the delivery date and flexible on almost everything else.",
             "elevated": "Resolute is not the same as certain. I have made my decision, and I will carry it whether or not the doubt ever goes away."
           },
-          "collocations": ["remain resolute", "resolute in the face of", "a resolute refusal", "resolute leadership", "resolute about the deadline"],
+          "collocations": [
+            "remain resolute",
+            "resolute in the face of",
+            "a resolute refusal",
+            "resolute leadership",
+            "resolute about the deadline"
+          ],
           "nearSynonyms": [
-            { "word": "determined", "distinction": "about the effort still ahead, where resolute is about the decision behind you" },
-            { "word": "steadfast", "distinction": "about loyalty over time rather than about one position" },
-            { "word": "unyielding", "distinction": "about refusing pressure, and closer to a criticism" },
-            { "word": "adamant", "distinction": "about the force with which a view is stated" }
+            {
+              "word": "determined",
+              "distinction": "about the effort still ahead, where resolute is about the decision behind you"
+            },
+            {
+              "word": "steadfast",
+              "distinction": "about loyalty over time rather than about one position"
+            },
+            {
+              "word": "unyielding",
+              "distinction": "about refusing pressure, and closer to a criticism"
+            },
+            {
+              "word": "adamant",
+              "distinction": "about the force with which a view is stated"
+            }
           ],
           "registerNote": "A compliment, and a useful way to close a topic in a meeting: we are resolute on the date ends the discussion without accusing anyone of anything."
         },
@@ -497,19 +800,37 @@
             "professional": "If the supplier stays intransigent on the payment terms, we should price the alternative properly.",
             "elevated": "There is a point at which a principled man becomes merely intransigent, and the honest test is whether he can still name what would change his mind."
           },
-          "collocations": ["an intransigent position", "intransigent opposition", "prove intransigent", "intransigent on price", "an intransigent minority"],
+          "collocations": [
+            "an intransigent position",
+            "intransigent opposition",
+            "prove intransigent",
+            "intransigent on price",
+            "an intransigent minority"
+          ],
           "nearSynonyms": [
-            { "word": "uncompromising", "distinction": "can be neutral or even admiring, where intransigent rarely is" },
-            { "word": "obstinate", "distinction": "about a person's general stubbornness rather than about one position" },
-            { "word": "inflexible", "distinction": "fits rules and systems as well as people" },
-            { "word": "adamant", "distinction": "firm about a stated view, without the charge of being unreasonable" }
+            {
+              "word": "uncompromising",
+              "distinction": "can be neutral or even admiring, where intransigent rarely is"
+            },
+            {
+              "word": "obstinate",
+              "distinction": "about a person's general stubbornness rather than about one position"
+            },
+            {
+              "word": "inflexible",
+              "distinction": "fits rules and systems as well as people"
+            },
+            {
+              "word": "adamant",
+              "distinction": "firm about a stated view, without the charge of being unreasonable"
+            }
           ],
           "registerNote": "Strongly negative: it accuses the other side of being unreasonable, not merely firm. Never use it about a client or a counterpart in the room; keep it for the debrief afterwards and say firm or resolute to their face."
         }
       ],
       "passage": {
         "title": "Holding the number",
-        "setting": "A short briefing to your own team in the corridor, five minutes before a negotiation resumes.",
+        "setting": "A short briefing to your own team in the corridor, five minutes before a negotiation resumes",
         "text": "We hold the number. I want to be clear about why, because in that room it has to look like calm and not like stubbornness. We are resolute on price and flexible on everything else: timeline, scope, the order of the payments. If they read us as intransigent, we have lost the room, so keep saying yes to the small things. And be steadfast with each other. Nobody breaks ranks in front of them, and nobody apologizes for the number.",
         "deliveryCue": "Quiet and level, with no rise at the end of any sentence. This is instruction, not persuasion."
       },
@@ -535,12 +856,30 @@
             "professional": "Clause nine is ambiguous about who carries the cost of a delay, and I would rather fix that now than in a year.",
             "elevated": "I was deliberately ambiguous, and I regret it. Precision would have cost me one uncomfortable hour and saved everyone a month."
           },
-          "collocations": ["an ambiguous phrase", "deliberately ambiguous", "ambiguous wording", "morally ambiguous", "leave it ambiguous"],
+          "collocations": [
+            "an ambiguous phrase",
+            "deliberately ambiguous",
+            "ambiguous wording",
+            "morally ambiguous",
+            "leave it ambiguous"
+          ],
           "nearSynonyms": [
-            { "word": "vague", "distinction": "says too little to be precise, where ambiguous says something that points two ways" },
-            { "word": "unclear", "distinction": "plain and general, and about the effect on the reader" },
-            { "word": "equivocal", "distinction": "ambiguity used on purpose to avoid committing" },
-            { "word": "obscure", "distinction": "hard to understand at all, rather than readable in two ways" }
+            {
+              "word": "vague",
+              "distinction": "says too little to be precise, where ambiguous says something that points two ways"
+            },
+            {
+              "word": "unclear",
+              "distinction": "plain and general, and about the effect on the reader"
+            },
+            {
+              "word": "equivocal",
+              "distinction": "ambiguity used on purpose to avoid committing"
+            },
+            {
+              "word": "obscure",
+              "distinction": "hard to understand at all, rather than readable in two ways"
+            }
           ],
           "registerNote": "Safe in any register. Aimed at wording it is a technical objection; aimed at a person's answer it implies evasion, so say the wording is ambiguous when you do not want to accuse anyone."
         },
@@ -559,12 +898,30 @@
             "professional": "The link between the campaign and the sales lift is tenuous; the timing alone does not carry it.",
             "elevated": "We have a tenuous hold on this market, and I would rather say so today than learn it from a competitor next quarter."
           },
-          "collocations": ["a tenuous connection", "a tenuous grasp", "tenuous evidence", "at best tenuous", "a tenuous hold on"],
+          "collocations": [
+            "a tenuous connection",
+            "a tenuous grasp",
+            "tenuous evidence",
+            "at best tenuous",
+            "a tenuous hold on"
+          ],
           "nearSynonyms": [
-            { "word": "weak", "distinction": "plain, general and blunter" },
-            { "word": "flimsy", "distinction": "suggests shoddy construction, with a hint of bad faith" },
-            { "word": "slight", "distinction": "about size rather than about fragility" },
-            { "word": "fragile", "distinction": "about breaking under pressure, not about being thin to begin with" }
+            {
+              "word": "weak",
+              "distinction": "plain, general and blunter"
+            },
+            {
+              "word": "flimsy",
+              "distinction": "suggests shoddy construction, with a hint of bad faith"
+            },
+            {
+              "word": "slight",
+              "distinction": "about size rather than about fragility"
+            },
+            {
+              "word": "fragile",
+              "distinction": "about breaking under pressure, not about being thin to begin with"
+            }
           ],
           "registerNote": "Safe in any register and diplomatically useful: it lets you reject an inference without questioning anyone's honesty. Of a relationship it means barely surviving, which is a heavier claim than it sounds."
         },
@@ -583,19 +940,37 @@
             "professional": "The trial results are equivocal, and I would not build a launch plan on them yet.",
             "elevated": "I would rather give you an unwelcome answer than an equivocal one, because only one of those two lets you plan."
           },
-          "collocations": ["an equivocal answer", "equivocal results", "equivocal evidence", "equivocal support", "an equivocal reception"],
+          "collocations": [
+            "an equivocal answer",
+            "equivocal results",
+            "equivocal evidence",
+            "equivocal support",
+            "an equivocal reception"
+          ],
           "nearSynonyms": [
-            { "word": "ambiguous", "distinction": "can be entirely accidental, where equivocal usually is not" },
-            { "word": "evasive", "distinction": "dodges the question rather than answering it two ways at once" },
-            { "word": "noncommittal", "distinction": "openly declines to take a side, without pretending to be clear" },
-            { "word": "inconclusive", "distinction": "of evidence only, and with no suggestion of intent" }
+            {
+              "word": "ambiguous",
+              "distinction": "can be entirely accidental, where equivocal usually is not"
+            },
+            {
+              "word": "evasive",
+              "distinction": "dodges the question rather than answering it two ways at once"
+            },
+            {
+              "word": "noncommittal",
+              "distinction": "openly declines to take a side, without pretending to be clear"
+            },
+            {
+              "word": "inconclusive",
+              "distinction": "of evidence only, and with no suggestion of intent"
+            }
           ],
           "registerNote": "Applied to a person it comes close to calling them slippery, so use it about statements and evidence rather than about the speaker. The related verb equivocate is squarely an accusation."
         }
       ],
       "passage": {
         "title": "What the pilot actually shows",
-        "setting": "A status call with a client, delivering results that have not settled.",
+        "setting": "A status call with a client, delivering results that have not settled",
         "text": "I would rather tell you this now than dress it up next month. The pilot results are equivocal. Two sites improved, two did not, and the survey question we built the whole thing on turns out to be ambiguous: half the staff read it one way and half the other. So the link we reported in July is tenuous. I am not asking you to stop. I am asking for six weeks to rewrite the question and run it again, at our cost.",
         "deliveryCue": "Even pace, with no apology in the voice. Say at our cost plainly and then stop; do not fill the silence."
       },
@@ -621,12 +996,30 @@
             "professional": "Any advantage from being first here is fleeting; what lasts is the service contract behind it.",
             "elevated": "The pleasure of being right is fleeting. The cost of having said so out loud is not."
           },
-          "collocations": ["a fleeting glimpse", "a fleeting moment", "a fleeting thought", "fleeting fame", "however fleeting"],
+          "collocations": [
+            "a fleeting glimpse",
+            "a fleeting moment",
+            "a fleeting thought",
+            "fleeting fame",
+            "however fleeting"
+          ],
           "nearSynonyms": [
-            { "word": "brief", "distinction": "only about duration, with no sense of loss" },
-            { "word": "momentary", "distinction": "lasting a moment, and more clinical about it" },
-            { "word": "passing", "distinction": "about something going by, often minor, as in a passing remark" },
-            { "word": "transient", "distinction": "longer and far more neutral" }
+            {
+              "word": "brief",
+              "distinction": "only about duration, with no sense of loss"
+            },
+            {
+              "word": "momentary",
+              "distinction": "lasting a moment, and more clinical about it"
+            },
+            {
+              "word": "passing",
+              "distinction": "about something going by, often minor, as in a passing remark"
+            },
+            {
+              "word": "transient",
+              "distinction": "longer and far more neutral"
+            }
           ],
           "registerNote": "Safe in any register and faintly wistful. It suits moments and feelings; a fleeting contract or a fleeting employee reads as a complaint rather than a description."
         },
@@ -645,12 +1038,30 @@
             "professional": "We staffed the site with transient contractors for the first year, and the handover cost us more than the wages saved.",
             "elevated": "Treat the applause as transient and the standards as permanent, and you will still be doing this work in twenty years."
           },
-          "collocations": ["a transient population", "transient staff", "transient effects", "purely transient", "a transient state"],
+          "collocations": [
+            "a transient population",
+            "transient staff",
+            "transient effects",
+            "purely transient",
+            "a transient state"
+          ],
           "nearSynonyms": [
-            { "word": "temporary", "distinction": "planned to end, where transient simply does not last" },
-            { "word": "fleeting", "distinction": "much shorter, and carrying a sense of loss" },
-            { "word": "impermanent", "distinction": "a flat statement of the fact, often philosophical" },
-            { "word": "short-lived", "distinction": "plain and slightly informal" }
+            {
+              "word": "temporary",
+              "distinction": "planned to end, where transient simply does not last"
+            },
+            {
+              "word": "fleeting",
+              "distinction": "much shorter, and carrying a sense of loss"
+            },
+            {
+              "word": "impermanent",
+              "distinction": "a flat statement of the fact, often philosophical"
+            },
+            {
+              "word": "short-lived",
+              "distinction": "plain and slightly informal"
+            }
           ],
           "registerNote": "As a noun in American use, a transient is a homeless person, so keep it adjectival when describing people: a transient workforce is fine, the transients is not."
         },
@@ -669,19 +1080,37 @@
             "professional": "Attention from a launch is ephemeral, so the sign-up flow has to be finished before the coverage starts, not after.",
             "elevated": "Everything we made this year is ephemeral except the way we treated each other while making it."
           },
-          "collocations": ["ephemeral pleasures", "ephemeral fame", "an ephemeral trend", "ephemeral beauty", "ephemeral by design"],
+          "collocations": [
+            "ephemeral pleasures",
+            "ephemeral fame",
+            "an ephemeral trend",
+            "ephemeral beauty",
+            "ephemeral by design"
+          ],
           "nearSynonyms": [
-            { "word": "transient", "distinction": "neutral and factual, where ephemeral is lyrical" },
-            { "word": "fleeting", "distinction": "about a moment slipping past, not about a thing whose whole life is short" },
-            { "word": "short-lived", "distinction": "the plain English equivalent" },
-            { "word": "evanescent", "distinction": "about fading from sight, and even more literary" }
+            {
+              "word": "transient",
+              "distinction": "neutral and factual, where ephemeral is lyrical"
+            },
+            {
+              "word": "fleeting",
+              "distinction": "about a moment slipping past, not about a thing whose whole life is short"
+            },
+            {
+              "word": "short-lived",
+              "distinction": "the plain English equivalent"
+            },
+            {
+              "word": "evanescent",
+              "distinction": "about fading from sight, and even more literary"
+            }
           ],
           "registerNote": "Literary. It belongs in a toast, an essay or a reflection; in an incident report, the word that will not raise eyebrows is short-lived."
         }
       ],
       "passage": {
         "title": "Twelve years, one long Tuesday",
-        "setting": "A short toast at a colleague's send-off.",
+        "setting": "A short toast at a colleague's send-off",
         "text": "Twelve years, and it feels like one long Tuesday. I used to think a job like this was transient, something you pass through on the way to the real thing. Then I watched Anand build a whole department out of nothing but patience. What is ephemeral here is the noise: the reorganizations, the dashboards, the crisis that owned last April that none of us can name now. What lasts is the people they trained. The years were fleeting. The habit is not.",
         "deliveryCue": "Let the list of noise run quickly, then slow right down for the last two sentences and lift your glass on is not."
       },
@@ -707,12 +1136,30 @@
             "professional": "The policy reads the same to both teams; the nuance is who signs off when the two rules disagree.",
             "elevated": "I have learned to listen for the nuance rather than for the answer, because the answer is usually decided before the meeting starts."
           },
-          "collocations": ["a nuance of meaning", "miss the nuance", "the nuances of the argument", "a nuance of tone", "without nuance"],
+          "collocations": [
+            "a nuance of meaning",
+            "miss the nuance",
+            "the nuances of the argument",
+            "a nuance of tone",
+            "without nuance"
+          ],
           "nearSynonyms": [
-            { "word": "subtlety", "distinction": "the general quality, where a nuance is one particular shade" },
-            { "word": "shade", "distinction": "the everyday word for the same idea" },
-            { "word": "distinction", "distinction": "a difference you can state outright, where a nuance has to be felt" },
-            { "word": "gradation", "distinction": "about a series of small steps rather than a single shade" }
+            {
+              "word": "subtlety",
+              "distinction": "the general quality, where a nuance is one particular shade"
+            },
+            {
+              "word": "shade",
+              "distinction": "the everyday word for the same idea"
+            },
+            {
+              "word": "distinction",
+              "distinction": "a difference you can state outright, where a nuance has to be felt"
+            },
+            {
+              "word": "gradation",
+              "distinction": "about a series of small steps rather than a single shade"
+            }
           ],
           "registerNote": "Safe in any register. The fashionable adjective (a nuanced take) has worn thin, but the noun stays precise, and that view lacks nuance is a courteous way to raise a difference without calling anyone wrong."
         },
@@ -731,12 +1178,30 @@
             "professional": "Approving the budget without a word on the hiring plan gives tacit consent to it, and we should be deliberate about that.",
             "elevated": "Every institution runs on tacit rules, and the fastest way to be thought difficult is to ask for one of them in writing."
           },
-          "collocations": ["tacit agreement", "tacit approval", "a tacit understanding", "tacit consent", "tacit knowledge"],
+          "collocations": [
+            "tacit agreement",
+            "tacit approval",
+            "a tacit understanding",
+            "tacit consent",
+            "tacit knowledge"
+          ],
           "nearSynonyms": [
-            { "word": "implicit", "distinction": "contained in the thing itself, without anyone having to accept it" },
-            { "word": "unspoken", "distinction": "plainer, and carries no idea of agreement" },
-            { "word": "implied", "distinction": "points at the speaker's suggestion, where tacit points at the listener's acceptance" },
-            { "word": "understood", "distinction": "the everyday version, with less legal weight" }
+            {
+              "word": "implicit",
+              "distinction": "contained in the thing itself, without anyone having to accept it"
+            },
+            {
+              "word": "unspoken",
+              "distinction": "plainer, and carries no idea of agreement"
+            },
+            {
+              "word": "implied",
+              "distinction": "points at the speaker's suggestion, where tacit points at the listener's acceptance"
+            },
+            {
+              "word": "understood",
+              "distinction": "the everyday version, with less legal weight"
+            }
           ],
           "registerNote": "Safe in any register, but tacit approval assigns responsibility: it says a person let something happen and is answerable for it. Use it carefully about people who were never actually asked."
         },
@@ -749,25 +1214,43 @@
           "respell": "oh·BLEEK",
           "definition": "Indirect, coming at a thing from the side rather than head on.",
           "nuance": "Oblique describes the angle of approach, not the motive, so the same word can praise tact or complain about evasion. The sentence around it decides which one you meant.",
-          "etymology": "From Latin obliquus, slanting or sideways. The geometric sense came first (a line neither parallel nor at a right angle), and the modern sense is that same slant applied to speech.",
+          "etymology": "From Latin obliquus, slanting or sideways. The physical sense of a slant is the root image (a line neither parallel nor at a right angle), and the indirect sense is that same slant applied to speech.",
           "examples": {
             "conversational": "That was an oblique way of asking whether the money had been paid back.",
             "professional": "I would rather you were direct with the client than oblique; they have been given hints twice already.",
             "elevated": "An oblique question is a courtesy: it gives the other person somewhere to stand while they decide how honest to be."
           },
-          "collocations": ["an oblique reference", "an oblique question", "oblique criticism", "approach it obliquely", "an oblique angle"],
+          "collocations": [
+            "an oblique reference",
+            "an oblique question",
+            "oblique criticism",
+            "approach it obliquely",
+            "an oblique angle"
+          ],
           "nearSynonyms": [
-            { "word": "indirect", "distinction": "plain and neutral, with no picture behind it" },
-            { "word": "roundabout", "distinction": "informal, and suggests wasted effort" },
-            { "word": "veiled", "distinction": "implies deliberate concealment, usually of a threat or an insult" },
-            { "word": "allusive", "distinction": "refers to something without naming it, and without the sideways manner" }
+            {
+              "word": "indirect",
+              "distinction": "plain and neutral, with no picture behind it"
+            },
+            {
+              "word": "roundabout",
+              "distinction": "informal, and suggests wasted effort"
+            },
+            {
+              "word": "veiled",
+              "distinction": "implies deliberate concealment, usually of a threat or an insult"
+            },
+            {
+              "word": "allusive",
+              "distinction": "refers to something without naming it, and without the sideways manner"
+            }
           ],
           "registerNote": "Safe in any register. Of a person's manner it edges toward a complaint that they are hard to pin down, so pair it with a warm word when you mean to praise the tact."
         }
       ],
       "passage": {
         "title": "The question at dinner",
-        "setting": "A story told across the table at a dinner with friends.",
+        "setting": "A story told across the table at a dinner with friends",
         "text": "My father never told me he disapproved of anything. He would ask an oblique question at dinner, something about how a neighbor was managing, and then leave it there. It took me twenty years to hear the nuance in it. There was a tacit rule in that house: you were free to make the mistake, and you were never allowed to be surprised by the cost. I run my own family the same way now, and my son has not caught on yet.",
         "deliveryCue": "Tell it slowly, as though you are remembering it while you speak. The last line is the joke; do not lean on it."
       },
@@ -793,12 +1276,30 @@
             "professional": "You will have ample warning: nothing changes before the March board meeting.",
             "elevated": "The evidence is ample. What we are short of is not proof but the willingness to act on what we already have."
           },
-          "collocations": ["ample time", "ample evidence", "ample opportunity", "ample room", "ample warning"],
+          "collocations": [
+            "ample time",
+            "ample evidence",
+            "ample opportunity",
+            "ample room",
+            "ample warning"
+          ],
           "nearSynonyms": [
-            { "word": "sufficient", "distinction": "exactly enough, with no margin at all" },
-            { "word": "abundant", "distinction": "a large quantity in itself, measured against nothing" },
-            { "word": "plentiful", "distinction": "about supply being easy to come by" },
-            { "word": "generous", "distinction": "about the giver's intent as much as about the amount" }
+            {
+              "word": "sufficient",
+              "distinction": "exactly enough, with no margin at all"
+            },
+            {
+              "word": "abundant",
+              "distinction": "a large quantity in itself, measured against nothing"
+            },
+            {
+              "word": "plentiful",
+              "distinction": "about supply being easy to come by"
+            },
+            {
+              "word": "generous",
+              "distinction": "about the giver's intent as much as about the amount"
+            }
           ],
           "registerNote": "Safe in any register, though of a person's build (an ample figure) it is a euphemism for large. Keep it on time, space, evidence and opportunity and it stays neutral."
         },
@@ -817,12 +1318,30 @@
             "professional": "The vendor supplied copious documentation and not one page that answers our question.",
             "elevated": "I have copious evidence of the problem and almost none of the cause, and I am not going to pretend otherwise tonight."
           },
-          "collocations": ["copious notes", "copious detail", "copious quantities", "copious evidence", "copious rain"],
+          "collocations": [
+            "copious notes",
+            "copious detail",
+            "copious quantities",
+            "copious evidence",
+            "copious rain"
+          ],
           "nearSynonyms": [
-            { "word": "abundant", "distinction": "about a plentiful supply, where copious leans toward what is produced or poured out" },
-            { "word": "plentiful", "distinction": "plain, and about availability" },
-            { "word": "profuse", "distinction": "stresses pouring out freely, and often too freely" },
-            { "word": "voluminous", "distinction": "about the sheer bulk of writing rather than quantity in general" }
+            {
+              "word": "abundant",
+              "distinction": "about a plentiful supply, where copious leans toward what is produced or poured out"
+            },
+            {
+              "word": "plentiful",
+              "distinction": "plain, and about availability"
+            },
+            {
+              "word": "profuse",
+              "distinction": "stresses pouring out freely, and often too freely"
+            },
+            {
+              "word": "voluminous",
+              "distinction": "about the sheer bulk of writing rather than quantity in general"
+            }
           ],
           "registerNote": "Safe in any register, but it pairs with things that are produced, not with people: copious notes is right, copious friends is not."
         },
@@ -841,19 +1360,37 @@
             "professional": "We have a plethora of dashboards and no agreement on which number the meeting is about.",
             "elevated": "The problem was never a shortage of information. It was a plethora of it, and the confidence that comes from mistaking volume for understanding."
           },
-          "collocations": ["a plethora of options", "a plethora of forms", "faced with a plethora of", "a plethora of rules", "a plethora of choices"],
+          "collocations": [
+            "a plethora of options",
+            "a plethora of forms",
+            "faced with a plethora of",
+            "a plethora of rules",
+            "a plethora of choices"
+          ],
           "nearSynonyms": [
-            { "word": "abundance", "distinction": "neutral or positive, where a plethora is too much" },
-            { "word": "surfeit", "distinction": "an excess that sickens, and stronger still" },
-            { "word": "glut", "distinction": "an oversupply, usually in a market" },
-            { "word": "profusion", "distinction": "a rich outpouring, and usually admiring" }
+            {
+              "word": "abundance",
+              "distinction": "neutral or positive, where a plethora is too much"
+            },
+            {
+              "word": "surfeit",
+              "distinction": "an excess that sickens, and stronger still"
+            },
+            {
+              "word": "glut",
+              "distinction": "an oversupply, usually in a market"
+            },
+            {
+              "word": "profusion",
+              "distinction": "a rich outpouring, and usually admiring"
+            }
           ],
           "registerNote": "Do not use it to mean simply many: it means too many, and anyone who knows the word will hear a criticism you did not intend. Reserve it for abundance that is genuinely the problem."
         }
       ],
       "passage": {
         "title": "Too much of a good thing",
-        "setting": "The opening of a conference talk to a room of managers.",
+        "setting": "The opening of a conference talk to a room of managers",
         "text": "When I started, the problem was that we had no data. Now every client I meet has a plethora of it, and I mean that word exactly: more than is good for them. Forty dashboards, copious notes from every meeting since 2019, and not one person who can say what the business should do on Monday. You already have ample evidence. What you are short of is a decision, and no further collection will produce one. So this morning I want to talk about throwing things away.",
         "deliveryCue": "Open briskly and conversationally, then slow down on more than is good for them so the correction registers."
       },

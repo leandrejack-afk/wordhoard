@@ -64,6 +64,9 @@ export function subjectFor(days, n) {
 export function buildEmail(lexicon, n) {
   const days = lexicon.days || [];
   const lastDay = days.reduce((max, d) => Math.max(max, d.day), 0);
+  if (lastDay < 1) {
+    throw new Error("lexicon.json has no days; refusing to compose an empty email");
+  }
   const entry = days.find((d) => d.day === n);
   if (!entry && n <= lastDay) {
     throw new Error(`lexicon.json has no day ${n}`);

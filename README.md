@@ -22,5 +22,7 @@ Everything ever delivered lives in the hoard: a permanent site where words unloc
 
 - `.env` on the VPS holds `GMAIL_USER` and `GMAIL_APP_PASSWORD` (same keys as morning-brief). Never committed.
 - Test render without sending: `DAY_OVERRIDE=8 RENDER_ONLY=1 node send.mjs` writes `out/day-8.html`.
-- Volume II: append new days to the content files (or add a part file to `build.mjs`), extend the curriculum table in `specs/`, run build + validate, push. The VPS pulls before every send.
+- On the VPS, always fire a real send with `systemctl start wordhoard.service`, never bare `node send.mjs`. There is no file lock; systemd's oneshot serialization is the lock.
+- `npm audit` flags nodemailer 6. The advisories sit in surfaces this sender never calls (reviewed 2026-08-17); do not force-upgrade past ^6, the validator pins the range.
+- Volume II: append new days to the content files (or add a part file to `build.mjs`), extend the curriculum table in `specs/` AND the embedded curriculum in `validate.mjs` (it hard-asserts 30 days), run build + validate, push. The VPS pulls before every send.
 - No paid dependencies. Zero monthly cost.
