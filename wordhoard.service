@@ -1,0 +1,13 @@
+[Unit]
+Description=Wordhoard daily lesson email
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+User=deploy
+WorkingDirectory=/home/deploy/wordhoard
+EnvironmentFile=/home/deploy/wordhoard/.env
+ExecStart=/home/deploy/wordhoard/run.sh
+StandardOutput=append:/home/deploy/wordhoard/wordhoard.log
+StandardError=append:/home/deploy/wordhoard/wordhoard.log

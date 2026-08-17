@@ -1,0 +1,1440 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Wordhoard · Volume I</title>
+<meta name="description" content="Three words a day, written to be said out loud, kept in one place for good.">
+<meta name="color-scheme" content="dark light">
+<meta name="theme-color" content="#14161D" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#F5F4EF" media="(prefers-color-scheme: light)">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext x='16' y='25' text-anchor='middle' font-family='Georgia,serif' font-size='25' fill='%23C9A54A'%3EW%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,900&amp;family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400;1,6..72,500&amp;display=swap">
+<style>
+/* ---------- tokens ---------- */
+
+:root {
+  color-scheme: dark light;
+  --ink: #14161D;
+  --vellum: #E9E4D6;
+  --gilt: #C9A54A;
+  --slate: #8B93A7;
+  --rule: rgba(201,165,74,.28);
+  --panel: rgba(233,228,214,.035);
+  --display: "Fraunces", "Iowan Old Style", Palatino, Georgia, serif;
+  --body: "Newsreader", "Iowan Old Style", Georgia, "Times New Roman", serif;
+  --ipa: "Newsreader", "Charis SIL", "Gentium Plus", "Lucida Sans Unicode", Georgia, serif;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --ink: #F5F4EF;
+    --vellum: #1C2130;
+    --gilt: #866626;
+    --slate: #5A6274;
+    --rule: rgba(134,102,38,.35);
+    --panel: rgba(28,33,48,.03);
+  }
+}
+
+/* ---------- ground ---------- */
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--ink);
+  color: var(--vellum);
+  font-family: var(--body);
+  font-size: 1.0625rem;
+  line-height: 1.72;
+  font-optical-sizing: auto;
+  -webkit-font-smoothing: antialiased;
+  overflow-wrap: break-word;
+}
+
+[hidden] { display: none !important; }
+
+.wrap {
+  width: min(100% - 2rem, 46rem);
+  margin-left: auto;
+  margin-right: auto;
+}
+.wrap--wide { width: min(100% - 2rem, 64rem); }
+
+h1, h2, h3, h4 { font-family: var(--display); font-weight: 600; line-height: 1.2; }
+
+p { margin: 0 0 1rem; }
+
+button {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+
+.tab, .chip, .btn, .speak, .card-head .headword, .journal__row {
+  transition: color 160ms ease, border-color 160ms ease, background-color 160ms ease, opacity 160ms ease;
+}
+
+:focus-visible {
+  outline: 2px solid var(--gilt);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.skip { position: absolute; left: -9999px; }
+.skip:focus {
+  position: fixed;
+  left: 1rem;
+  top: 1rem;
+  z-index: 20;
+  background: var(--ink);
+  border: 1px solid var(--rule);
+  padding: .7rem 1rem;
+  color: var(--vellum);
+}
+
+/* ---------- masthead ---------- */
+
+.masthead {
+  padding: 3rem 0 1.6rem;
+  text-align: center;
+}
+
+.masthead__title {
+  margin: 0;
+  font-weight: 900;
+  font-size: clamp(1.45rem, 6.2vw, 2.4rem);
+  letter-spacing: .22em;
+  text-indent: .22em;
+  text-transform: uppercase;
+  color: var(--vellum);
+}
+
+.masthead__title .orn {
+  color: var(--slate);
+  padding: 0 .5em;
+  letter-spacing: 0;
+}
+
+.stats {
+  margin: 1.1rem 0 0;
+  font-size: .95rem;
+  letter-spacing: .06em;
+  color: var(--slate);
+  font-variant-caps: all-small-caps;
+}
+
+.sealed {
+  margin: .1rem 0 0;
+  font-size: .92rem;
+  font-style: italic;
+  color: var(--slate);
+  opacity: .82;
+}
+
+/* ---------- tabs ---------- */
+
+.tabs {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: var(--ink);
+  border-bottom: 1px solid var(--rule);
+}
+
+.tabs__inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0 1.4rem;
+}
+
+.tab {
+  position: relative;
+  min-height: 44px;
+  min-width: 44px;
+  padding: .7rem .1rem;
+  font-family: var(--display);
+  font-weight: 600;
+  font-size: .78rem;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--slate);
+}
+
+.tab:hover { color: var(--vellum); }
+.tab[aria-current="page"] { color: var(--vellum); }
+.tab[aria-current="page"]::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1px;
+  height: 2px;
+  background: var(--gilt);
+}
+
+/* ---------- shared plate ---------- */
+
+.plate { border-top: 1px solid var(--rule); }
+
+.plate::before {
+  content: "";
+  display: block;
+  height: 1px;
+  margin-top: 3px;
+  background: var(--rule);
+}
+
+.plate__inner { padding-top: 1.5rem; }
+
+.eyebrow {
+  font-family: var(--display);
+  font-weight: 600;
+  font-size: .7rem;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--slate);
+}
+
+.label {
+  margin: 0 0 .15rem;
+  font-family: var(--display);
+  font-weight: 600;
+  font-size: .68rem;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--slate);
+}
+
+.headword {
+  margin: 0;
+  font-family: var(--display);
+  font-weight: 600;
+  font-size: clamp(2rem, 8.5vw, 2.9rem);
+  line-height: 1.06;
+  letter-spacing: -.005em;
+  color: var(--gilt);
+}
+
+.respell {
+  margin: .5rem 0 0;
+  font-size: 1rem;
+  letter-spacing: .04em;
+  color: var(--slate);
+}
+
+.syl--stress {
+  color: var(--gilt);
+  font-variant-caps: all-small-caps;
+  -webkit-font-variant-caps: all-small-caps;
+  letter-spacing: .07em;
+}
+
+.syl-dot { padding: 0 .12em; opacity: .55; }
+
+.ipa {
+  margin: .25rem 0 0;
+  font-family: var(--ipa);
+  font-size: .96rem;
+  color: var(--slate);
+  opacity: .85;
+}
+
+.definition { margin: 1.1rem 0 0; font-size: 1.15rem; }
+.nuance { margin: .7rem 0 0; color: var(--slate); }
+
+.field { margin-top: 1.5rem; }
+.field p:last-child { margin-bottom: 0; }
+
+.examples { margin: 0; padding: 0; list-style: none; }
+.examples li { margin-top: .8rem; }
+.examples li:first-child { margin-top: .3rem; }
+.ex-label {
+  display: block;
+  font-family: var(--display);
+  font-weight: 600;
+  font-size: .64rem;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--slate);
+  opacity: .8;
+}
+.examples p { margin: 0; font-style: italic; }
+
+.collocs { margin: .3rem 0 0; color: var(--vellum); opacity: .9; }
+.collocs .sep { color: var(--slate); padding: 0 .35em; }
+
+.synonyms { margin: .3rem 0 0; padding: 0; list-style: none; }
+.synonyms li { margin-top: .35rem; }
+.synonyms b { font-weight: 500; font-style: italic; }
+.synonyms span { color: var(--slate); }
+
+.register { margin: .3rem 0 0; color: var(--slate); }
+
+.speak {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  flex: none;
+  color: var(--slate);
+  border: 1px solid transparent;
+  border-radius: 50%;
+}
+.speak:hover { color: var(--vellum); border-color: var(--rule); }
+.speak svg { width: 21px; height: 21px; display: block; }
+
+.plate__head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: .6rem;
+}
+.plate__head .speak { margin-top: .2rem; }
+
+.word-meta { margin-top: .75rem; }
+
+.card-foot {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+/* ---------- day view ---------- */
+
+.day { padding-bottom: 3rem; }
+.day__eyebrow { margin: 2.4rem 0 .7rem; }
+.day__theme {
+  margin: 0;
+  font-size: clamp(1.7rem, 6.6vw, 2.3rem);
+  font-weight: 600;
+}
+.day__line {
+  margin: .8rem 0 0;
+  font-size: 1.15rem;
+  font-style: italic;
+  color: var(--slate);
+}
+
+.words > .plate { margin-top: 3.2rem; }
+
+.gild { animation: gild 900ms cubic-bezier(.2,.6,.2,1) both; }
+@keyframes gild {
+  from { color: var(--vellum); }
+  to { color: var(--gilt); }
+}
+.words > .plate:nth-child(1) .gild { animation-delay: 40ms; }
+.words > .plate:nth-child(2) .gild { animation-delay: 290ms; }
+.words > .plate:nth-child(3) .gild { animation-delay: 540ms; }
+
+@media (prefers-reduced-motion: reduce) {
+  .gild { animation: none; color: var(--gilt); }
+  .tab, .chip, .btn, .speak, .card-head .headword, .journal__row { transition: none; }
+}
+
+/* ---------- passage ---------- */
+
+.passage { margin-top: 3.6rem; }
+.passage__body { min-width: 0; }
+
+.passage__setting {
+  margin: .9rem 0 0;
+  font-style: italic;
+  color: var(--slate);
+}
+
+.passage__title {
+  margin: .5rem 0 1.2rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.passage__text {
+  margin: 0;
+  font-size: 1.16rem;
+  line-height: 1.78;
+}
+.passage__text::after { content: ""; display: block; clear: both; }
+
+.dropcap {
+  float: left;
+  font-family: var(--display);
+  font-weight: 900;
+  font-size: 5.9em;
+  line-height: .88;
+  color: var(--gilt);
+  margin: 0 .07em 0 0;
+}
+
+.cue {
+  margin: 1.8rem 0 0;
+  padding-left: 1rem;
+  border-left: 1px solid var(--rule);
+  font-style: italic;
+  font-size: .96rem;
+  color: var(--slate);
+}
+.cue .label { font-style: normal; }
+
+.epigram {
+  margin: 3.6rem 0 0;
+  padding: 1.6rem 0;
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+  text-align: center;
+}
+.epigram p {
+  margin: 0 auto;
+  max-width: 30rem;
+  font-size: 1.2rem;
+  font-style: italic;
+  line-height: 1.5;
+}
+
+@media (min-width: 900px) {
+  .passage { display: flex; gap: 2.2rem; align-items: flex-start; }
+  .cue {
+    flex: 0 0 11rem;
+    margin: 3.6rem 0 0;
+  }
+}
+
+/* ---------- controls ---------- */
+
+.controls {
+  margin: 2.2rem 0 1.4rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: .7rem;
+  align-items: center;
+}
+
+.controls--tight { margin-top: 0; }
+
+.search { flex: 1 1 15rem; }
+.search .label { display: block; }
+.search input {
+  width: 100%;
+  min-height: 44px;
+  padding: .6rem .9rem;
+  background: var(--panel);
+  border: 1px solid var(--rule);
+  border-radius: 2px;
+  color: var(--vellum);
+  font-family: var(--body);
+  font-size: 1rem;
+  -webkit-appearance: none;
+  appearance: none;
+}
+.search input::placeholder { color: var(--slate); opacity: .75; }
+
+.chips { display: flex; flex-wrap: wrap; gap: .5rem; }
+
+.chip {
+  min-height: 44px;
+  padding: .4rem 1rem;
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  color: var(--slate);
+  font-family: var(--display);
+  font-weight: 600;
+  font-size: .68rem;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+.chip:hover { color: var(--vellum); }
+.chip[aria-pressed="true"] {
+  color: var(--vellum);
+  border-color: var(--vellum);
+  background: var(--panel);
+}
+
+.tally {
+  margin: 0 0 1.6rem;
+  font-size: .92rem;
+  color: var(--slate);
+  font-variant-caps: all-small-caps;
+  letter-spacing: .05em;
+}
+
+.view__title {
+  margin: 2.4rem 0 0;
+  font-size: clamp(1.6rem, 6vw, 2.1rem);
+}
+.view__lead { margin: .7rem 0 0; color: var(--slate); font-style: italic; }
+
+/* ---------- hoard ---------- */
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.4rem;
+  padding-bottom: 3rem;
+}
+@media (min-width: 760px) {
+  .grid { grid-template-columns: repeat(auto-fill, minmax(19rem, 1fr)); gap: 2.4rem 2.6rem; }
+}
+
+.review-grid { margin-top: 2.6rem; }
+
+.card h3 { margin: 0; font-weight: inherit; font-size: inherit; }
+
+.card-head {
+  display: block;
+  width: 100%;
+  min-height: 44px;
+  text-align: left;
+  padding: 0 0 .2rem;
+}
+.card-head .headword { font-size: clamp(1.6rem, 6vw, 2rem); display: block; }
+.card-head:hover .headword { opacity: .85; }
+.card-head .respell { display: block; }
+.card-head .eyebrow { display: block; margin-top: .55rem; }
+
+.card .definition { font-size: 1.05rem; }
+.card-detail { margin-top: .4rem; }
+.card-more {
+  margin-top: .9rem;
+  font-family: var(--display);
+  font-weight: 600;
+  font-size: .68rem;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--slate);
+  min-height: 44px;
+  padding: 0;
+}
+.card-more:hover { color: var(--vellum); }
+
+/* ---------- journal ---------- */
+
+.journal { margin: 2rem 0 3rem; padding: 0; list-style: none; }
+
+.journal__row {
+  display: block;
+  width: 100%;
+  text-align: left;
+  min-height: 44px;
+  padding: 1.1rem 0;
+  border-top: 1px solid var(--rule);
+}
+.journal li:last-child .journal__row { border-bottom: 1px solid var(--rule); }
+.journal__num {
+  display: block;
+  font-family: var(--display);
+  font-weight: 600;
+  font-size: .7rem;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--slate);
+}
+.journal__theme {
+  display: block;
+  margin-top: .2rem;
+  font-family: var(--display);
+  font-size: 1.25rem;
+}
+.journal__words {
+  display: block;
+  margin-top: .25rem;
+  font-style: italic;
+  color: var(--slate);
+}
+.journal__row:hover { background: var(--panel); }
+.journal__row:hover .journal__num { color: var(--vellum); }
+
+.back {
+  margin: 2rem 0 0;
+  min-height: 44px;
+  font-family: var(--display);
+  font-weight: 600;
+  font-size: .7rem;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--slate);
+}
+.back:hover { color: var(--vellum); }
+
+/* ---------- practice ---------- */
+
+.drill { margin-top: 1rem; padding-bottom: 3rem; }
+.drill__prompt { margin: 1.1rem 0 0; font-size: 1.2rem; }
+.drill__hint { margin: .8rem 0 0; color: var(--slate); font-style: italic; }
+.drill__answer { margin-top: 1.4rem; padding-top: 1.2rem; border-top: 1px solid var(--rule); }
+.drill__answer .definition { margin-top: 0; }
+
+.drill__actions {
+  margin-top: 1.8rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: .7rem;
+}
+
+.btn {
+  min-height: 44px;
+  padding: .5rem 1.4rem;
+  border: 1px solid var(--rule);
+  border-radius: 2px;
+  font-family: var(--display);
+  font-weight: 600;
+  font-size: .72rem;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--vellum);
+  background: var(--panel);
+}
+.btn:hover { border-color: var(--vellum); }
+.btn--quiet { color: var(--slate); background: none; }
+.btn--quiet:hover { color: var(--vellum); }
+
+/* ---------- about ---------- */
+
+.about { padding-bottom: 3.5rem; }
+.about h3 {
+  margin: 2.6rem 0 .6rem;
+  font-size: 1.25rem;
+}
+.about p { font-size: 1.08rem; }
+.about__note { margin-top: 1.6rem; }
+.about .oe { font-style: italic; }
+.about ul { margin: .2rem 0 1rem; padding-left: 1.1rem; }
+.about li { margin-top: .3rem; }
+
+/* ---------- notices, footer ---------- */
+
+.notice {
+  margin: 3rem 0;
+  color: var(--slate);
+  font-style: italic;
+  text-align: center;
+}
+
+.foot {
+  padding: 2.4rem 0 3rem;
+  border-top: 1px solid var(--rule);
+  text-align: center;
+}
+.foot p {
+  margin: 0;
+  font-size: .8rem;
+  letter-spacing: .1em;
+  color: var(--slate);
+  font-variant-caps: all-small-caps;
+}
+
+@media (max-width: 420px) {
+  body { font-size: 1.02rem; }
+  .masthead { padding-top: 2.2rem; }
+  .tabs__inner { gap: 0 .8rem; }
+  .tab { font-size: .72rem; letter-spacing: .1em; }
+}
+</style>
+</head>
+<body>
+
+<a class="skip" href="#view">Skip to the words</a>
+
+<header class="masthead wrap">
+  <h1 class="masthead__title"><span class="orn" aria-hidden="true">·</span>Wordhoard<span class="orn" aria-hidden="true">·</span></h1>
+  <p class="stats" id="stats"></p>
+  <p class="sealed" id="sealed"></p>
+</header>
+
+<nav class="tabs" aria-label="Sections">
+  <div class="tabs__inner wrap">
+    <button class="tab" type="button" data-action="tab" data-view="today" aria-current="page">Today</button>
+    <button class="tab" type="button" data-action="tab" data-view="hoard">Hoard</button>
+    <button class="tab" type="button" data-action="tab" data-view="days">Days</button>
+    <button class="tab" type="button" data-action="tab" data-view="practice">Practice</button>
+    <button class="tab" type="button" data-action="tab" data-view="about">About</button>
+  </div>
+</nav>
+
+<main id="main">
+  <noscript>
+    <p class="notice wrap">Wordhoard needs JavaScript to open the hoard. Turn it on and reload this page.</p>
+  </noscript>
+  <div id="view" class="view wrap" aria-busy="true"></div>
+</main>
+
+<footer class="foot wrap">
+  <p>Volume I · thirty days · ninety words</p>
+</footer>
+
+<script>
+(function () {
+  'use strict';
+
+  var MASTERED_KEY = 'wh.mastered';
+
+  var state = {
+    view: 'today',
+    lex: null,
+    entries: [],
+    today: 1,
+    totalDays: 30,
+    openDay: null,
+    open: {},
+    hoard: { q: '', sort: 'day', tier: 'all' },
+    practice: { mode: 'define', hideMastered: false, current: null, revealed: false },
+    mastered: readMastered()
+  };
+
+  var canSpeak = ('speechSynthesis' in window);
+  var speakingKey = null;
+
+  /* ---------- small helpers ---------- */
+
+  function el(id) { return document.getElementById(id); }
+
+  function has(value) { return typeof value === 'string' && value.trim() !== ''; }
+
+  function esc(value) {
+    return String(value == null ? '' : value).replace(/[&<>"']/g, function (ch) {
+      return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[ch];
+    });
+  }
+
+  function plural(count, one, many) { return count === 1 ? one : many; }
+
+  /* ---------- the pinned day-number algorithm ---------- */
+
+  function dayNumberFor(startDate) {
+    const guyanaToday = new Intl.DateTimeFormat('en-CA', { timeZone: 'America/Guyana' }).format(new Date());
+    const dayNumber = Math.round((Date.parse(guyanaToday + 'T00:00:00Z') - Date.parse(startDate + 'T00:00:00Z')) / 86400000) + 1;
+    return dayNumber;
+  }
+
+  /* ---------- the pinned post-volume review algorithm ---------- */
+
+  function postVolumeReview(n) {
+    var picks = [];
+    var seen = {};
+    for (var k = 0; k < 6; k++) {
+      var dayIndex = ((n * 7 + k * 11) % 30) + 1;
+      var wordIndex = (n + k) % 3;
+      var day = dayByNumber(dayIndex);
+      if (!day || !day.words || !day.words[wordIndex]) continue;
+      var word = day.words[wordIndex];
+      if (seen[word.id]) continue;
+      seen[word.id] = true;
+      picks.push({ w: word, day: day.day, theme: day.theme, i: wordIndex });
+    }
+    return picks;
+  }
+
+  /* ---------- data ---------- */
+
+  function dayByNumber(n) {
+    var days = (state.lex && state.lex.days) || [];
+    for (var i = 0; i < days.length; i++) {
+      if (days[i].day === n) return days[i];
+    }
+    return null;
+  }
+
+  function unlockedDays() {
+    var days = (state.lex && state.lex.days) || [];
+    return days.filter(function (d) { return d.day <= state.today; })
+      .sort(function (a, b) { return a.day - b.day; });
+  }
+
+  function unlockedEntries() {
+    return state.entries.filter(function (e) { return e.day <= state.today; });
+  }
+
+  function readMastered() {
+    try {
+      var raw = window.localStorage.getItem('wh.mastered');
+      var parsed = raw ? JSON.parse(raw) : null;
+      return (parsed && typeof parsed === 'object') ? parsed : {};
+    } catch (err) {
+      console.warn('wordhoard: could not read wh.mastered', err);
+      return {};
+    }
+  }
+
+  function saveMastered() {
+    try {
+      window.localStorage.setItem('wh.mastered', JSON.stringify(state.mastered));
+    } catch (err) {
+      console.warn('wordhoard: could not save wh.mastered', err);
+    }
+  }
+
+  /* ---------- speech ---------- */
+
+  function preferredVoice() {
+    var voices = (window.speechSynthesis.getVoices && window.speechSynthesis.getVoices()) || [];
+    var tag = function (v) { return String(v.lang || '').replace('_', '-'); };
+    var found = null;
+    voices.forEach(function (v) {
+      if (found) return;
+      if (tag(v) === 'en-US' && v.default) found = v;
+    });
+    voices.forEach(function (v) { if (!found && tag(v) === 'en-US') found = v; });
+    voices.forEach(function (v) { if (!found && tag(v).indexOf('en') === 0) found = v; });
+    return found;
+  }
+
+  function speak(text, rate, key) {
+    if (!canSpeak || !has(text)) return;
+    var synth = window.speechSynthesis;
+    var wasSpeaking = synth.speaking || synth.pending;
+    synth.cancel();
+    if (wasSpeaking && key && key === speakingKey) { speakingKey = null; return; }
+    var utterance = new window.SpeechSynthesisUtterance(text);
+    utterance.rate = rate;
+    var voice = preferredVoice();
+    if (voice) { utterance.voice = voice; utterance.lang = voice.lang; }
+    else { utterance.lang = 'en-US'; }
+    utterance.onend = function () { speakingKey = null; };
+    speakingKey = key || null;
+    // cancel() followed by speak() in the same tick is dropped by some browsers.
+    window.setTimeout(function () { synth.speak(utterance); }, 20);
+  }
+
+  function speakButton(label, kind, id) {
+    if (!canSpeak) return '';
+    var icon = '<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">' +
+      '<path d="M4 9.2h3.6L13 5v14l-5.4-4.2H4z" fill="currentColor"></path>' +
+      '<path d="M16.4 8.7a4.6 4.6 0 0 1 0 6.6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>' +
+      '<path d="M18.9 6.2a8.1 8.1 0 0 1 0 11.6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity=".55"></path>' +
+      '</svg>';
+    return '<button class="speak" type="button" data-action="speak" data-kind="' + esc(kind) + '" data-id="' + esc(id) + '" aria-label="' + esc(label) + '">' + icon + '</button>';
+  }
+
+  /* ---------- word rendering ---------- */
+
+  function respellHtml(respell) {
+    if (!has(respell)) return '';
+    var parts = String(respell).split('·');
+    var out = [];
+    parts.forEach(function (part) {
+      var syllable = part.trim();
+      var stressed = /[A-Za-z]/.test(syllable) && syllable === syllable.toUpperCase();
+      out.push('<span class="syl' + (stressed ? ' syl--stress' : '') + '">' + esc(syllable) + '</span>');
+    });
+    return out.join('<span class="syl-dot" aria-hidden="true">·</span>');
+  }
+
+  function eyebrowFor(entry, withDay) {
+    var bits = [];
+    if (has(entry.w.pos)) bits.push(esc(entry.w.pos));
+    if (has(entry.w.tier)) bits.push(esc(entry.w.tier));
+    if (withDay) bits.push('Day ' + entry.day);
+    return bits.join(' <span aria-hidden="true">·</span> ');
+  }
+
+  function wordDetailHtml(word) {
+    var out = '';
+    if (has(word.nuance)) out += '<p class="nuance">' + esc(word.nuance) + '</p>';
+    if (has(word.etymology)) {
+      out += '<div class="field"><p class="label">Origin</p><p>' + esc(word.etymology) + '</p></div>';
+    }
+    var ex = word.examples || {};
+    var rows = [
+      ['Conversational', ex.conversational],
+      ['Professional', ex.professional],
+      ['Elevated', ex.elevated]
+    ].filter(function (row) { return has(row[1]); });
+    if (rows.length) {
+      out += '<div class="field"><p class="label">In use</p><ul class="examples">';
+      rows.forEach(function (row) {
+        out += '<li><span class="ex-label">' + row[0] + '</span><p>' + esc(row[1]) + '</p></li>';
+      });
+      out += '</ul></div>';
+    }
+    var collocations = (word.collocations || []).filter(has);
+    if (collocations.length) {
+      out += '<div class="field"><p class="label">Pairings</p><p class="collocs">' +
+        collocations.map(esc).join('<span class="sep" aria-hidden="true">·</span>') + '</p></div>';
+    }
+    var synonyms = (word.nearSynonyms || []).filter(function (s) { return s && has(s.word); });
+    if (synonyms.length) {
+      out += '<div class="field"><p class="label">Near synonyms</p><ul class="synonyms">';
+      synonyms.forEach(function (s) {
+        out += '<li><b>' + esc(s.word) + '</b> <span>' + esc(s.distinction) + '</span></li>';
+      });
+      out += '</ul></div>';
+    }
+    if (has(word.registerNote)) {
+      out += '<div class="field"><p class="label">Register</p><p class="register">' + esc(word.registerNote) + '</p></div>';
+    }
+    return out;
+  }
+
+  function wordPlateHtml(entry, gild) {
+    var word = entry.w;
+    var out = '<article class="plate">';
+    out += '<div class="plate__inner">';
+    out += '<div class="plate__head">';
+    out += '<div><h3 class="headword' + (gild ? ' gild' : '') + '">' + esc(word.word) + '</h3>';
+    if (has(word.respell)) out += '<p class="respell">' + respellHtml(word.respell) + '</p>';
+    if (has(word.ipa)) out += '<p class="ipa">' + esc(word.ipa) + '</p>';
+    out += '<p class="eyebrow word-meta">' + eyebrowFor(entry, false) + '</p></div>';
+    out += speakButton('Say the word ' + word.word, 'word', word.id);
+    out += '</div>';
+    if (has(word.definition)) out += '<p class="definition">' + esc(word.definition) + '</p>';
+    out += wordDetailHtml(word);
+    out += '</div></article>';
+    return out;
+  }
+
+  /* ---------- passage and epigram ---------- */
+
+  function passageHtml(day) {
+    var passage = day.passage || {};
+    if (!has(passage.text)) return '';
+    var text = String(passage.text).trim();
+    var first = text.slice(0, 1);
+    var rest = text.slice(1);
+    var out = '<section class="passage">';
+    out += '<div class="passage__body">';
+    out += '<div class="plate__head"><div>';
+    out += '<p class="eyebrow">Read this aloud</p>';
+    if (has(passage.setting)) out += '<p class="passage__setting">' + esc(passage.setting) + '</p>';
+    if (has(passage.title)) out += '<h3 class="passage__title">' + esc(passage.title) + '</h3>';
+    out += '</div>' + speakButton('Read the passage aloud', 'passage', String(day.day)) + '</div>';
+    out += '<p class="passage__text"><span class="dropcap" aria-hidden="true">' + esc(first) + '</span>' +
+      '<span class="sr-only">' + esc(first) + '</span>' + esc(rest) + '</p>';
+    out += '</div>';
+    if (has(passage.deliveryCue)) {
+      out += '<aside class="cue"><p class="label">Delivery</p>' + esc(passage.deliveryCue) + '</aside>';
+    }
+    out += '</section>';
+    return out;
+  }
+
+  function epigramHtml(day) {
+    if (!has(day.epigram)) return '';
+    return '<div class="epigram"><p>' + esc(day.epigram) + '</p></div>';
+  }
+
+  function dayArticleHtml(day, gild) {
+    var out = '<article class="day">';
+    out += '<p class="eyebrow day__eyebrow">Volume I <span aria-hidden="true">·</span> Day ' + day.day + '</p>';
+    out += '<h2 class="day__theme">' + esc(day.theme) + '</h2>';
+    if (has(day.themeLine)) out += '<p class="day__line">' + esc(day.themeLine) + '</p>';
+    out += '<div class="words">';
+    (day.words || []).forEach(function (word, i) {
+      out += wordPlateHtml({ w: word, day: day.day, theme: day.theme, i: i }, gild);
+    });
+    out += '</div>';
+    out += passageHtml(day);
+    out += epigramHtml(day);
+    out += '</article>';
+    return out;
+  }
+
+  /* ---------- expandable card (hoard, review) ---------- */
+
+  function cardHtml(entry, context) {
+    var word = entry.w;
+    var key = context + ':' + word.id;
+    var isOpen = state.open[key] === true;
+    var panelId = 'panel-' + context + '-' + word.id;
+    var out = '<article class="plate card">';
+    out += '<div class="plate__inner">';
+    out += '<h3><button class="card-head" type="button" data-action="expand" data-key="' + esc(key) +
+      '" aria-expanded="' + (isOpen ? 'true' : 'false') + '" aria-controls="' + esc(panelId) + '">';
+    out += '<span class="headword">' + esc(word.word) + '</span>';
+    if (has(word.respell)) out += '<span class="respell">' + respellHtml(word.respell) + '</span>';
+    out += '<span class="eyebrow">' + eyebrowFor(entry, true) + '</span>';
+    out += '</button></h3>';
+    if (context === 'hoard' && has(word.definition)) {
+      out += '<p class="definition">' + esc(word.definition) + '</p>';
+    }
+    out += '<div class="card-detail" id="' + esc(panelId) + '"' + (isOpen ? '' : ' hidden') + '>';
+    if (context !== 'hoard' && has(word.definition)) {
+      out += '<p class="definition">' + esc(word.definition) + '</p>';
+    }
+    if (has(word.ipa)) out += '<p class="ipa">' + esc(word.ipa) + '</p>';
+    out += wordDetailHtml(word);
+    out += '</div>';
+    out += '<div class="card-foot">';
+    out += '<button class="card-more" type="button" data-action="expand" data-key="' + esc(key) +
+      '" aria-expanded="' + (isOpen ? 'true' : 'false') + '" aria-controls="' + esc(panelId) + '">' +
+      (isOpen ? 'Close' : (context === 'hoard' ? 'Full entry' : 'Reveal the meaning')) + '</button>';
+    out += speakButton('Say the word ' + word.word, 'word', word.id);
+    out += '</div>';
+    out += '</div></article>';
+    return out;
+  }
+
+  /* ---------- views ---------- */
+
+  function viewToday() {
+    if (state.today > state.totalDays) return viewPostVolume();
+    var day = dayByNumber(state.today);
+    if (!day) return '<p class="notice">Day ' + state.today + ' is not in this volume.</p>';
+    return dayArticleHtml(day, true);
+  }
+
+  function viewPostVolume() {
+    var picks = postVolumeReview(state.today);
+    var out = '<article class="day">';
+    out += '<p class="eyebrow day__eyebrow">Day ' + state.today + ' <span aria-hidden="true">·</span> review</p>';
+    out += '<h2 class="day__theme">Volume I complete</h2>';
+    out += '<p class="day__line">Thirty days are in. Today is a day for going back: six words drawn from the hoard, meanings hidden until you have tried to summon them.</p>';
+    out += '<div class="grid review-grid">';
+    picks.forEach(function (entry) { out += cardHtml(entry, 'review'); });
+    out += '</div>';
+    out += '<p><button class="btn" type="button" data-action="tab" data-view="hoard">Open the hoard</button></p>';
+    out += '</article>';
+    return out;
+  }
+
+  function viewHoard() {
+    var out = '<h2 class="view__title">The hoard</h2>';
+    out += '<p class="view__lead">Everything unlocked so far. Tap a word for the full entry.</p>';
+    out += '<div class="controls">';
+    out += '<label class="search"><span class="label">Search</span>' +
+      '<input id="q" type="search" value="' + esc(state.hoard.q) + '" placeholder="word, meaning or theme" ' +
+      'autocomplete="off" autocapitalize="none" spellcheck="false"></label>';
+    out += '</div>';
+    out += '<div class="controls controls--tight">';
+    out += '<div class="chips">';
+    [['all', 'All'], ['foundation', 'Foundation'], ['distinction', 'Distinction'], ['flourish', 'Flourish']]
+      .forEach(function (tier) {
+        out += '<button class="chip" type="button" data-action="tier" data-tier="' + tier[0] + '" aria-pressed="' +
+          (state.hoard.tier === tier[0] ? 'true' : 'false') + '">' + tier[1] + '</button>';
+      });
+    out += '</div>';
+    out += '<button class="chip" type="button" data-action="sort">Sort: ' +
+      (state.hoard.sort === 'az' ? 'A to Z' : 'by day') + '</button>';
+    out += '</div>';
+    out += '<p class="tally" id="hoard-tally" role="status"></p>';
+    out += '<div class="grid" id="hoard-results"></div>';
+    return out;
+  }
+
+  function hoardMatches() {
+    var query = state.hoard.q.trim().toLowerCase();
+    var tier = state.hoard.tier;
+    var list = unlockedEntries().filter(function (entry) {
+      if (tier !== 'all' && entry.w.tier !== tier) return false;
+      if (!query) return true;
+      var hay = [entry.w.word, entry.w.definition, entry.theme].join(' ').toLowerCase();
+      return hay.indexOf(query) !== -1;
+    });
+    if (state.hoard.sort === 'az') {
+      list.sort(function (a, b) { return String(a.w.word).localeCompare(String(b.w.word)); });
+    } else {
+      list.sort(function (a, b) { return (a.day - b.day) || (a.i - b.i); });
+    }
+    return list;
+  }
+
+  function renderHoardResults() {
+    var results = el('hoard-results');
+    var tally = el('hoard-tally');
+    if (!results || !tally) return;
+    var list = hoardMatches();
+    var total = unlockedEntries().length;
+    var filtered = state.hoard.tier !== 'all' || state.hoard.q.trim() !== '';
+    tally.textContent = filtered
+      ? list.length + ' of ' + total + ' ' + plural(total, 'word', 'words') + ' shown'
+      : total + ' ' + plural(total, 'word', 'words') + ' in the hoard';
+    if (!list.length) {
+      results.innerHTML = '<p class="notice">Nothing in the hoard matches that.</p>';
+      return;
+    }
+    results.innerHTML = list.map(function (entry) { return cardHtml(entry, 'hoard'); }).join('');
+  }
+
+  function viewDays() {
+    if (state.openDay) {
+      var day = dayByNumber(state.openDay);
+      if (day) {
+        return '<button class="back" type="button" data-action="backdays">Back to the journal</button>' +
+          dayArticleHtml(day, true);
+      }
+    }
+    var days = unlockedDays().slice().reverse();
+    var out = '<h2 class="view__title">The journal</h2>';
+    out += '<p class="view__lead">Every day that has arrived, newest first. A missed email is never resent, but the day is always here.</p>';
+    out += '<ol class="journal">';
+    days.forEach(function (day) {
+      var words = (day.words || []).map(function (w) { return esc(w.word); })
+        .join(' <span aria-hidden="true">·</span> ');
+      out += '<li><button class="journal__row" type="button" data-action="openday" data-day="' + day.day + '">';
+      out += '<span class="journal__num">Day ' + day.day + '</span>';
+      out += '<span class="journal__theme">' + esc(day.theme) + '</span>';
+      out += '<span class="journal__words">' + words + '</span>';
+      out += '</button></li>';
+    });
+    out += '</ol>';
+    return out;
+  }
+
+  function practicePool() {
+    var pool = unlockedEntries();
+    if (state.practice.hideMastered) {
+      pool = pool.filter(function (entry) { return !state.mastered[entry.w.id]; });
+    }
+    return pool;
+  }
+
+  function nextDrill() {
+    var pool = practicePool();
+    if (!pool.length) {
+      state.practice.current = null;
+      state.practice.revealed = false;
+      return;
+    }
+    var previous = state.practice.current;
+    var pick = pool[Math.floor(Math.random() * pool.length)];
+    if (pool.length > 1 && previous) {
+      var guard = 0;
+      while (pick.w.id === previous.w.id && guard < 12) {
+        pick = pool[Math.floor(Math.random() * pool.length)];
+        guard++;
+      }
+    }
+    state.practice.current = pick;
+    state.practice.revealed = false;
+  }
+
+  function viewPractice() {
+    var unlocked = unlockedEntries();
+    var masteredCount = unlocked.filter(function (entry) { return state.mastered[entry.w.id]; }).length;
+    var out = '<h2 class="view__title">Practice</h2>';
+    out += '<p class="view__lead">Two directions. Say your answer out loud before you reveal it.</p>';
+    out += '<div class="controls">';
+    out += '<div class="chips">';
+    out += '<button class="chip" type="button" data-action="mode" data-mode="define" aria-pressed="' +
+      (state.practice.mode === 'define' ? 'true' : 'false') + '">Define it</button>';
+    out += '<button class="chip" type="button" data-action="mode" data-mode="summon" aria-pressed="' +
+      (state.practice.mode === 'summon' ? 'true' : 'false') + '">Summon it</button>';
+    out += '</div>';
+    out += '<button class="chip" type="button" data-action="hidemastered" aria-pressed="' +
+      (state.practice.hideMastered ? 'true' : 'false') + '">Hide mastered</button>';
+    out += '</div>';
+    out += '<p class="tally" role="status">' + masteredCount + ' of ' + unlocked.length + ' unlocked ' +
+      plural(unlocked.length, 'word', 'words') + ' marked mastered</p>';
+
+    if (!state.practice.current) {
+      out += '<p class="notice">' + (state.practice.hideMastered
+        ? 'Every unlocked word is marked mastered. Turn off hide mastered to keep drilling.'
+        : 'Nothing to drill yet.') + '</p>';
+      return out;
+    }
+
+    var entry = state.practice.current;
+    var word = entry.w;
+    var revealed = state.practice.revealed;
+    out += '<article class="plate drill"><div class="plate__inner">';
+    out += '<p class="eyebrow">' + (state.practice.mode === 'define' ? 'Define it' : 'Summon it') +
+      ' <span aria-hidden="true">·</span> Day ' + entry.day + ' <span aria-hidden="true">·</span> ' + esc(word.tier) + '</p>';
+
+    if (state.practice.mode === 'define') {
+      out += '<div class="plate__head"><div>';
+      out += '<h3 class="headword">' + esc(word.word) + '</h3>';
+      if (has(word.respell)) out += '<p class="respell">' + respellHtml(word.respell) + '</p>';
+      out += '</div>' + speakButton('Say the word ' + word.word, 'word', word.id) + '</div>';
+      if (revealed) {
+        out += '<div class="drill__answer">';
+        if (has(word.definition)) out += '<p class="definition">' + esc(word.definition) + '</p>';
+        if (has(word.nuance)) out += '<p class="nuance">' + esc(word.nuance) + '</p>';
+        out += '</div>';
+      } else {
+        out += '<p class="drill__hint">Say the meaning out loud, then reveal.</p>';
+      }
+    } else {
+      out += '<p class="drill__prompt">' + esc(word.definition) + '</p>';
+      out += '<p class="drill__hint">Begins with ' + esc(String(word.word).slice(0, 1).toUpperCase()) + '.</p>';
+      if (revealed) {
+        out += '<div class="drill__answer"><div class="plate__head"><div>';
+        out += '<h3 class="headword">' + esc(word.word) + '</h3>';
+        if (has(word.respell)) out += '<p class="respell">' + respellHtml(word.respell) + '</p>';
+        out += '</div>' + speakButton('Say the word ' + word.word, 'word', word.id) + '</div></div>';
+      }
+    }
+
+    out += '<div class="drill__actions">';
+    if (revealed) {
+      out += '<button class="btn" type="button" data-action="gotit">Got it</button>';
+      out += '<button class="btn btn--quiet" type="button" data-action="again">Again</button>';
+    } else {
+      out += '<button class="btn" type="button" data-action="reveal">Reveal</button>';
+      out += '<button class="btn btn--quiet" type="button" data-action="again">Skip</button>';
+    }
+    out += '</div>';
+    out += '</div></article>';
+    return out;
+  }
+
+  function viewAbout() {
+    var unlocked = unlockedEntries().length;
+    var total = state.entries.length;
+    var sealed = Math.max(0, state.totalDays - state.today);
+    var out = '<div class="about">';
+    out += '<h2 class="view__title"><span class="oe">wordhord onleac</span></h2>';
+    out += '<p class="view__lead">Old English: he unlocked his word-hoard.</p>';
+    out += '<p class="about__note">The phrase belongs to Beowulf, where it marks the pause before a man speaks: ' +
+      'the store is opened and the right word is drawn out of it. That is the whole idea here. ' +
+      'Not more reading. A store of words you have said out loud at least once, kept where you can find them.</p>';
+    out += '<h3>How it works</h3>';
+    out += '<p>Thirty days, three words a day, one from each tier:</p>';
+    out += '<ul>';
+    out += '<li><b>Foundation</b>: common-elevated, meant for daily use.</li>';
+    out += '<li><b>Distinction</b>: educated register, worth the reach.</li>';
+    out += '<li><b>Flourish</b>: a deliberate showpiece, used once and used well.</li>';
+    out += '</ul>';
+    out += '<p>Each day carries a short passage written in the first person, set as a little speech: a toast, ' +
+      'an objection, a pitch, a story at dinner. It is there to be spoken, not skimmed. Saying a word out loud ' +
+      'is what moves it from recognized to available.</p>';
+    out += '<h3>The daily email</h3>';
+    out += '<p>An email arrives at 06:45 Guyana time with the day\'s three words, the passage, and a few words ' +
+      'called back from the hoard for review at one, three, seven and twenty-one days. Everything the email ' +
+      'sends also lives here, permanently.</p>';
+    out += '<h3>If a day goes by</h3>';
+    out += '<p>A missed email is never resent. The day is not lost: it is in the journal with everything it ' +
+      'carried, and it stays there. Open the Days tab and read it whenever you like.</p>';
+    out += '<h3>This volume</h3>';
+    out += '<p>' + (state.today > state.totalDays
+      ? 'Volume I is complete. All ' + total + ' words are unlocked.'
+      : 'Day ' + state.today + ' of ' + state.totalDays + '. ' + unlocked + ' of ' + total + ' words unlocked, ' +
+        sealed + ' ' + plural(sealed, 'day', 'days') + ' still sealed.') + '</p>';
+    out += '<p>Practice is stored on this device only, in your browser. Nothing is sent anywhere.</p>';
+    out += '</div>';
+    return out;
+  }
+
+  /* ---------- chrome ---------- */
+
+  function renderChrome() {
+    var total = state.totalDays;
+    var unlocked = unlockedEntries().length;
+    el('stats').textContent = state.today > total
+      ? 'Volume I complete · ' + unlocked + ' words unlocked'
+      : 'Day ' + state.today + ' of ' + total + ' · ' + unlocked + ' words unlocked';
+    var sealed = Math.max(0, total - state.today);
+    el('sealed').textContent = sealed > 0
+      ? sealed + ' ' + plural(sealed, 'day', 'days') + ' still sealed in Volume I.'
+      : '';
+  }
+
+  function syncTabs() {
+    var tabs = document.querySelectorAll('.tab');
+    Array.prototype.forEach.call(tabs, function (tab) {
+      if (tab.getAttribute('data-view') === state.view) tab.setAttribute('aria-current', 'page');
+      else tab.removeAttribute('aria-current');
+    });
+  }
+
+  function render() {
+    var view = el('view');
+    view.className = 'view wrap' + (state.view === 'hoard' ? ' wrap--wide' : '');
+    view.setAttribute('aria-busy', 'false');
+    if (state.view === 'today') view.innerHTML = viewToday();
+    else if (state.view === 'hoard') view.innerHTML = viewHoard();
+    else if (state.view === 'days') view.innerHTML = viewDays();
+    else if (state.view === 'practice') view.innerHTML = viewPractice();
+    else view.innerHTML = viewAbout();
+    if (state.view === 'hoard') renderHoardResults();
+    syncTabs();
+  }
+
+  function notice(message) {
+    var view = el('view');
+    view.setAttribute('aria-busy', 'false');
+    view.innerHTML = '<p class="notice">' + esc(message) + '</p>';
+  }
+
+  /* ---------- actions ---------- */
+
+  function wordById(id) {
+    for (var i = 0; i < state.entries.length; i++) {
+      if (state.entries[i].w.id === id) return state.entries[i].w;
+    }
+    return null;
+  }
+
+  function toggleExpand(trigger) {
+    var key = trigger.getAttribute('data-key');
+    var open = state.open[key] !== true;
+    state.open[key] = open;
+    var panel = el(trigger.getAttribute('aria-controls'));
+    if (panel) {
+      if (open) panel.removeAttribute('hidden');
+      else panel.setAttribute('hidden', '');
+    }
+    var card = trigger.closest ? trigger.closest('.card') : null;
+    var buttons = card ? card.querySelectorAll('[data-action="expand"]') : [trigger];
+    Array.prototype.forEach.call(buttons, function (button) {
+      button.setAttribute('aria-expanded', open ? 'true' : 'false');
+      if (button.className.indexOf('card-more') !== -1) {
+        button.textContent = open ? 'Close' : (key.indexOf('hoard:') === 0 ? 'Full entry' : 'Reveal the meaning');
+      }
+    });
+  }
+
+  function onAction(trigger) {
+    var action = trigger.getAttribute('data-action');
+
+    if (action === 'tab') {
+      state.view = trigger.getAttribute('data-view');
+      state.openDay = null;
+      if (state.view === 'practice' && !state.practice.current) nextDrill();
+      render();
+      window.scrollTo(0, 0);
+      return;
+    }
+
+    if (action === 'speak') {
+      var kind = trigger.getAttribute('data-kind');
+      var id = trigger.getAttribute('data-id');
+      if (kind === 'word') {
+        var word = wordById(id);
+        if (word) speak(word.word, 0.9, 'word:' + id);
+      } else {
+        var day = dayByNumber(Number(id));
+        if (day && day.passage) speak(day.passage.text, 0.92, 'passage:' + id);
+      }
+      return;
+    }
+
+    if (action === 'expand') { toggleExpand(trigger); return; }
+
+    if (action === 'sort') {
+      state.hoard.sort = state.hoard.sort === 'az' ? 'day' : 'az';
+      trigger.textContent = 'Sort: ' + (state.hoard.sort === 'az' ? 'A to Z' : 'by day');
+      renderHoardResults();
+      return;
+    }
+
+    if (action === 'tier') {
+      state.hoard.tier = trigger.getAttribute('data-tier');
+      Array.prototype.forEach.call(document.querySelectorAll('[data-action="tier"]'), function (chip) {
+        chip.setAttribute('aria-pressed', chip.getAttribute('data-tier') === state.hoard.tier ? 'true' : 'false');
+      });
+      renderHoardResults();
+      return;
+    }
+
+    if (action === 'openday') {
+      state.openDay = Number(trigger.getAttribute('data-day'));
+      render();
+      window.scrollTo(0, 0);
+      return;
+    }
+
+    if (action === 'backdays') {
+      state.openDay = null;
+      render();
+      window.scrollTo(0, 0);
+      return;
+    }
+
+    if (action === 'mode') {
+      state.practice.mode = trigger.getAttribute('data-mode');
+      state.practice.revealed = false;
+      render();
+      return;
+    }
+
+    if (action === 'hidemastered') {
+      state.practice.hideMastered = !state.practice.hideMastered;
+      if (state.practice.hideMastered && state.practice.current && state.mastered[state.practice.current.w.id]) {
+        nextDrill();
+      }
+      if (!state.practice.current) nextDrill();
+      render();
+      return;
+    }
+
+    if (action === 'reveal') { state.practice.revealed = true; render(); return; }
+
+    if (action === 'gotit') {
+      if (state.practice.current) {
+        state.mastered[state.practice.current.w.id] = true;
+        saveMastered();
+      }
+      nextDrill();
+      render();
+      return;
+    }
+
+    if (action === 'again') { nextDrill(); render(); return; }
+  }
+
+  document.addEventListener('click', function (event) {
+    var target = event.target;
+    var trigger = (target && target.closest) ? target.closest('[data-action]') : null;
+    if (!trigger) return;
+    event.preventDefault();
+    onAction(trigger);
+  });
+
+  document.addEventListener('input', function (event) {
+    var target = event.target;
+    if (!target || target.id !== 'q') return;
+    state.hoard.q = target.value;
+    renderHoardResults();
+  });
+
+  /* ---------- boot ---------- */
+
+  function start(lex) {
+    if (!lex || !Object.prototype.hasOwnProperty.call(lex, 'days') || !lex.days || !lex.days.length) {
+      console.error('wordhoard: lexicon.json has no days');
+      notice('The hoard is empty. Nothing to show yet.');
+      return;
+    }
+    state.lex = lex;
+    state.totalDays = lex.days.length;
+    var computed = dayNumberFor(lex.startDate);
+    state.today = (isFinite(computed) && computed >= 1) ? computed : 1;
+    state.entries = [];
+    lex.days.slice().sort(function (a, b) { return a.day - b.day; }).forEach(function (day) {
+      (day.words || []).forEach(function (word, i) {
+        state.entries.push({ w: word, day: day.day, theme: day.theme, i: i });
+      });
+    });
+    nextDrill();
+    renderChrome();
+    render();
+  }
+
+  async function load() {
+    notice('Opening the hoard.');
+    try {
+      var response = await fetch('lexicon.json');
+      if (!response.ok) throw new Error('lexicon.json returned HTTP ' + response.status);
+      var lex = await response.json();
+      start(lex);
+    } catch (err) {
+      console.error('wordhoard: could not open lexicon.json', err);
+      notice('The hoard could not be opened. Reload the page, or open the site through its address rather than from a local file.');
+    }
+  }
+
+  load();
+}());
+</script>
+</body>
+</html>

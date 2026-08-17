@@ -1,0 +1,834 @@
+{
+  "days": [
+    {
+      "day": 1,
+      "theme": "The art of speaking well",
+      "themeLine": "Three rungs of good speech: being understood, being moved by, and being a pleasure to listen to.",
+      "words": [
+        {
+          "id": "articulate",
+          "word": "articulate",
+          "pos": "adjective",
+          "tier": "foundation",
+          "ipa": "/ɑrˈtɪk.jə.lət/",
+          "respell": "ar·TIK·yuh·lit",
+          "definition": "able to put thoughts into clear, fluent words, and easy to follow when doing it.",
+          "nuance": "Articulate is about clarity, not beauty: it praises a person for making a tangled thing plain. It is the floor that eloquence is built on, and the right word when someone explained something well without any show.",
+          "etymology": "From Latin articulus, a small joint, by way of articulare, to divide into joints and so to speak distinctly. Articulate speech has joints in it, each part separated enough to be understood.",
+          "examples": {
+            "conversational": "He is the most articulate person in that whole family, and he is nineteen.",
+            "professional": "She was clear and articulate about exactly what she needs from us before Friday.",
+            "elevated": "Their case was not stronger than ours. It was simply more articulate, and the panel heard it better."
+          },
+          "collocations": ["highly articulate", "an articulate speaker", "articulate and thoughtful", "an articulate defense"],
+          "nearSynonyms": [
+            { "word": "eloquent", "distinction": "adds beauty and persuasive force to plain clarity" },
+            { "word": "fluent", "distinction": "praises ease and flow, which is not the same as being understood" },
+            { "word": "coherent", "distinction": "only means it hangs together logically, a much lower bar" }
+          ],
+          "registerNote": "Say the adjective flat, ar·TIK·yuh·lit, and the verb long, ar·TIK·yuh·late, or the compliment lands as a stumble. Praise the argument or the sentence rather than expressing surprise that the person can speak, since calling someone articulate has a long history as a backhanded compliment."
+        },
+        {
+          "id": "eloquent",
+          "word": "eloquent",
+          "pos": "adjective",
+          "tier": "distinction",
+          "ipa": "/ˈɛl.ə.kwənt/",
+          "respell": "EL·uh·kwent",
+          "definition": "speaking or writing with a force and grace that moves people, not merely informs them.",
+          "nuance": "Eloquence is clarity plus feeling and persuasion, and it is measured by its effect on the listener. It can also describe something wordless that speaks volumes, which is why an eloquent silence is not a contradiction.",
+          "etymology": "From Latin eloqui, to speak out: e- meaning out, loqui meaning to speak. The words come out instead of staying in.",
+          "examples": {
+            "conversational": "He gave a short, eloquent speech at the wedding and then sat down, which is the trick.",
+            "professional": "I want the proposal accurate first and eloquent second, in that order.",
+            "elevated": "There is nothing more eloquent in a negotiation than a man who is willing to be silent."
+          },
+          "collocations": ["an eloquent speaker", "an eloquent plea", "an eloquent silence", "eloquent testimony"],
+          "nearSynonyms": [
+            { "word": "articulate", "distinction": "clear and fluent, without the claim that anyone was moved" },
+            { "word": "persuasive", "distinction": "judged by whether you won, not by how it sounded" },
+            { "word": "silver-tongued", "distinction": "the same skill with a suspicion of flattery attached" }
+          ],
+          "registerNote": "Calling your own remarks eloquent sounds vain, so let others award it; and in a hard negotiation, praising an opponent's eloquence is often heard as a polite way of saying the substance was thin."
+        },
+        {
+          "id": "mellifluous",
+          "word": "mellifluous",
+          "pos": "adjective",
+          "tier": "flourish",
+          "ipa": "/məˈlɪf.lu.əs/",
+          "respell": "muh·LIF·loo·us",
+          "definition": "sweet and smooth to hear, the way a fine voice pours rather than clatters.",
+          "nuance": "It describes sound and nothing else. A mellifluous speaker may be saying nothing at all, which is exactly why the word is useful: it lets you praise the voice while withholding judgment on the argument.",
+          "etymology": "From Latin mel, honey, and fluere, to flow: literally flowing with honey.",
+          "examples": {
+            "conversational": "He has that mellifluous radio voice, and he knows it.",
+            "professional": "Her delivery is mellifluous, which helps on a call, though the numbers are what will carry the meeting.",
+            "elevated": "A mellifluous voice will carry a weak argument a surprising distance, so I listen twice to men who sound like that."
+          },
+          "collocations": ["a mellifluous voice", "mellifluous tones", "a mellifluous baritone", "mellifluous phrasing"],
+          "nearSynonyms": [
+            { "word": "melodious", "distinction": "musical in pitch and tune, rather than smooth in texture" },
+            { "word": "dulcet", "distinction": "sweet, but now used lightly and often with a raised eyebrow" },
+            { "word": "sonorous", "distinction": "deep and resonant: full rather than sweet" }
+          ],
+          "registerNote": "Keep it for sound. Calling a report or an argument mellifluous reads as praise for the packaging and a quiet dismissal of the contents."
+        }
+      ],
+      "passage": {
+        "title": "The toast I did not rehearse",
+        "setting": "A short toast at a colleague's farewell dinner",
+        "text": "I have worked beside Marcus for nine years, and in that time I have never heard him waste a sentence. He is articulate in the way engineers rarely are: he takes a tangled problem and hands it back to you in plain words. Twice I watched him turn a hostile room with a single eloquent paragraph. He does not have a mellifluous voice. He has something better. He has something to say, and he says it. To Marcus.",
+        "deliveryCue": "Let the last three sentences get shorter and shorter, then stop dead on his name."
+      },
+      "epigram": "A mellifluous voice buys you a minute; an articulate one buys you the hour."
+    },
+    {
+      "day": 2,
+      "theme": "Judging wisely",
+      "themeLine": "Three grades of seeing clearly: noticing quality, reading motives, and seeing straight through to what is actually happening.",
+      "words": [
+        {
+          "id": "discerning",
+          "word": "discerning",
+          "pos": "adjective",
+          "tier": "foundation",
+          "ipa": "/dɪˈsɜr.nɪŋ/",
+          "respell": "di·SUR·ning",
+          "definition": "good at telling fine things from ordinary ones, and true things from merely plausible ones.",
+          "nuance": "Discerning is judgment as taste: it implies a standard the person is quietly measuring against. It flatters, which makes it useful about customers, readers and audiences you want to take seriously.",
+          "etymology": "From Latin discernere, to separate: dis- meaning apart, cernere meaning to sift. Judgment as sifting, one grain at a time.",
+          "examples": {
+            "conversational": "You have a discerning ear for that kind of music. I have no idea what I am hearing.",
+            "professional": "Our best customers are discerning, which is why the packaging matters more than we like to admit.",
+            "elevated": "A discerning reader will notice what we chose to leave out, and that is the paragraph I would defend first."
+          },
+          "collocations": ["a discerning eye", "a discerning reader", "discerning taste", "the discerning customer"],
+          "nearSynonyms": [
+            { "word": "astute", "distinction": "sharper and more worldly, concerned with motive and advantage" },
+            { "word": "perceptive", "distinction": "notices things, without implying a standard of quality behind it" },
+            { "word": "judicious", "distinction": "about deciding well, not about telling good from ordinary" }
+          ],
+          "registerNote": "Safe and flattering in any register. The only misfire is using it for luck: call a decision discerning when it was really fortunate and whoever knows the story will hear it."
+        },
+        {
+          "id": "astute",
+          "word": "astute",
+          "pos": "adjective",
+          "tier": "distinction",
+          "ipa": "/əˈstut/",
+          "respell": "uh·STOOT",
+          "definition": "sharp at reading a situation and seeing where the advantage lies.",
+          "nuance": "Astute carries practical shrewdness: it is judgment with one eye on the outcome. An astute observation tells you something useful, not merely something true.",
+          "etymology": "From Latin astutus, from astus, craft or cunning. The old sense had more cunning in it than the modern compliment lets on.",
+          "examples": {
+            "conversational": "That was an astute question, and I do not have a good answer for it.",
+            "professional": "It was astute of them to make the offer before the audit closed.",
+            "elevated": "He is astute in the way a man becomes when he has lost money once and still remembers the week it happened."
+          },
+          "collocations": ["an astute observation", "an astute investor", "politically astute", "astute judgment"],
+          "nearSynonyms": [
+            { "word": "discerning", "distinction": "about quality and taste rather than advantage" },
+            { "word": "shrewd", "distinction": "harder-nosed, and hints at self-interest" },
+            { "word": "perspicacious", "distinction": "deeper penetration into what is true, less concerned with tactics" }
+          ],
+          "registerNote": "Fine in any professional room, but it praises tactical sense rather than character, so a pause after \"an astute man\" can turn the compliment into a warning."
+        },
+        {
+          "id": "perspicacious",
+          "word": "perspicacious",
+          "pos": "adjective",
+          "tier": "flourish",
+          "ipa": "/ˌpɜr.spɪˈkeɪ.ʃəs/",
+          "respell": "per·spi·KAY·shus",
+          "definition": "unusually quick to see what is really going on, especially what everyone else has missed.",
+          "nuance": "This is penetration rather than observation: seeing through a thing, not merely noticing it. It suits the person who had read the room correctly while the rest were still reading the slides.",
+          "etymology": "From Latin perspicere, to look through or see clearly: per- meaning through, specere meaning to look.",
+          "examples": {
+            "conversational": "You were perspicacious about that man from the first evening, and I should have listened.",
+            "professional": "I want a perspicacious pair of eyes on this contract before we sign, not a fast one.",
+            "elevated": "It takes a perspicacious mind to see that the problem in the report is really a problem in the company."
+          },
+          "collocations": ["a perspicacious observer", "perspicacious analysis", "a perspicacious remark", "perspicacious about people"],
+          "nearSynonyms": [
+            { "word": "astute", "distinction": "worldly and tactical: sees the angle rather than the truth" },
+            { "word": "insightful", "distinction": "the plain everyday word, with none of the showpiece quality" },
+            { "word": "sagacious", "distinction": "adds age and accumulated wisdom rather than speed of sight" }
+          ],
+          "registerNote": "A showpiece: one per conversation at most, and never about yourself, or you sound like a man admiring his own eyesight. Do not confuse it with perspicuous, which means clearly expressed."
+        }
+      ],
+      "passage": {
+        "title": "The question nobody else asked",
+        "setting": "Explaining a hiring decision to your team the morning after the interviews",
+        "text": "I know most of you wanted the second candidate. She interviews beautifully. But watch what the third one did: she asked who owns the budget before she asked what the salary was. That is an astute question, and nobody else thought to ask it. Her references called her discerning about people, and after an hour with her I would go further and call her perspicacious. She saw our problem before we had finished describing it. That is who I want in the room.",
+        "deliveryCue": "Drop your voice on the budget question and give it a full beat before you go on."
+      },
+      "epigram": "The discerning man sees the difference; the perspicacious one sees the reason for it."
+    },
+    {
+      "day": 3,
+      "theme": "Disagreeing with grace",
+      "themeLine": "Three ways to say no: state your case, register a quiet hesitation, or take it up with the person directly.",
+      "words": [
+        {
+          "id": "contend",
+          "word": "contend",
+          "pos": "verb",
+          "tier": "foundation",
+          "ipa": "/kənˈtɛnd/",
+          "respell": "kun·TEND",
+          "definition": "to argue a position and maintain that it is true.",
+          "nuance": "Contend puts your claim on the table as a claim, which is more honest than saying you feel something and less aggressive than telling a man he is wrong. The other sense, to contend with a difficulty, means to struggle against it.",
+          "etymology": "From Latin contendere, to stretch or strive together: con- meaning with, tendere meaning to stretch. Two people pulling on the same rope.",
+          "examples": {
+            "conversational": "I would contend that we have had this argument before and you lost it then too.",
+            "professional": "I contend that the delay is a scheduling failure and not a supplier failure, and I can show you why.",
+            "elevated": "I contend, and will keep contending until someone puts better figures in front of me, that we are solving last year's problem."
+          },
+          "collocations": ["contend that", "strongly contend", "as I would contend", "contend with a rival"],
+          "nearSynonyms": [
+            { "word": "argue", "distinction": "names the whole quarrel, not just the claim you are putting" },
+            { "word": "maintain", "distinction": "holds a position under pressure, with no sense of a contest" },
+            { "word": "assert", "distinction": "states it flatly, with no invitation to reply" }
+          ],
+          "registerNote": "In a formal room, \"I would contend\" is a courteous way to disagree; over dinner it can sound like you are addressing a tribunal."
+        },
+        {
+          "id": "demur",
+          "word": "demur",
+          "pos": "verb",
+          "tier": "distinction",
+          "ipa": "/dɪˈmɜr/",
+          "respell": "di·MUR",
+          "definition": "to voice a polite objection or hesitation instead of simply going along.",
+          "nuance": "The mildest form of refusal: it registers that you are not persuaded without forcing a fight. Often used with at, as in demurring at a price, and often about declining something offered.",
+          "etymology": "From Old French demourer, to linger or delay, from Latin demorari, to wait. The objection begins as a pause.",
+          "examples": {
+            "conversational": "I offered to pay and he demurred, which I respected until the third time.",
+            "professional": "Two of the directors demurred at the price, so the vote was put off to the next meeting.",
+            "elevated": "Nobody demurred, which is not the same thing as agreement, and I have learned to tell the difference."
+          },
+          "collocations": ["demur at the price", "demur politely", "gently demur", "demur when pressed"],
+          "nearSynonyms": [
+            { "word": "object", "distinction": "louder and more formal: it puts the disagreement on the record" },
+            { "word": "decline", "distinction": "refuses the offer without arguing the point at all" },
+            { "word": "balk", "distinction": "a bodily refusal to go further: stubborn rather than polite" }
+          ],
+          "registerNote": "Do not confuse it with demure, which means modest and reserved and is an entirely different word. And because demurring is so mild, it can read as evasion in a room that needed a straight no."
+        },
+        {
+          "id": "remonstrate",
+          "word": "remonstrate",
+          "pos": "verb",
+          "tier": "flourish",
+          "ipa": "/rɪˈmɑn.streɪt/",
+          "respell": "ri·MON·strayt",
+          "definition": "to protest to someone directly, setting out your reasons for objecting.",
+          "nuance": "Protest with an argument attached, usually face to face and usually with someone you have standing with. Stronger than demurring, gentler than rebuking, and it assumes the other party can still be reasoned with.",
+          "etymology": "From Medieval Latin remonstrare, to point out or show plainly, built on the Latin monstrare, to show. You are showing a man the thing he has failed to see.",
+          "examples": {
+            "conversational": "I remonstrated with him about the noise, and he apologized beautifully and changed nothing.",
+            "professional": "I remonstrated with the supplier in writing, so that there would be a record of it.",
+            "elevated": "There comes a moment when you must stop remonstrating and start deciding, and I think we passed it on Tuesday."
+          },
+          "collocations": ["remonstrate with him", "remonstrate in vain", "remonstrate gently", "remonstrate against the decision"],
+          "nearSynonyms": [
+            { "word": "protest", "distinction": "can be public and wordless: remonstrating is reasoning at a person" },
+            { "word": "rebuke", "distinction": "comes from above, and is a reprimand rather than an appeal" },
+            { "word": "expostulate", "distinction": "close to identical in meaning and even more formal" }
+          ],
+          "registerNote": "Bookish, and slightly old-fashioned in speech: it fits a written account or a deliberately formal moment. It also implies something was genuinely wrong, so it sounds heavy for small disagreements."
+        }
+      ],
+      "passage": {
+        "title": "Not object. Demur.",
+        "setting": "Objecting to a proposal in a board meeting without burning the room",
+        "text": "Before we vote, let me demur. Not object, not block: demur. I would contend that we are pricing this for the client we had last year, not the one we are trying to win. I remonstrated with the finance team about it on Tuesday, and I want to say it here as well, in front of everyone, so that it sits in the minutes and not in a corridor. Vote it through if you disagree. I will hold the line with you either way.",
+        "deliveryCue": "Say the first three sentences almost quietly, then lift your voice only on the words in front of everyone."
+      },
+      "epigram": "A man who can demur without sulking gets invited back to every difficult table."
+    },
+    {
+      "day": 4,
+      "theme": "Calm under pressure",
+      "themeLine": "Calm has three faces: the one you keep on show, the one you keep inside, and the one that makes a hard thing look easy.",
+      "words": [
+        {
+          "id": "composure",
+          "word": "composure",
+          "pos": "noun",
+          "tier": "foundation",
+          "ipa": "/kəmˈpoʊ.ʒər/",
+          "respell": "kum·POH·zhur",
+          "definition": "steadiness of mind and manner when something has gone wrong.",
+          "nuance": "Composure is visible and momentary, which is why it can be lost and regained inside a single meeting. It is the calm the room can see, whatever is happening underneath it.",
+          "etymology": "From compose, to put in order or settle. A composed man is one whose parts are still where he left them.",
+          "examples": {
+            "conversational": "I lost my composure with the bank this morning, for the first time in years.",
+            "professional": "She kept her composure through forty minutes of hostile questions and never once raised her voice.",
+            "elevated": "Composure is not the absence of fear. It is the decision not to hand your fear to the room."
+          },
+          "collocations": ["regain your composure", "lose your composure", "with perfect composure", "keep your composure"],
+          "nearSynonyms": [
+            { "word": "poise", "distinction": "composure with grace of bearing added: more about presence" },
+            { "word": "self-possession", "distinction": "stresses ownership of yourself under provocation" },
+            { "word": "calm", "distinction": "the plain state, with no suggestion that anything was testing it" }
+          ],
+          "registerNote": "Safe in any register, with one catch: saying a man kept his composure implies there was something to lose, so it can quietly remind the room that he was rattled."
+        },
+        {
+          "id": "equanimity",
+          "word": "equanimity",
+          "pos": "noun",
+          "tier": "distinction",
+          "ipa": "/ˌi.kwəˈnɪm.ə.ti/",
+          "respell": "ee·kwuh·NIM·uh·tee",
+          "definition": "an even temper that holds steady whether things go well or badly.",
+          "nuance": "Inward and sustained where composure is outward and momentary: equanimity describes a settled disposition, not a good performance in one bad hour. It also implies you do not overreact to good news.",
+          "etymology": "From Latin aequus, even, and animus, mind. An even mind, held level like water in a glass.",
+          "examples": {
+            "conversational": "He took the news with an equanimity I could not have managed.",
+            "professional": "I would like us to receive the audit findings with equanimity and simply fix what is broken.",
+            "elevated": "Equanimity is easy to admire in another man and hard to find in yourself at two in the morning."
+          },
+          "collocations": ["accept with equanimity", "remarkable equanimity", "face it with equanimity", "a man of equanimity"],
+          "nearSynonyms": [
+            { "word": "composure", "distinction": "the visible, momentary version of the same steadiness" },
+            { "word": "serenity", "distinction": "calm without any sense of pressure being resisted" },
+            { "word": "stoicism", "distinction": "implies endurance of pain, and carries a whole philosophy behind it" }
+          ],
+          "registerNote": "Formal and faintly philosophical: it fits a eulogy, a reference letter or a considered remark, and it sounds arch applied to small annoyances like traffic."
+        },
+        {
+          "id": "aplomb",
+          "word": "aplomb",
+          "pos": "noun",
+          "tier": "flourish",
+          "ipa": "/əˈplɑm/",
+          "respell": "uh·PLOM",
+          "definition": "cool, confident poise while doing something demanding, especially in front of people.",
+          "nuance": "Performance calm with a little style in it: you did the difficult thing and made it look easy. It travels almost always with the word with, as in handled with aplomb.",
+          "etymology": "From French a plomb, meaning to the plumb line, that is, perfectly upright. The steadiness of a weighted string.",
+          "examples": {
+            "conversational": "She handled the whole dinner with aplomb, and the cook had walked out at five.",
+            "professional": "He answered a question he had plainly never been asked before, with complete aplomb.",
+            "elevated": "There is an aplomb that comes from preparation and another that comes from not yet knowing what is at stake, and only one of them survives the second hour."
+          },
+          "collocations": ["handled it with aplomb", "carried it off with aplomb", "answered with aplomb", "considerable aplomb"],
+          "nearSynonyms": [
+            { "word": "poise", "distinction": "steady grace, without the hint of flair that aplomb carries" },
+            { "word": "composure", "distinction": "calm under strain, with no suggestion of style" },
+            { "word": "assurance", "distinction": "confidence in yourself, which need not show as grace at all" }
+          ],
+          "registerNote": "It praises style as much as substance, so keep it for a performance carried off well: aplomb about a grim situation sounds flippant."
+        }
+      ],
+      "passage": {
+        "title": "How we lose",
+        "setting": "Speaking to your staff the morning after a deal collapsed",
+        "text": "By now you have all heard. We lost it. I want to say two things. First, Anita took that call at nine at night and handled it with more composure than I would have. Second, I am not asking anyone here for equanimity today. Be annoyed. I am. What I am asking is that we walk into Thursday's meeting with the same aplomb we would have carried in if we had won, because the next client is watching how we lose.",
+        "deliveryCue": "Keep the opening sentences short and flat, then let the final one run all the way to the end without a breath."
+      },
+      "epigram": "Composure is what the room sees; equanimity is what you actually have."
+    },
+    {
+      "day": 5,
+      "theme": "Making a strong case",
+      "themeLine": "The difference between a case that pulls at you, a case that reasons with you, and a case that cannot honestly be argued with.",
+      "words": [
+        {
+          "id": "compelling",
+          "word": "compelling",
+          "pos": "adjective",
+          "tier": "foundation",
+          "ipa": "/kəmˈpɛl.ɪŋ/",
+          "respell": "kum·PEL·ing",
+          "definition": "strong enough to force your attention or your agreement.",
+          "nuance": "Compelling works on the listener rather than on the logic. A compelling case is one you cannot look away from, which is not at all the same as one you cannot fault.",
+          "etymology": "From Latin compellere, to drive together or force: com- plus pellere, to drive. The argument pushes you.",
+          "examples": {
+            "conversational": "Give me one compelling reason to drive out there on a Sunday.",
+            "professional": "The pricing is fine. What we still do not have is a compelling reason for them to switch.",
+            "elevated": "The evidence was compelling long before it was complete, which is exactly when careful men get into trouble."
+          },
+          "collocations": ["a compelling argument", "compelling evidence", "a compelling reason", "compelling reading"],
+          "nearSynonyms": [
+            { "word": "cogent", "distinction": "persuades by the strength of its reasoning, not by pull" },
+            { "word": "convincing", "distinction": "measured purely by whether you now believe it" },
+            { "word": "gripping", "distinction": "holds attention only, with no claim on your judgment" }
+          ],
+          "registerNote": "Safe everywhere, but marketing copy has worn it thin: a compelling opportunity sounds like a brochure, so keep it for arguments and evidence."
+        },
+        {
+          "id": "cogent",
+          "word": "cogent",
+          "pos": "adjective",
+          "tier": "distinction",
+          "ipa": "/ˈkoʊ.dʒənt/",
+          "respell": "KOH·junt",
+          "definition": "clearly reasoned and hard to argue with.",
+          "nuance": "Cogent praises the structure of an argument: every step earns the next one. You can find a case cogent and still dislike where it leads, which is what makes the word so useful in a disagreement.",
+          "etymology": "From Latin cogere, to drive together or compel, the same root that gives us coagulate: scattered ideas driven into one mass.",
+          "examples": {
+            "conversational": "That is the first cogent explanation of the fee that anyone has given me.",
+            "professional": "Make it cogent and short: three reasons, in the order you want them remembered.",
+            "elevated": "A cogent argument need not be loud. It needs each step to carry the weight of the next one."
+          },
+          "collocations": ["a cogent argument", "cogent reasoning", "cogent and concise", "a cogent case"],
+          "nearSynonyms": [
+            { "word": "compelling", "distinction": "moves you, whether or not the reasoning holds up" },
+            { "word": "lucid", "distinction": "clear to follow, though clarity by itself persuades nobody" },
+            { "word": "sound", "distinction": "free of error, which is a lower bar than driving to a conclusion" }
+          ],
+          "registerNote": "It belongs to arguments, papers and reasoning, not to people: a cogent man is a misfire, and in casual talk it can sound like you are grading a friend's homework."
+        },
+        {
+          "id": "incontrovertible",
+          "word": "incontrovertible",
+          "pos": "adjective",
+          "tier": "flourish",
+          "ipa": "/ˌɪn.kɑn.trəˈvɜr.tə.bəl/",
+          "respell": "in·kon·truh·VUR·tuh·bul",
+          "definition": "so clearly true that it cannot honestly be disputed.",
+          "nuance": "This is a claim about the evidence, not about your confidence in it. Keep it for facts that survive a hostile examination: dates, records, figures, things the other side can check for themselves.",
+          "etymology": "From Latin controversus, turned against: contra, against, plus vertere, to turn. With in- for not, it is the thing that cannot be turned against you.",
+          "examples": {
+            "conversational": "The photograph is incontrovertible, so there is no point arguing about the date.",
+            "professional": "We hold incontrovertible records for every delivery in that period and I will send them this afternoon.",
+            "elevated": "Very little in business is incontrovertible, which is why I have come to trust the man who tells me he is not certain."
+          },
+          "collocations": ["incontrovertible evidence", "incontrovertible proof", "an incontrovertible fact", "incontrovertible and documented"],
+          "nearSynonyms": [
+            { "word": "indisputable", "distinction": "the plainer everyday twin, with less weight behind it" },
+            { "word": "irrefutable", "distinction": "nobody has managed to refute it, a claim about attempts made" },
+            { "word": "undeniable", "distinction": "often used of impressions and feelings as much as of facts" }
+          ],
+          "registerNote": "A heavy word, and it invites someone to try: use it only when you can put the document on the table, because a single exception makes you look careless."
+        }
+      ],
+      "passage": {
+        "title": "Three lines, then I stop",
+        "setting": "The closing minute of a pitch to a client who has seen three other firms this week",
+        "text": "You have heard three firms this week and all of us sounded competent, so I will not make a compelling speech. I will make a cogent one, in three lines. Your current supplier missed eleven of the last forty deliveries. That figure is incontrovertible: it came from your own dispatch log, not from us. We have missed four in three hundred over the same period. If those two numbers are not enough, then no amount of talking from me should convince you.",
+        "deliveryCue": "Read the two numbers slowly, as though lifting them off a page, then pause before the last sentence."
+      },
+      "epigram": "A compelling case wins the meeting; a cogent one survives the drive home."
+    },
+    {
+      "day": 6,
+      "theme": "Precision and clarity",
+      "themeLine": "Clarity in three strengths: cutting the words down, letting the light in, and leaving nothing at all in the way.",
+      "words": [
+        {
+          "id": "concise",
+          "word": "concise",
+          "pos": "adjective",
+          "tier": "foundation",
+          "ipa": "/kənˈsaɪs/",
+          "respell": "kun·SICE",
+          "definition": "saying what needs saying in few words, with nothing padded out.",
+          "nuance": "Concise praises density, not mere shortness: a concise answer is complete and short at the same time. Brief only promises the second half of that.",
+          "etymology": "From Latin concidere, to cut up: con- plus caedere, to cut. The fat has been cut away.",
+          "examples": {
+            "conversational": "Be concise, we have ten minutes before they close.",
+            "professional": "One page, concise, with the recommendation at the top and the working behind it.",
+            "elevated": "Being concise is not saying less. It is having decided in advance what actually matters."
+          },
+          "collocations": ["a concise summary", "clear and concise", "keep it concise", "a concise reply"],
+          "nearSynonyms": [
+            { "word": "succinct", "distinction": "concise with a note of elegance in the compression" },
+            { "word": "brief", "distinction": "short in length or time, and may simply have left things out" },
+            { "word": "terse", "distinction": "short to the point of coldness, and often heard as rude" }
+          ],
+          "registerNote": "Safe in any register. The one trap is applying it to a man's manner rather than his words: he was very concise can be heard as he was cold."
+        },
+        {
+          "id": "lucid",
+          "word": "lucid",
+          "pos": "adjective",
+          "tier": "distinction",
+          "ipa": "/ˈlu.sɪd/",
+          "respell": "LOO·sid",
+          "definition": "clear and easy to follow, so that the meaning arrives without effort.",
+          "nuance": "Lucid praises an explanation for the light it gives rather than for its brevity. It carries a second sense worth knowing, mentally clear, as in a lucid interval after illness or confusion.",
+          "etymology": "From Latin lucidus, bright, from lux, light. A lucid explanation lets the light through.",
+          "examples": {
+            "conversational": "He gave me a lucid explanation of the whole thing in about four minutes.",
+            "professional": "Your summary was lucid enough that the finance team stopped asking questions, which never happens.",
+            "elevated": "Lucid writing is a courtesy to a busy reader and a discipline for the man doing the writing."
+          },
+          "collocations": ["a lucid explanation", "lucid prose", "a lucid account", "lucid and calm"],
+          "nearSynonyms": [
+            { "word": "clear", "distinction": "the plain everyday word, with none of the shine" },
+            { "word": "intelligible", "distinction": "merely capable of being understood, a much lower bar" },
+            { "word": "coherent", "distinction": "hangs together, which is not the same as giving light" }
+          ],
+          "registerNote": "Calling a person lucid, rather than their writing, can suggest you were surprised to find them making sense, since the word also means clear-headed after a period of confusion."
+        },
+        {
+          "id": "pellucid",
+          "word": "pellucid",
+          "pos": "adjective",
+          "tier": "flourish",
+          "ipa": "/pəˈlu.sɪd/",
+          "respell": "puh·LOO·sid",
+          "definition": "so clear that nothing obstructs it, whether that is water you can see straight through or an explanation with nothing in the way.",
+          "nuance": "Lucid with the light turned all the way up. It suits prose, water and air, and it is the right word when the clarity itself is the remarkable thing rather than a convenience.",
+          "etymology": "From Latin pellucidus, from per, through, and lucere, to shine. Light passing all the way through.",
+          "examples": {
+            "conversational": "The water out there is pellucid. You can see the bottom at ten feet.",
+            "professional": "I want the terms pellucid, so that nobody can claim later that they misread them.",
+            "elevated": "His prose is pellucid: you never notice the writing, only the thing he is holding up to show you."
+          },
+          "collocations": ["pellucid prose", "pellucid water", "pellucid clarity", "a pellucid explanation"],
+          "nearSynonyms": [
+            { "word": "lucid", "distinction": "clear, but without the physical image of light passing through" },
+            { "word": "transparent", "distinction": "about seeing through: of motives it usually means obvious and unflattering" },
+            { "word": "limpid", "distinction": "clear and untroubled, used more often of water and eyes" }
+          ],
+          "registerNote": "A literary word: fine when writing about writing, and in an ordinary meeting it sounds like you swallowed a review. Save it for the times you mean the clarity was beautiful."
+        }
+      ],
+      "passage": {
+        "title": "Do not nod",
+        "setting": "Briefing a room of non-specialists before the engineers present",
+        "text": "Before the engineers come in, one request from me. I have asked them to be concise, which they will manage, and lucid, which is harder. If you lose the thread at any point, stop them. Do not nod. Nodding is how a project dies. And when one of them gives you a pellucid answer, an answer you could repeat to your own board tonight, tell them so, because that is what I want the rest of the afternoon to sound like.",
+        "deliveryCue": "Hit the three short sentences in the middle flat and hard, then let the long final sentence run."
+      },
+      "epigram": "Anyone can be concise by saying less; only the prepared are lucid."
+    },
+    {
+      "day": 7,
+      "theme": "Praise that lands",
+      "themeLine": "Praise has grades: the act of saying it aloud, the word for a worthy attempt, and the word for a standard others should copy.",
+      "words": [
+        {
+          "id": "commend",
+          "word": "commend",
+          "pos": "verb",
+          "tier": "foundation",
+          "ipa": "/kəˈmɛnd/",
+          "respell": "kuh·MEND",
+          "definition": "to praise someone openly, especially where others can hear it or record it.",
+          "nuance": "Commending is public and slightly official: it puts your own standing behind the praise. That is why it belongs in references, meetings and citations more than in a private thank you.",
+          "etymology": "From Latin commendare, to entrust or commit to the care of: com- plus mandare, to entrust. To commend a man was first to hand him into good keeping, and it still means putting your name behind him.",
+          "examples": {
+            "conversational": "I have to commend you. That was a hard call to make and you made it early.",
+            "professional": "I want to commend the whole logistics team for the way they handled the shortage.",
+            "elevated": "I commend her to you without reservation, and I do not say that about many people I have managed."
+          },
+          "collocations": ["commend him for", "highly commended", "commend the team", "commend her to you"],
+          "nearSynonyms": [
+            { "word": "praise", "distinction": "warmer and more personal, with no official weight behind it" },
+            { "word": "applaud", "distinction": "approves an act in passing, without endorsing the person" },
+            { "word": "recommend", "distinction": "points at a future use rather than praising a past performance" }
+          ],
+          "registerNote": "Commendation flows downward and sideways, so commending your own boss can sound presumptuous: thank them instead, and save commend for people whose work you can vouch for."
+        },
+        {
+          "id": "laudable",
+          "word": "laudable",
+          "pos": "adjective",
+          "tier": "distinction",
+          "ipa": "/ˈlɔ.də.bəl/",
+          "respell": "LAW·duh·bul",
+          "definition": "deserving praise, and usually said of an aim or an effort rather than a result.",
+          "nuance": "Laudable praises the aim more than the result, which is why a laudable effort so often means it did not work. Used honestly it is generous; used as a cushion it fools nobody.",
+          "etymology": "From Latin laudare, to praise, from laus, praise: the same family as laud and laudatory.",
+          "examples": {
+            "conversational": "It was a laudable effort, and next time please tell me before you do it.",
+            "professional": "The aim is laudable and the timeline is not, so let us fix the second one.",
+            "elevated": "A laudable intention that never survives contact with a budget is only a well-worded wish."
+          },
+          "collocations": ["a laudable aim", "laudable restraint", "laudable but impractical", "a laudable attempt"],
+          "nearSynonyms": [
+            { "word": "commendable", "distinction": "praises the doing rather than the motive behind it" },
+            { "word": "admirable", "distinction": "warmer, and can praise the person as well as the act" },
+            { "word": "praiseworthy", "distinction": "the plain English twin, with no faint-praise shadow" }
+          ],
+          "registerNote": "Watch the faint-praise trap: laudable followed by but is heard as a polite dismissal, so when you mean it fully, name the part that worked."
+        },
+        {
+          "id": "exemplary",
+          "word": "exemplary",
+          "pos": "adjective",
+          "tier": "flourish",
+          "ipa": "/ɪɡˈzɛm.plə.ri/",
+          "respell": "ig·ZEM·pluh·ree",
+          "definition": "so good that it sets the standard others should copy.",
+          "nuance": "The strongest of the three, because it makes the person a model rather than a success. Keep it for conduct, service and records that hold up over time, not for one good afternoon.",
+          "etymology": "From Latin exemplum, a sample or example. To be exemplary is to be the example itself.",
+          "examples": {
+            "conversational": "His attendance record is exemplary, which is more than I can say for mine.",
+            "professional": "Her conduct through the whole dispute was exemplary and I have said so in writing.",
+            "elevated": "We do not need exemplary people for this to work. We need an exemplary system that ordinary people can follow on a bad day."
+          },
+          "collocations": ["an exemplary record", "exemplary conduct", "exemplary service", "exemplary in every respect"],
+          "nearSynonyms": [
+            { "word": "outstanding", "distinction": "stands above the rest without becoming a model to follow" },
+            { "word": "commendable", "distinction": "worth praising, which is a considerably lower bar" },
+            { "word": "exceptional", "distinction": "unusual, and unusual is not automatically good" }
+          ],
+          "registerNote": "It sets a bar you may have to defend later, so use it where a record backs you. Note also the legal sense: exemplary damages are punitive and have nothing to do with praise."
+        }
+      ],
+      "passage": {
+        "title": "What she did before she started",
+        "setting": "Presenting a junior colleague's work at a company town hall",
+        "text": "I want to commend Priya in front of everyone, because she will not do it herself. Six months ago she inherited a filing system nobody understood. The plan she wrote for fixing it was laudable. The way she carried it out was exemplary: she trained two people before she touched anything, so that when she takes her leave in August, nothing stops. That last part is what I want the rest of us to copy. Priya, thank you.",
+        "deliveryCue": "Say her name at the end on its own, look at her, and let the room fill the silence."
+      },
+      "epigram": "Laudable is what we say when we admire the attempt; exemplary is what we say when we intend to copy it."
+    },
+    {
+      "day": 8,
+      "theme": "Reading people",
+      "themeLine": "Reading a person in three layers: what they show you, what they actually are, and what their face admits before they speak.",
+      "words": [
+        {
+          "id": "demeanor",
+          "word": "demeanor",
+          "pos": "noun",
+          "tier": "foundation",
+          "ipa": "/dɪˈmi.nər/",
+          "respell": "di·MEE·nur",
+          "definition": "the manner a person carries themselves in front of others: bearing, expression and tone.",
+          "nuance": "Demeanor is the outside only. It is what a stranger can observe in five minutes, which makes it the honest word when you want to describe behavior without claiming to know the person.",
+          "etymology": "From the old verb demean, meaning to conduct oneself, from Old French demener, to lead or conduct. It is how a man conducts himself, before you know anything else about him.",
+          "examples": {
+            "conversational": "His demeanor changed the moment his wife walked in, and I have never seen a man sit up so fast.",
+            "professional": "Keep the same demeanor with the difficult clients as with the easy ones. They talk to each other.",
+            "elevated": "A calm demeanor is worth more in a crisis than a good plan delivered badly."
+          },
+          "collocations": ["a calm demeanor", "professional demeanor", "his usual demeanor", "a change in demeanor"],
+          "nearSynonyms": [
+            { "word": "bearing", "distinction": "the physical carriage specifically: how a person stands and moves" },
+            { "word": "manner", "distinction": "broader and more casual, covering habits of speech as well" },
+            { "word": "disposition", "distinction": "the temperament underneath, not the surface you can see" }
+          ],
+          "registerNote": "Safe in any register, but it describes the surface only, so a pleasant demeanor in a reference letter is usually read as praise with nothing behind it."
+        },
+        {
+          "id": "disposition",
+          "word": "disposition",
+          "pos": "noun",
+          "tier": "distinction",
+          "ipa": "/ˌdɪs.pəˈzɪʃ.ən/",
+          "respell": "dis·puh·ZISH·un",
+          "definition": "a person's natural temperament: the mood and inclination they tend to return to.",
+          "nuance": "Disposition is the settled grain of a person, under the day's mood and under the manners. It has a second life in law and administration, where the disposition of a case or of property means how it was finally settled.",
+          "etymology": "From Latin disponere, to arrange or set in order. Your disposition is how your parts are arranged when nobody is rearranging them.",
+          "examples": {
+            "conversational": "She has a sunny disposition, which is either genetic or extremely hard work.",
+            "professional": "By disposition I am cautious, so I want at least one person on this team who is not.",
+            "elevated": "You can teach a skill in a year. A disposition takes rather longer, so hire for the second one."
+          },
+          "collocations": ["a sunny disposition", "a nervous disposition", "by disposition", "of a generous disposition"],
+          "nearSynonyms": [
+            { "word": "temperament", "distinction": "close to identical, though it leans more toward the inborn" },
+            { "word": "character", "distinction": "moral, and about what a person will and will not do" },
+            { "word": "demeanor", "distinction": "the surface a stranger sees, not the grain underneath" }
+          ],
+          "registerNote": "It claims to know what a person is really like, so in a written judgment it is safer about yourself than about a colleague. Keep the legal sense in mind too, since the disposition of a matter means its settlement."
+        },
+        {
+          "id": "countenance",
+          "word": "countenance",
+          "pos": "noun",
+          "tier": "flourish",
+          "ipa": "/ˈkaʊn.tə.nəns/",
+          "respell": "KOWN·tuh·nunss",
+          "definition": "a person's face, especially the expression it is wearing.",
+          "nuance": "Countenance is the face treated as evidence: the word for the expression that gave a man away. As a verb it means something quite different, to tolerate or approve, as in refusing to countenance a suggestion, and that sense is worth having ready.",
+          "etymology": "From Old French contenance, bearing or demeanor, from Latin continentia, self-restraint. The face is where a man's self-control shows first.",
+          "examples": {
+            "conversational": "You should have seen his countenance when the bill arrived.",
+            "professional": "He kept his countenance while the figures were read out, and only afterwards asked me to explain them.",
+            "elevated": "There was one moment, one change in his countenance, and I knew the thing had already been decided elsewhere."
+          },
+          "collocations": ["a grave countenance", "an open countenance", "keep your countenance", "a change of countenance"],
+          "nearSynonyms": [
+            { "word": "face", "distinction": "the plain word, with no suggestion of what it is expressing" },
+            { "word": "expression", "distinction": "the passing look, rather than the whole face wearing it" },
+            { "word": "visage", "distinction": "equally literary, but about the cast of a face more than its mood" }
+          ],
+          "registerNote": "Deliberately literary as a noun: it suits a written portrait or a formal address and is a costume in ordinary talk. Do not let the verb collide with it, since I cannot countenance this means I will not tolerate it."
+        }
+      ],
+      "passage": {
+        "title": "Twenty minutes",
+        "setting": "Telling a friend over dinner why you trusted someone on sight",
+        "text": "You asked why I hired him after twenty minutes. It was not the CV. His demeanor was ordinary, honestly: quiet handshake, no performance. But I asked him about the job he was let go from, and his countenance did not change at all. No flinch, no cleverness. He simply told me. A man with that disposition will bring me bad news early, and bad news early is the whole business. Everything else I can teach him. That I cannot.",
+        "deliveryCue": "Keep it conversational until the last two sentences, then slow right down and let them be short."
+      },
+      "epigram": "Demeanor is rehearsed and disposition is not, and the countenance forgets its lines first."
+    },
+    {
+      "day": 9,
+      "theme": "Work and mastery",
+      "themeLine": "Three kinds of hard work: steady effort, exact attention, and the plain refusal to stop.",
+      "words": [
+        {
+          "id": "diligent",
+          "word": "diligent",
+          "pos": "adjective",
+          "tier": "foundation",
+          "ipa": "/ˈdɪl.ə.dʒənt/",
+          "respell": "DIL·uh·junt",
+          "definition": "steadily hardworking and careful, day after day.",
+          "nuance": "Diligence is consistency rather than brilliance: it is the word for the person who does the unglamorous parts properly. It implies effort applied over months, not a single heroic push.",
+          "etymology": "From Latin diligere, to value highly or take delight in. The old sense holds a good idea: careful work comes from caring about the thing.",
+          "examples": {
+            "conversational": "He is diligent, and diligent beats clever most weeks.",
+            "professional": "We were diligent about the paperwork, and it saved us when the inspection came.",
+            "elevated": "Diligence is not glamorous, but I have never once seen a business fail from too much of it."
+          },
+          "collocations": ["a diligent worker", "diligent in his duties", "diligent preparation", "due diligence"],
+          "nearSynonyms": [
+            { "word": "industrious", "distinction": "busy and productive, with no promise of care" },
+            { "word": "conscientious", "distinction": "adds a sense of duty and conscience to the effort" },
+            { "word": "meticulous", "distinction": "about precision in detail rather than steadiness over time" }
+          ],
+          "registerNote": "Safe everywhere, though in a reference for a senior person diligent on its own can read as damning: it praises effort and says nothing at all about judgment."
+        },
+        {
+          "id": "meticulous",
+          "word": "meticulous",
+          "pos": "adjective",
+          "tier": "distinction",
+          "ipa": "/məˈtɪk.jə.ləs/",
+          "respell": "muh·TIK·yuh·lus",
+          "definition": "extremely careful about details, to the point of checking what most people would leave.",
+          "nuance": "Meticulous praises precision and can gently imply obsession, depending entirely on your tone. It fits work that can be inspected afterwards: records, drawings, accounts, preparation.",
+          "etymology": "From Latin meticulosus, fearful, from metus, fear. The original sense was timid, and the modern one keeps a trace of the man who is afraid of missing something.",
+          "examples": {
+            "conversational": "My father was meticulous about his tools, and I did not understand why until I owned some.",
+            "professional": "Her records are meticulous, so the audit took two days instead of two weeks.",
+            "elevated": "Be meticulous where a mistake is expensive and quick everywhere else. Knowing which is which is most of the job."
+          },
+          "collocations": ["meticulous records", "meticulous attention to detail", "meticulous planning", "meticulous in his work"],
+          "nearSynonyms": [
+            { "word": "thorough", "distinction": "covers everything, without the fineness of detail" },
+            { "word": "scrupulous", "distinction": "careful for moral reasons, about right and wrong" },
+            { "word": "fastidious", "distinction": "fussy about taste and cleanliness, and often unflattering" }
+          ],
+          "registerNote": "Praise for work, not for habits: calling a colleague meticulous about his desk sounds like a complaint, and meticulous said slowly is often heard as slow."
+        },
+        {
+          "id": "assiduous",
+          "word": "assiduous",
+          "pos": "adjective",
+          "tier": "flourish",
+          "ipa": "/əˈsɪdʒ.u.əs/",
+          "respell": "uh·SIJ·oo·us",
+          "definition": "persistently attentive: working at something without letting up.",
+          "nuance": "Diligence with the emphasis on not stopping. It fits long campaigns rather than single tasks: courting an account, research, practice, the years nobody was watching.",
+          "etymology": "From Latin assiduus, from assidere, to sit down to something: ad, to, plus sedere, to sit. The man who stays in the chair.",
+          "examples": {
+            "conversational": "He has been assiduous about staying in touch, I will give him that.",
+            "professional": "Six months of assiduous follow-up won that account, not the presentation.",
+            "elevated": "Talent gets you invited. Assiduous attention over years is what gets you kept."
+          },
+          "collocations": ["assiduous attention", "assiduous in his studies", "assiduous practice", "assiduous courtship"],
+          "nearSynonyms": [
+            { "word": "diligent", "distinction": "steady and careful, without the note of relentlessness" },
+            { "word": "persistent", "distinction": "keeps going, but may be careless or unwelcome while doing it" },
+            { "word": "sedulous", "distinction": "a close twin, even more formal, from the same idea of steady application" }
+          ],
+          "registerNote": "Formal and old-fashioned enough that people notice it. Applied to attention paid to a person it can sound like polite mockery, as in an assiduous suitor."
+        }
+      ],
+      "passage": {
+        "title": "There is no secret",
+        "setting": "Mentoring a junior who asked how you became good at the work",
+        "text": "You asked me what the secret is. There is not one. For four years I was simply diligent: I did the boring parts on time and I did them twice. Then a supervisor showed me how to be meticulous about the one page a client actually reads, which is never the page you enjoyed writing. The rest is being assiduous when nobody is watching, in July, when the work is dull and nothing is due. That is the whole answer. I am sorry it is not better.",
+        "deliveryCue": "Say the last line lightly, almost as a joke, so the whole thing does not turn into a lecture."
+      },
+      "epigram": "Diligent gets the work done, meticulous gets it right, and assiduous is still there in July."
+    },
+    {
+      "day": 10,
+      "theme": "Beginnings",
+      "themeLine": "The vocabulary of starting: doing it, dating it, and naming the thing that has only just come into being.",
+      "words": [
+        {
+          "id": "initiate",
+          "word": "initiate",
+          "pos": "verb",
+          "tier": "foundation",
+          "ipa": "/ɪˈnɪʃ.i.eɪt/",
+          "respell": "i·NISH·ee·ayt",
+          "definition": "to set something in motion: to be the one who starts it.",
+          "nuance": "Initiate names the act of starting formally, which is why it suits processes, proceedings, reviews and talks. It carries a second sense as well, to bring someone into a body of knowledge or a society, as in being initiated into a craft.",
+          "etymology": "From Latin initium, a beginning, from inire, to go in. To initiate is to go in first.",
+          "examples": {
+            "conversational": "He initiated the whole plan and then left the country, which is very much his way.",
+            "professional": "We will initiate the review on Monday and report back inside three weeks.",
+            "elevated": "Anyone can initiate a project. The rarer man is the one still there when it turns dull."
+          },
+          "collocations": ["initiate proceedings", "initiate a review", "initiate contact", "initiate discussions"],
+          "nearSynonyms": [
+            { "word": "begin", "distinction": "plain and unofficial: you begin a meal, you initiate a process" },
+            { "word": "launch", "distinction": "public and energetic, and it assumes an audience" },
+            { "word": "instigate", "distinction": "starts something, usually trouble, and puts the blame on you" }
+          ],
+          "registerNote": "Business writing has worn it out, so initiating a conversation where you could simply call the man sounds inflated. Note the pronunciation shift too: the noun and adjective, an initiate, end flat, i·NISH·ee·it."
+        },
+        {
+          "id": "inception",
+          "word": "inception",
+          "pos": "noun",
+          "tier": "distinction",
+          "ipa": "/ɪnˈsɛp.ʃən/",
+          "respell": "in·SEP·shun",
+          "definition": "the point at which something began.",
+          "nuance": "A formal word for a starting point you could put a date on, which is why it lives in phrases like from its inception. It marks the beginning of the thing itself, not the beginning of your involvement with it.",
+          "etymology": "From Latin incipere, to take up or begin: in- plus capere, to take. The moment a thing was taken in hand.",
+          "examples": {
+            "conversational": "That shop has been in the same family since its inception.",
+            "professional": "The scheme has run at a loss since inception, and I want to know why nobody said so.",
+            "elevated": "From its inception this business rested on one promise, and every argument we have had since has been about keeping it."
+          },
+          "collocations": ["from its inception", "since inception", "at the inception of the project", "the company's inception"],
+          "nearSynonyms": [
+            { "word": "beginning", "distinction": "plain, and can mean the early period as well as the moment" },
+            { "word": "origin", "distinction": "where a thing came from, which is a cause rather than a date" },
+            { "word": "outset", "distinction": "the start of an undertaking, and lives mostly in from the outset" }
+          ],
+          "registerNote": "Formal register: it belongs in a report or a board minute. Applied to small things it turns comic, since a conversation has a start and not an inception."
+        },
+        {
+          "id": "nascent",
+          "word": "nascent",
+          "pos": "adjective",
+          "tier": "flourish",
+          "ipa": "/ˈneɪ.sənt/",
+          "respell": "NAY·sunt",
+          "definition": "just coming into existence and not yet developed.",
+          "nuance": "Nascent is the word for something real but very early: a nascent industry, a nascent friendship. It grants promise without claiming success, which makes it the honest choice when you want to say how young a thing still is.",
+          "etymology": "From Latin nasci, to be born, through its participle nascens, being born. The same root gives us native and nation.",
+          "examples": {
+            "conversational": "It is a nascent thing, so do not expect very much of it yet.",
+            "professional": "There is a nascent market for this locally, but it will not pay salaries for another year and I would rather say so now.",
+            "elevated": "Every industry that now looks inevitable was nascent once, and was mostly ignored by people who should have known better."
+          },
+          "collocations": ["a nascent industry", "a nascent talent", "a nascent democracy", "in its nascent stage"],
+          "nearSynonyms": [
+            { "word": "emerging", "distinction": "already visible and coming up: further along than nascent" },
+            { "word": "embryonic", "distinction": "earlier still, and suggests something not yet formed" },
+            { "word": "fledgling", "distinction": "young and inexperienced, with a hint of wobble to it" }
+          ],
+          "registerNote": "Both NAY·sunt and NASS·unt are standard, so choose one and keep to it. And because the word insists the thing is very young, using it about your own two-year-old business sounds like an excuse."
+        }
+      ],
+      "passage": {
+        "title": "The rule between us",
+        "setting": "Announcing a new venture to a small room of early backers",
+        "text": "Thank you for coming. Two months ago I asked whether anyone would pay for this, and eleven of you said yes before I had built a thing. So today we initiate it properly. I want to be plain about where we are: this is a nascent business, six people and one product, and I would rather you heard that from me than worked it out in a year. From its inception I want one rule between us. When it goes badly, you hear it from me first.",
+        "deliveryCue": "Pause after one rule between us and hold it until the room is completely quiet."
+      },
+      "epigram": "Every institution was once a nascent idea that somebody refused to be embarrassed about."
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+[Unit]
+Description=Fire Wordhoard daily at 06:45 America/Guyana
+
+[Timer]
+# Timezone pinned explicitly so it is correct regardless of the host's clock
+# setting. 06:45 is its own slot, ahead of the 07:00 Morning Brief.
+OnCalendar=*-*-* 06:45:00 America/Guyana
+Persistent=true
+
+[Install]
+WantedBy=timers.target

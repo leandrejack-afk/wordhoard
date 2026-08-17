@@ -1,0 +1,1386 @@
+{
+  "days": [
+    {
+      "day": 21,
+      "theme": "Character worth having",
+      "themeLine": "Three words for being trustworthy: the whole of a person, the truth they will say out loud, and the record that survives inspection.",
+      "words": [
+        {
+          "id": "integrity",
+          "word": "integrity",
+          "pos": "noun",
+          "tier": "foundation",
+          "ipa": "/ɪnˈtɛɡ.rə.ti/",
+          "respell": "in·TEG·ruh·tee",
+          "definition": "Being the same person under pressure that you are in public: holding to your principles even when bending would be easier and nobody would know.",
+          "nuance": "Honesty is about what you say; integrity is about whether the whole of you holds together, in the accounts, the contracts and the small favors. It is the word for a person whose behavior does not change when the room empties.",
+          "etymology": "From Latin integritas, wholeness or soundness, from integer, whole or untouched (in-, not, plus the root of tangere, to touch). The same integer as in whole numbers: a person of integrity is undivided.",
+          "examples": {
+            "conversational": "I have known him twenty years, and his integrity is the reason I keep sending him work.",
+            "professional": "We can rebuild the schedule, but we cannot rebuild the integrity of this report if we sign it as it stands.",
+            "elevated": "Reputation is what a room believes about you; integrity is what stays true when the room is wrong."
+          },
+          "collocations": [
+            "a man of integrity",
+            "professional integrity",
+            "the integrity of the process",
+            "compromise your integrity",
+            "unquestioned integrity"
+          ],
+          "nearSynonyms": [
+            {
+              "word": "honesty",
+              "distinction": "narrower: it covers what you say, while integrity covers the whole of how you act"
+            },
+            {
+              "word": "rectitude",
+              "distinction": "stiffer and more strictly moral, closer to probity"
+            },
+            {
+              "word": "honor",
+              "distinction": "more public, tied to reputation and a code"
+            },
+            {
+              "word": "incorruptibility",
+              "distinction": "one specific test of integrity, resistance to being bought"
+            }
+          ],
+          "registerNote": "Safe in every register, but announcing your own integrity invites people to look for the exception, so let others use the word about you; note the second, non-moral sense as well, where the integrity of a hull or a data set means soundness, nothing broken."
+        },
+        {
+          "id": "candor",
+          "word": "candor",
+          "pos": "noun",
+          "tier": "distinction",
+          "ipa": "/ˈkæn.dɚ/",
+          "respell": "KAN·der",
+          "definition": "Saying openly and without hedging what you actually think, especially when it would be easier not to.",
+          "nuance": "Candor is not bluntness: bluntness is about how hard you say it, candor is about refusing to hide it. It is exactly right when the polite answer would leave someone walking into a wall.",
+          "etymology": "From Latin candor, whiteness or brightness, from candere, to shine (the same root as candle and incandescent). English kept the light and turned it into openness: nothing shaded, nothing hidden.",
+          "examples": {
+            "conversational": "I appreciate your candor. Most people would have let me find out on my own.",
+            "professional": "May I speak with candor? The deadline is not the problem. The scope is.",
+            "elevated": "Candor is a courtesy that looks like a risk: it credits the other person with being able to hear the truth."
+          },
+          "collocations": [
+            "speak with candor",
+            "refreshing candor",
+            "candor about the risks",
+            "disarming candor",
+            "a moment of candor"
+          ],
+          "nearSynonyms": [
+            {
+              "word": "frankness",
+              "distinction": "near twin, a shade blunter and less warm"
+            },
+            {
+              "word": "honesty",
+              "distinction": "broader: being truthful, without the promise of volunteering the hard part"
+            },
+            {
+              "word": "openness",
+              "distinction": "about disclosure in general rather than one difficult truth"
+            },
+            {
+              "word": "directness",
+              "distinction": "describes manner, not motive; you can be direct and still evasive"
+            }
+          ],
+          "registerNote": "Welcome in professional rooms, though 'with all due candor' is heard as a warning shot, so prefer the plain 'may I be candid' unless you want the temperature to rise; the adjective is candid, and candour is only the British spelling of the noun."
+        },
+        {
+          "id": "probity",
+          "word": "probity",
+          "pos": "noun",
+          "tier": "flourish",
+          "ipa": "/ˈproʊ.bə.ti/",
+          "respell": "PROH·buh·tee",
+          "definition": "Complete honesty and moral uprightness, of the kind that holds up when somebody actually checks.",
+          "nuance": "Probity is integrity seen from the outside, under audit: it is the word for treasurers, judges, auditors and public officials. Reach for it when the honesty in question concerns money, office or public trust.",
+          "etymology": "From Latin probitas, uprightness, from probus, good and upright, the root behind prove, probe and probation. Probity is honesty that has been tested.",
+          "examples": {
+            "conversational": "The old chairman had a reputation for probity that outlived him.",
+            "professional": "For a role that signs off on payments, we are hiring for probity first and speed second.",
+            "elevated": "An institution can buy expertise at any time; probity it can only inherit, and only by never once spending it."
+          },
+          "collocations": [
+            "financial probity",
+            "a man of probity",
+            "unquestioned probity",
+            "probity in public office",
+            "moral probity"
+          ],
+          "nearSynonyms": [
+            {
+              "word": "integrity",
+              "distinction": "the everyday word, wider and warmer, and not tied to office"
+            },
+            {
+              "word": "rectitude",
+              "distinction": "stresses strict moral correctness and can sound severe"
+            },
+            {
+              "word": "uprightness",
+              "distinction": "the plain English twin, without the formal weight"
+            },
+            {
+              "word": "honesty",
+              "distinction": "general and personal, where probity implies a public standard"
+            }
+          ],
+          "registerNote": "Formal to the point of ceremony: it fits an audit committee, a eulogy or a reference letter, and sounds stiff about a friend, so keep it for honesty that involves money, office or public trust."
+        }
+      ],
+      "passage": {
+        "title": "The reference call",
+        "setting": "Vouching for a former colleague on a reference call",
+        "text": "I will give you my honest read, and I will not dress it up. In four years I never saw her shade a number or move a blame. Her integrity held on the days it cost her something, which is the only test that counts. She will tell a client no to his face, and that candor has saved us twice. If you want the older word for it, the word is probity. Hire her, and sleep well.",
+        "deliveryCue": "Keep the first two sentences flat and unhurried, slow down on 'the only test that counts', then leave a full beat before the last line."
+      },
+      "epigram": "Candor is what you pay in the moment; probity is what people call it once you have been paying for years."
+    },
+    {
+      "day": 22,
+      "theme": "Difficult people",
+      "themeLine": "Three grades of difficulty: the one who will not move, the one who will not comply, and the one who is looking for a fight.",
+      "words": [
+        {
+          "id": "obstinate",
+          "word": "obstinate",
+          "pos": "adjective",
+          "tier": "foundation",
+          "ipa": "/ˈɑb.stə.nət/",
+          "respell": "OB·stuh·nit",
+          "definition": "Refusing to change a position or course of action even when the arguments against it are good.",
+          "nuance": "Stubborn is neutral and can even be fond; obstinate says the refusal is unreasonable, that persuasion has been tried and has failed. Use it when a person has stopped weighing anything and is simply holding on.",
+          "etymology": "From Latin obstinatus, from obstinare, to persist or set one's mind on, built from ob-, against, and a root related to stare, to stand. To be obstinate is to stand against.",
+          "examples": {
+            "conversational": "He is not slow, he is obstinate, and there is a difference worth respecting.",
+            "professional": "We were obstinate about the delivery date for good reasons, and I would hold that line again.",
+            "elevated": "There is a point where conviction has stopped listening and becomes merely obstinate, and few of us notice ourselves crossing it."
+          },
+          "collocations": [
+            "obstinate refusal",
+            "obstinate resistance",
+            "remain obstinate",
+            "an obstinate streak",
+            "obstinate about the price"
+          ],
+          "nearSynonyms": [
+            {
+              "word": "stubborn",
+              "distinction": "plainer and sometimes affectionate; obstinate adds the charge of unreason"
+            },
+            {
+              "word": "headstrong",
+              "distinction": "drives forward recklessly rather than digging in and refusing"
+            },
+            {
+              "word": "dogged",
+              "distinction": "positive: persistence that keeps going, not a refusal to move"
+            },
+            {
+              "word": "unyielding",
+              "distinction": "describes the hardness without accusing the person of poor judgment"
+            }
+          ],
+          "registerNote": "Negative charge: it accuses a person of being unreasonable, so never say it to a client or counterpart's face and be careful in writing that may be forwarded; about yourself or your own side it can work as a wry half-compliment."
+        },
+        {
+          "id": "recalcitrant",
+          "word": "recalcitrant",
+          "pos": "adjective",
+          "tier": "distinction",
+          "ipa": "/rɪˈkæl.sə.trənt/",
+          "respell": "ri·KAL·suh·trunt",
+          "definition": "Stubbornly resisting authority, instruction or control.",
+          "nuance": "Obstinate is about an opinion; recalcitrant is about obedience, and it needs something to disobey: a rule, a manager, a court, a process. It also works dryly for machines and systems that will not behave.",
+          "etymology": "From Latin recalcitrare, to kick back, from re-, back, and calx, the heel. The picture is a mule kicking out at the man standing behind it.",
+          "examples": {
+            "conversational": "The gate is recalcitrant in the rainy season, so give it a shove.",
+            "professional": "One recalcitrant department can stall a rollout that every other team has already finished.",
+            "elevated": "Every reform meets the same recalcitrant middle: not opposition exactly, but a thousand quiet reasons that today is not the day."
+          },
+          "collocations": [
+            "a recalcitrant employee",
+            "recalcitrant debtor",
+            "recalcitrant supplier",
+            "remain recalcitrant",
+            "recalcitrant about the new system"
+          ],
+          "nearSynonyms": [
+            {
+              "word": "obstinate",
+              "distinction": "holds a position, where recalcitrant refuses to be governed"
+            },
+            {
+              "word": "defiant",
+              "distinction": "open and confrontational, while recalcitrant can be entirely passive"
+            },
+            {
+              "word": "insubordinate",
+              "distinction": "a formal workplace charge about rank and orders"
+            },
+            {
+              "word": "refractory",
+              "distinction": "bookish twin, common of materials and of illness that will not respond"
+            }
+          ],
+          "registerNote": "Strongly negative and faintly official, which is why it lands hard on paper: 'recalcitrant' in an email about a colleague reads as a disciplinary word, so never to someone's face, and about a client only in a document you would be content for them to read."
+        },
+        {
+          "id": "truculent",
+          "word": "truculent",
+          "pos": "adjective",
+          "tier": "flourish",
+          "ipa": "/ˈtrʌ.kjə.lənt/",
+          "respell": "TRUK·yuh·lunt",
+          "definition": "Aggressively hostile: quick to belligerence and not troubling to hide it.",
+          "nuance": "This is the strongest of the three and the only one carrying threat: the obstinate man will not move, the recalcitrant man will not comply, the truculent man would rather it came to a fight. Save it for someone whose manner has turned openly aggressive.",
+          "etymology": "From Latin truculentus, from trux, fierce or savage. The Latin word described wild animals and grim faces long before it described a difficult man at a table.",
+          "examples": {
+            "conversational": "He turns truculent after the second drink, so we make an early night of it.",
+            "professional": "Their side became truculent when the auditors arrived, which told us more than the accounts did.",
+            "elevated": "A truculent negotiator mistakes noise for strength, and usually learns the price of that mistake in the last hour."
+          },
+          "collocations": [
+            "a truculent mood",
+            "turn truculent",
+            "truculent tone",
+            "openly truculent"
+          ],
+          "nearSynonyms": [
+            {
+              "word": "belligerent",
+              "distinction": "near twin: looking for a fight, with a shade more of formal warfare in it"
+            },
+            {
+              "word": "pugnacious",
+              "distinction": "eager to argue, lighter and often almost affectionate"
+            },
+            {
+              "word": "hostile",
+              "distinction": "plainer and colder, and it can be silent"
+            },
+            {
+              "word": "aggressive",
+              "distinction": "broadest, and in a sales context it can even be praise"
+            }
+          ],
+          "registerNote": "The heaviest of the three and close to calling somebody a bully, so it is safest in the past tense about a situation rather than the present tense about a person in the room, and never to a client or counterpart's face."
+        }
+      ],
+      "passage": {
+        "title": "After the negotiation",
+        "setting": "A private debrief with your own manager after a hard negotiating session",
+        "text": "I want to be careful how I describe that room, because I have to sit in it again on Monday. Their lead was obstinate on price, which is his job and he did it well. His deputy was recalcitrant about every deadline we proposed, and that is the harder problem. By four o'clock one of them had turned truculent, which told me more about the pressure on their side than on ours. None of that goes in the minutes. It goes in my head, and we come back rested.",
+        "deliveryCue": "Keep the volume low all the way through. Three flat clauses, then a real pause before 'None of that goes in the minutes.'"
+      },
+      "epigram": "The obstinate defend a position, the recalcitrant defend their independence, the truculent defend themselves."
+    },
+    {
+      "day": 23,
+      "theme": "Making things easier",
+      "themeLine": "Three different mercies, often confused: making a burden bearable, making it less severe, and removing the need for it at all.",
+      "words": [
+        {
+          "id": "alleviate",
+          "word": "alleviate",
+          "pos": "verb",
+          "tier": "foundation",
+          "ipa": "/əˈli.viˌeɪt/",
+          "respell": "uh·LEE·vee·ayt",
+          "definition": "To make something painful or difficult easier to bear, without necessarily removing it.",
+          "nuance": "Alleviate takes suffering as its object: pain, pressure, poverty, symptoms, worry. It says the load is lighter, not that the load is gone, which makes it the honest word when you cannot fix the cause.",
+          "etymology": "From Late Latin alleviare, to lighten, from ad-, to, and levis, light in weight, the same levis behind levity and levitate. To alleviate is to take weight off.",
+          "examples": {
+            "conversational": "A phone call would not solve it, but it would alleviate a lot of the worry.",
+            "professional": "A second counter will alleviate the queue on Fridays; it will not fix the process that creates it.",
+            "elevated": "We are not here to alleviate the symptoms of a system we are free to redesign."
+          },
+          "collocations": [
+            "alleviate suffering",
+            "alleviate pain",
+            "alleviate pressure",
+            "alleviate concerns",
+            "alleviate poverty"
+          ],
+          "nearSynonyms": [
+            {
+              "word": "relieve",
+              "distinction": "the plainer near twin and the better choice in speech"
+            },
+            {
+              "word": "ease",
+              "distinction": "softer and vaguer, and it works on situations as well as suffering"
+            },
+            {
+              "word": "assuage",
+              "distinction": "used of feelings, fears and appetites, and more literary"
+            },
+            {
+              "word": "mitigate",
+              "distinction": "aims at severity or risk rather than at suffering"
+            }
+          ],
+          "registerNote": "Slightly formal for casual talk, where 'ease' or 'take the edge off' sounds more natural, so save it for writing and meetings; it also needs a burden as its object, since you alleviate pain or pressure, not a task."
+        },
+        {
+          "id": "mitigate",
+          "word": "mitigate",
+          "pos": "verb",
+          "tier": "distinction",
+          "ipa": "/ˈmɪt.əˌɡeɪt/",
+          "respell": "MIT·uh·gayt",
+          "definition": "To make something bad less severe, less harmful or less serious.",
+          "nuance": "Mitigate is the risk word: it acts on severity rather than on suffering, and it accepts that the bad thing may still happen. It is exactly right when you cannot prevent something and are reducing what it will cost you.",
+          "etymology": "From Latin mitigare, to soften or make mild, from mitis, gentle, plus the root of agere, to make or drive. To mitigate is to make a hard thing milder.",
+          "examples": {
+            "conversational": "We cannot stop the rain, but we can mitigate the mess with two hours of work today.",
+            "professional": "The contract does not remove the currency risk, it mitigates it, and I want us clear about which.",
+            "elevated": "Half of good management is mitigation: the quiet work of making the bad week smaller before it arrives."
+          },
+          "collocations": [
+            "mitigate the risk",
+            "mitigate the damage",
+            "mitigating circumstances",
+            "mitigate the impact",
+            "mitigate losses"
+          ],
+          "nearSynonyms": [
+            {
+              "word": "alleviate",
+              "distinction": "relieves suffering, where mitigate reduces severity or exposure"
+            },
+            {
+              "word": "reduce",
+              "distinction": "plain and quantitative, with no sense of softening a harm"
+            },
+            {
+              "word": "temper",
+              "distinction": "softens an extreme, usually of tone, judgment or enthusiasm"
+            },
+            {
+              "word": "lessen",
+              "distinction": "the plainest of the group and the safest in conversation"
+            }
+          ],
+          "registerNote": "Standard business and legal register, and it can sound bureaucratic in a personal conversation; know one trap too, that the phrase for weighing against something is 'militate against', not 'mitigate against', which careful readers count as an error."
+        },
+        {
+          "id": "obviate",
+          "word": "obviate",
+          "pos": "verb",
+          "tier": "flourish",
+          "ipa": "/ˈɑb.viˌeɪt/",
+          "respell": "OB·vee·ayt",
+          "definition": "To remove the need for something, or to head off a difficulty so that it never arises.",
+          "nuance": "This is the strongest of the three and the most misused: to obviate is not to ease or reduce anything, it is to make the step, the risk or the argument unnecessary. If the thing still has to be done afterwards, obviate is the wrong word.",
+          "etymology": "From Late Latin obviare, to meet in the way or go against, from Latin ob-, against, and via, road. To obviate is to meet the trouble on the road before it reaches your door.",
+          "examples": {
+            "conversational": "Paying it off early would obviate the whole argument about interest.",
+            "professional": "One shared file obviates the need for these three status meetings.",
+            "elevated": "The best decisions obviate whole categories of problem, which is why nobody ever thanks you for them."
+          },
+          "collocations": [
+            "obviate the need for",
+            "obviate the difficulty",
+            "obviate any objection",
+            "obviate the risk"
+          ],
+          "nearSynonyms": [
+            {
+              "word": "preclude",
+              "distinction": "rules the thing out as impossible, where obviate makes it unnecessary"
+            },
+            {
+              "word": "forestall",
+              "distinction": "heads it off in time, stressing that you moved first"
+            },
+            {
+              "word": "prevent",
+              "distinction": "plain and general: stops the thing rather than the need for it"
+            },
+            {
+              "word": "eliminate",
+              "distinction": "removes the thing itself, not the requirement to do it"
+            }
+          ],
+          "registerNote": "Formal, and commonly misused as a grand word for 'make easier', which is the one thing it does not mean; it is nearly always followed by 'the need for' and sounds best in writing or a prepared remark rather than in quick conversation."
+        }
+      ],
+      "passage": {
+        "title": "The approval loop",
+        "setting": "Pitching a change to a client's approval process",
+        "text": "Right now three people sign the same form, and everyone in this room has waited on it. We could alleviate the worst of that with a faster reminder. We could mitigate the delay by letting two signatures stand when the third person is traveling. But I would rather obviate the loop altogether: set a limit, and below that limit no signature is needed at all. Fix the cause, not the symptom. Give me thirty days and I will bring you the numbers.",
+        "deliveryCue": "Build the three middle sentences like steps, a little stronger each time, then drop your voice for 'Fix the cause, not the symptom.'"
+      },
+      "epigram": "To alleviate is kind, to mitigate is prudent, to obviate is to make the trouble unnecessary."
+    },
+    {
+      "day": 24,
+      "theme": "Wit and humor",
+      "themeLine": "The humor that works in a professional room is quiet: a twist of irony, an odd angle, and a well-aimed lack of reverence.",
+      "words": [
+        {
+          "id": "wry",
+          "word": "wry",
+          "pos": "adjective",
+          "tier": "foundation",
+          "ipa": "/raɪ/",
+          "respell": "RY",
+          "definition": "Amused in a dry, ironic way, with the humor showing as a twist rather than a laugh.",
+          "nuance": "A wry remark says less than it means and trusts you to catch the rest, which is why it works in rooms where a joke would be too much. The literal sense survives in a wry smile: one side of the mouth, slightly turned.",
+          "etymology": "From Old English wrigian, to turn or bend. The word meant twisted long before it meant funny, and the twist is still there in a wry smile.",
+          "examples": {
+            "conversational": "She gave me a wry look and said the budget had solved itself.",
+            "professional": "His report ends on a wry line about the third revision that everybody in the room understood.",
+            "elevated": "There is a wry pleasure in being proved right too late to be useful."
+          },
+          "collocations": [
+            "a wry smile",
+            "a wry look",
+            "wry humor",
+            "wry amusement",
+            "a wry observation"
+          ],
+          "nearSynonyms": [
+            {
+              "word": "ironic",
+              "distinction": "broader: the gap between what is said and what is meant, not necessarily amused"
+            },
+            {
+              "word": "dry",
+              "distinction": "very close, but it describes the deadpan delivery rather than the twist of thought"
+            },
+            {
+              "word": "sardonic",
+              "distinction": "darker, with real scorn under the amusement"
+            },
+            {
+              "word": "sly",
+              "distinction": "implies mischief and something deliberately concealed"
+            }
+          ],
+          "registerNote": "Safe in any register and one of the few compliments about humor that does not sound stiff, but keep it for small, private amusement, since a wry line is not a joke and wry is the wrong word for broad comedy."
+        },
+        {
+          "id": "droll",
+          "word": "droll",
+          "pos": "adjective",
+          "tier": "distinction",
+          "ipa": "/droʊl/",
+          "respell": "DROHL",
+          "definition": "Amusing in an odd, quaint or unexpected way.",
+          "nuance": "Droll turns on oddity rather than irony: the humor comes from the strange angle a person takes, usually delivered with a straight face. It suits the colleague whose asides are funny because nobody else would have thought of them.",
+          "etymology": "From French drole, a merry fellow or a rascal, probably from Middle Dutch drol, a little fat man or a goblin. It began as a name for a person and became a description of the humor.",
+          "examples": {
+            "conversational": "He has a droll way of describing his own disasters that makes them almost enviable.",
+            "professional": "Her droll aside about the seating plan settled the room faster than my opening did.",
+            "elevated": "The best chairman I ever watched was droll rather than funny, and no meeting of his ever ran long."
+          },
+          "collocations": [
+            "a droll remark",
+            "droll humor",
+            "droll wit",
+            "a droll little story"
+          ],
+          "nearSynonyms": [
+            {
+              "word": "wry",
+              "distinction": "turns on irony, where droll turns on oddity"
+            },
+            {
+              "word": "whimsical",
+              "distinction": "fanciful and light, without the straight face"
+            },
+            {
+              "word": "comical",
+              "distinction": "broader and louder, and it can mean funny-looking"
+            },
+            {
+              "word": "amusing",
+              "distinction": "plain and general, with none of the quaintness"
+            }
+          ],
+          "registerNote": "Faintly old-fashioned and British in flavor, and said flatly it becomes a put-down, since 'how droll' is what people say when a joke has failed; mean it warmly or leave it alone."
+        },
+        {
+          "id": "irreverent",
+          "word": "irreverent",
+          "pos": "adjective",
+          "tier": "flourish",
+          "ipa": "/ɪˈrɛv.ə.rənt/",
+          "respell": "ih·REV·uh·runt",
+          "definition": "Treating things that are usually treated with respect in a light or mocking way.",
+          "nuance": "Irreverence aims at institutions, titles and pieties rather than at people, and that is what separates it from rudeness. It is the right word for humor that punctures the ceremony without wounding the person standing inside it.",
+          "etymology": "From Latin irreverentem: in-, not, plus reverens, from revereri, to stand in awe of (re- plus vereri, to fear or respect). It is literally the absence of awe.",
+          "examples": {
+            "conversational": "That newsletter is irreverent about the whole industry, which is exactly why I trust its numbers.",
+            "professional": "We can be irreverent in the campaign about the category, never about the customer.",
+            "elevated": "An irreverent question early in a career costs very little and teaches you quickly who is actually in charge."
+          },
+          "collocations": [
+            "irreverent humor",
+            "an irreverent tone",
+            "cheerfully irreverent",
+            "irreverent about authority"
+          ],
+          "nearSynonyms": [
+            {
+              "word": "flippant",
+              "distinction": "dismissive and careless, treating a serious thing as unworthy of attention"
+            },
+            {
+              "word": "cheeky",
+              "distinction": "lighter and more personal, aimed at a person rather than an institution"
+            },
+            {
+              "word": "impudent",
+              "distinction": "rude directly to somebody's face, with no wit required"
+            },
+            {
+              "word": "sacrilegious",
+              "distinction": "literally about sacred things, and a real charge rather than a style"
+            }
+          ],
+          "registerNote": "Usually a compliment about a person's humor and a complaint about their conduct at a funeral, a court or a place of worship, where irreverence is a genuine offense, so read the room's ceremonies before you puncture them."
+        }
+      ],
+      "passage": {
+        "title": "A toast, briefly",
+        "setting": "A short toast at a colleague's farewell dinner",
+        "text": "I was told to keep this under a minute, and he would want that. For nine years his wry comment at the end of a long meeting did more good than the meeting. He is droll in a way that takes a second to land, and the new staff always laughed late. He was irreverent about every title in this building, including his own, and never once about the work. That is the balance most of us miss. To a good colleague, and a rare one.",
+        "deliveryCue": "Toasts live on pauses. Stop after 'including his own', let it sit for a beat, then finish and raise the glass without hurrying."
+      },
+      "epigram": "The wry line says less than it means, which is why it is still being repeated a year later."
+    },
+    {
+      "day": 25,
+      "theme": "Getting to the point",
+      "themeLine": "Three tools for a meeting that has drifted: what stands out, what cuts through, and what actually bears on the question.",
+      "words": [
+        {
+          "id": "salient",
+          "word": "salient",
+          "pos": "adjective",
+          "tier": "foundation",
+          "ipa": "/ˈseɪl.jənt/",
+          "respell": "SAYL·yunt",
+          "definition": "Standing out as the most noticeable and important thing about a matter.",
+          "nuance": "Salient does not mean merely visible: it means the detail that leaps at you because it matters most. It is the professional's way of saying 'the thing we should actually be talking about'.",
+          "etymology": "From Latin saliens, leaping, from salire, to leap, the same root as assail and somersault. The salient point is the one that jumps out at you.",
+          "examples": {
+            "conversational": "The salient thing about the offer is the timing, not the money.",
+            "professional": "Let me restate the salient points before we vote, so nobody is deciding on the summary alone.",
+            "elevated": "In any long argument there are perhaps two salient facts, and the discipline is finding them before the third hour."
+          },
+          "collocations": [
+            "the salient point",
+            "salient features",
+            "salient details",
+            "the most salient issue",
+            "salient facts"
+          ],
+          "nearSynonyms": [
+            {
+              "word": "prominent",
+              "distinction": "about visibility or eminence, not about mattering to the question"
+            },
+            {
+              "word": "notable",
+              "distinction": "worth noticing, which is a weaker claim than worth deciding on"
+            },
+            {
+              "word": "striking",
+              "distinction": "grabs attention, often for how it looks rather than what it means"
+            },
+            {
+              "word": "conspicuous",
+              "distinction": "obvious to everyone, sometimes unfortunately so"
+            }
+          ],
+          "registerNote": "Safe and useful in meetings, and one of the few formal words that shortens a discussion instead of lengthening it, but it means most important, so do not attach it to a minor detail, and note that it does not mean valid or true."
+        },
+        {
+          "id": "incisive",
+          "word": "incisive",
+          "pos": "adjective",
+          "tier": "distinction",
+          "ipa": "/ɪnˈsaɪ.sɪv/",
+          "respell": "in·SY·siv",
+          "definition": "Sharp and penetrating in thought or expression, going straight to the heart of a matter.",
+          "nuance": "Incisive praises accuracy and economy at once: the remark cut, and it cut in the right place. It fits questions, analysis and criticism rather than a person's manners or their kindness.",
+          "etymology": "From Latin incidere, to cut into (in-, into, plus caedere, to cut), the same root as incision and incisor, the front teeth that do the cutting.",
+          "examples": {
+            "conversational": "One incisive question from her and the whole plan fell apart, which was a mercy.",
+            "professional": "That was the most incisive comment of the review, and I would like it in the minutes.",
+            "elevated": "An incisive question is a kindness done at speed: it saves everyone the hour they were about to spend."
+          },
+          "collocations": [
+            "an incisive question",
+            "incisive analysis",
+            "incisive criticism",
+            "incisive wit",
+            "an incisive mind"
+          ],
+          "nearSynonyms": [
+            {
+              "word": "penetrating",
+              "distinction": "sees deeply, while incisive also cuts away what does not matter"
+            },
+            {
+              "word": "trenchant",
+              "distinction": "very close, more forceful and nearly always critical"
+            },
+            {
+              "word": "acute",
+              "distinction": "perceptive, without the sense of brevity or of cutting"
+            },
+            {
+              "word": "sharp",
+              "distinction": "plain, and said of a person it can suggest harshness"
+            }
+          ],
+          "registerNote": "High praise in a professional room, but the edge is real: an incisive question can expose someone in public, so aim it at the argument and not at the person holding it."
+        },
+        {
+          "id": "germane",
+          "word": "germane",
+          "pos": "adjective",
+          "tier": "flourish",
+          "ipa": "/dʒɚˈmeɪn/",
+          "respell": "jer·MAYN",
+          "definition": "Genuinely relevant to the matter at hand, and fitting for the occasion.",
+          "nuance": "Germane is relevance with a sense of propriety: a fact can be true, interesting and still not germane. It is the courteous way to set something aside without calling it wrong.",
+          "etymology": "From Latin germanus, of the same parents, which entered English as german in the old phrase cousin-german, a first cousin. Something germane is closely related by blood to the question in hand.",
+          "examples": {
+            "conversational": "That is a good story, though I am not sure it is germane to what we are deciding.",
+            "professional": "I will keep my remarks germane to the two questions the committee actually asked.",
+            "elevated": "Half of chairing well is deciding quickly, and without offense, what is germane."
+          },
+          "collocations": [
+            "germane to the discussion",
+            "germane to the question",
+            "not strictly germane",
+            "hardly germane"
+          ],
+          "nearSynonyms": [
+            {
+              "word": "relevant",
+              "distinction": "plainer and broader; germane adds fitness for this particular occasion"
+            },
+            {
+              "word": "pertinent",
+              "distinction": "near twin, a shade more formal and more common in writing"
+            },
+            {
+              "word": "apposite",
+              "distinction": "bookish, and it stresses being strikingly apt rather than merely connected"
+            },
+            {
+              "word": "applicable",
+              "distinction": "used of rules and cases rather than of arguments"
+            }
+          ],
+          "registerNote": "Formal, at home in meetings, committees and legal talk, and nearly always followed by 'to'; it does not mean important, since a point can be germane and still minor, and it has nothing to do with Germany."
+        }
+      ],
+      "passage": {
+        "title": "Back to the point",
+        "setting": "Pulling a drifting meeting back on track as chair",
+        "text": "We have twenty minutes left, so let me put the salient question back on the table: can we deliver by March, yes or no. Anisa asked the most incisive question of the morning an hour ago, and we walked straight past it. Most of what we have discussed since is interesting, and almost none of it is germane to that date. I am not closing those topics down. I am parking them. Give me the answer on the date, and then we can wander.",
+        "deliveryCue": "Ask the yes-or-no question and then stop talking. The silence after it is the tool, not the sentence."
+      },
+      "epigram": "A salient point is not the loudest one in the room; it is the one the rest of the argument leans on."
+    },
+    {
+      "day": 26,
+      "theme": "Displeasure with dignity",
+      "themeLine": "Annoyance, moral anger and personal offense: three ways to be displeased without raising your voice or losing the room.",
+      "words": [
+        {
+          "id": "vexed",
+          "word": "vexed",
+          "pos": "adjective",
+          "tier": "foundation",
+          "ipa": "/vɛkst/",
+          "respell": "VEKST",
+          "definition": "Annoyed and worn down by something that keeps causing trouble.",
+          "nuance": "Vexed is mild and slightly bookish, and that is its whole use: it admits irritation without dramatizing it. The verb is vex, so the delay can also vex you, and a vexed question is one long argued and still unsettled rather than an angry one.",
+          "etymology": "From Latin vexare, to shake, jolt or harass. To be vexed is to have been shaken about by something, which is exactly how a small recurring problem feels.",
+          "examples": {
+            "conversational": "I am a little vexed about the whole thing, but not enough to spoil the evening.",
+            "professional": "I will be honest that we are vexed by a third revision, and I would like to agree on how we stop this.",
+            "elevated": "It is a vexed question, and anyone who finds it simple has not yet been responsible for the answer."
+          },
+          "collocations": [
+            "a vexed question",
+            "vexed by the delay",
+            "sorely vexed",
+            "a vexed issue"
+          ],
+          "nearSynonyms": [
+            {
+              "word": "annoyed",
+              "distinction": "plainer and more momentary, with no sense of wearing on"
+            },
+            {
+              "word": "irritated",
+              "distinction": "sharper and closer to the surface"
+            },
+            {
+              "word": "exasperated",
+              "distinction": "further along the road, with the patience already spent"
+            },
+            {
+              "word": "aggrieved",
+              "distinction": "has an actual grievance behind it, not only an irritation"
+            }
+          ],
+          "registerNote": "Mild and safe at work, and useful precisely because it understates, but note the local ear: in Guyana and much of the Caribbean 'vex' in everyday speech means plain angry, so 'vexed' can land harder at home than the bookish sense intends."
+        },
+        {
+          "id": "indignant",
+          "word": "indignant",
+          "pos": "adjective",
+          "tier": "distinction",
+          "ipa": "/ɪnˈdɪɡ.nənt/",
+          "respell": "in·DIG·nunt",
+          "definition": "Angry at something you judge to be unfair, unjust or beneath decent treatment.",
+          "nuance": "Indignation is anger with a moral claim attached, which is what makes it respectable and also what makes it risky: it only persuades if the grievance really is about fairness. It fits a wrong done to someone else as naturally as one done to you.",
+          "etymology": "From Latin indignari, to consider unworthy, from in-, not, and dignus, worthy, the same dignus behind dignity and deign. Indignation is anger at treatment beneath what is due.",
+          "examples": {
+            "conversational": "I was indignant on her behalf, which surprised me more than it surprised her.",
+            "professional": "The staff are not being difficult. They are indignant, and they have a fair reason to be.",
+            "elevated": "Indignation is the most respectable anger and the easiest to counterfeit, so I try to spend it only where the injustice is plain."
+          },
+          "collocations": [
+            "indignant at the suggestion",
+            "righteous indignation",
+            "grow indignant",
+            "an indignant response"
+          ],
+          "nearSynonyms": [
+            {
+              "word": "angry",
+              "distinction": "plain, with no moral claim attached to it"
+            },
+            {
+              "word": "outraged",
+              "distinction": "much stronger, usually public, and hard to walk back"
+            },
+            {
+              "word": "affronted",
+              "distinction": "personally insulted, about dignity rather than justice"
+            },
+            {
+              "word": "resentful",
+              "distinction": "nursed quietly over time, where indignation is open and immediate"
+            }
+          ],
+          "registerNote": "It claims the moral high ground, so performing it over a small slight reads as self-importance; play it rarely, aim it at the act rather than at yourself, and it keeps its force."
+        },
+        {
+          "id": "umbrage",
+          "word": "umbrage",
+          "pos": "noun",
+          "tier": "flourish",
+          "ipa": "/ˈʌm.brɪdʒ/",
+          "respell": "UM·brij",
+          "definition": "Offense or resentment at a slight, real or imagined, used almost only in the phrase 'take umbrage at'.",
+          "nuance": "Umbrage is personal rather than moral: the pride is wounded, not the principle. It carries a dry irony too, hinting that the offense was taken more readily than it was given, which makes it perfect for admitting your own thin skin with a smile.",
+          "etymology": "From Latin umbra, shade or shadow, the same umbra behind umbrella and penumbra. To take umbrage is to feel a shadow pass over you, and the word meant shade in English long before it meant offense.",
+          "examples": {
+            "conversational": "He took umbrage at not being asked, and honestly, I would have too.",
+            "professional": "Nobody here takes umbrage at hard questions. We take umbrage at hearing them first from the client.",
+            "elevated": "There is a kind of pride that goes looking for the shadow, and takes umbrage before any insult has been offered."
+          },
+          "collocations": [
+            "take umbrage at",
+            "took umbrage",
+            "give umbrage",
+            "no umbrage taken"
+          ],
+          "nearSynonyms": [
+            {
+              "word": "offense",
+              "distinction": "the plain everyday word in the same frame, take offense at"
+            },
+            {
+              "word": "pique",
+              "distinction": "a brief sting of wounded pride, usually followed by a fit of it"
+            },
+            {
+              "word": "resentment",
+              "distinction": "slower and longer lasting, and kept inside"
+            },
+            {
+              "word": "indignation",
+              "distinction": "carries a moral claim, where umbrage is about personal pride"
+            }
+          ],
+          "registerNote": "It lives almost entirely inside 'take umbrage at', so do not stretch it into other shapes; said of another person it comes with a raised eyebrow, which makes it safest about yourself unless you mean to call somebody touchy."
+        }
+      ],
+      "passage": {
+        "title": "A word about the delivery",
+        "setting": "A calm call to a supplier who has missed a delivery twice",
+        "text": "I am vexed, and I would rather say so plainly than let it sour the account. The first missed delivery I understood. The second one left me indignant, because nobody called me, and I heard about it from my own customer instead. I take no umbrage at the delay itself; things go wrong in this business. I take umbrage at being the last to know. Tell me what happened, tell me what changes, and we carry on as before.",
+        "deliveryCue": "Say 'I am vexed' calmly and then stop. Everything after it should sound like information rather than complaint."
+      },
+      "epigram": "Umbrage taken quickly is rarely umbrage earned."
+    },
+    {
+      "day": 27,
+      "theme": "Growth and improvement",
+      "themeLine": "Improvement in three moves: take away what is coarse, sharpen what is left, and recognize the first real growth when it shows.",
+      "words": [
+        {
+          "id": "refine",
+          "word": "refine",
+          "pos": "verb",
+          "tier": "foundation",
+          "ipa": "/rɪˈfaɪn/",
+          "respell": "ri·FYN",
+          "definition": "To improve something by removing what is coarse, impure or unnecessary, usually in small steps.",
+          "nuance": "Refining works by subtraction: the thing gets better because something has been taken out of it. That makes it the honest word for second and third drafts, where the gain comes from cutting rather than adding.",
+          "etymology": "Built in English from re- plus fine, on the model of French raffiner. It was first a word for metals and sugar: heat the thing, take out what does not belong, keep what does.",
+          "examples": {
+            "conversational": "I have been refining that story for years, mostly by leaving parts out.",
+            "professional": "We refined the proposal down to four pages, and it won on the fourth version, not the first.",
+            "elevated": "Every craft keeps the same secret: you refine by removing what was never needed, not by adding polish."
+          },
+          "collocations": [
+            "refine the argument",
+            "refine a process",
+            "refine the estimate",
+            "further refined",
+            "refine the wording"
+          ],
+          "nearSynonyms": [
+            {
+              "word": "polish",
+              "distinction": "works on the surface and the finish, where refining changes the substance"
+            },
+            {
+              "word": "improve",
+              "distinction": "broadest and vaguest, with no method implied"
+            },
+            {
+              "word": "hone",
+              "distinction": "sharpens toward one purpose, where refine strips away the coarse"
+            },
+            {
+              "word": "perfect",
+              "distinction": "claims a finish line that refine never claims"
+            }
+          ],
+          "registerNote": "Safe everywhere, with one caution about the adjective: calling a person refined is a comment on class and manners that can sound condescending, so keep refine for drafts, processes and estimates."
+        },
+        {
+          "id": "hone",
+          "word": "hone",
+          "pos": "verb",
+          "tier": "distinction",
+          "ipa": "/hoʊn/",
+          "respell": "HOHN",
+          "definition": "To sharpen: literally on a stone, and by extension to make a skill or an argument sharper through practice.",
+          "nuance": "Hone implies a thing that already works being brought to an edge, so you hone what you have rather than build what you lack. Repetition is built into it: an edge is made by many passes, and it dulls again if you stop.",
+          "etymology": "The noun hone is Old English han, a stone, and specifically the whetstone kept for razors and blades. The verb came later: to hone is to take the blade to that stone.",
+          "examples": {
+            "conversational": "He honed that closing line over about fifty phone calls before it sounded effortless.",
+            "professional": "This year is for honing what we already do well, not for adding a fourth service line.",
+            "elevated": "Talent arrives as a rough edge; every hour after that is honing, and the stone does not care how gifted you are."
+          },
+          "collocations": [
+            "hone your skills",
+            "hone a craft",
+            "finely honed",
+            "hone an argument",
+            "hone the pitch"
+          ],
+          "nearSynonyms": [
+            {
+              "word": "sharpen",
+              "distinction": "the plain literal twin, and the safer word in casual talk"
+            },
+            {
+              "word": "whet",
+              "distinction": "also a stone word, now used mostly of appetite and curiosity"
+            },
+            {
+              "word": "perfect",
+              "distinction": "aims at a finished state, where honing is continuous"
+            },
+            {
+              "word": "refine",
+              "distinction": "removes what is coarse, where honing puts on the edge"
+            }
+          ],
+          "registerNote": "Know the trap: 'hone in on' is widely judged an error for 'home in on', which comes from homing pigeons closing on a target, so keep hone for edges, skills and arguments and say 'home in on' when you mean closing in."
+        },
+        {
+          "id": "burgeon",
+          "word": "burgeon",
+          "pos": "verb",
+          "tier": "flourish",
+          "ipa": "/ˈbɚ.dʒən/",
+          "respell": "BUR·jun",
+          "definition": "To put out buds or shoots, and so to begin growing quickly and flourishingly.",
+          "nuance": "The strict sense is the beginning of growth, not size: a burgeoning practice is one visibly taking off, not one already large. That early-stage meaning makes it the right word for a talent, a market or a friendship that has just started to move.",
+          "etymology": "From Old French borjon, a bud or a shoot. The bud came first and the growth came after, which is why careful users keep burgeon for things that are only starting to take off.",
+          "examples": {
+            "conversational": "His confidence has burgeoned since he started teaching the evening class.",
+            "professional": "There is a burgeoning market for this in the region, and we are early enough for it to matter.",
+            "elevated": "Everything that burgeons looks fragile for a season, which is why patient people end up owning it."
+          },
+          "collocations": [
+            "a burgeoning market",
+            "burgeoning talent",
+            "burgeoning demand",
+            "burgeoning interest"
+          ],
+          "nearSynonyms": [
+            {
+              "word": "flourish",
+              "distinction": "thriving at full strength, where burgeon is the taking off before that"
+            },
+            {
+              "word": "blossom",
+              "distinction": "the same figure from the plant, more about coming into beauty"
+            },
+            {
+              "word": "sprout",
+              "distinction": "literal and small, with no sense of a surge"
+            },
+            {
+              "word": "boom",
+              "distinction": "loud, commercial and sudden, and about volume rather than beginnings"
+            }
+          ],
+          "registerNote": "Careful users object to burgeon used to mean simply grow large: a long-established company does not burgeon into a giant, it expands, so keep the word for the early visible surge and use plain 'growing' in casual talk."
+        }
+      ],
+      "passage": {
+        "title": "On the second draft",
+        "setting": "Mentoring a junior colleague through a second draft",
+        "text": "This is good, and I want to say that before I mark it up. Your first job is to refine it: cut the two paragraphs that repeat your opening, because they cost you the reader. Then hone the argument on page three until a tired man could not miss it. What you have here is an instinct beginning to burgeon, and an instinct only grows if you make it work. Bring me the third version on Thursday. I will be harder on that one than on this.",
+        "deliveryCue": "Give the praise evenly, then let the two instructions come a little faster, and put a smile you can hear into the last line."
+      },
+      "epigram": "Nothing burgeons in a week; the edge you hone this month turns up in somebody else's year."
+    },
+    {
+      "day": 28,
+      "theme": "Judgment calls",
+      "themeLine": "Deciding well has three parts: taking the world as it is, weighing the choice on its merits, and looking around before you step.",
+      "words": [
+        {
+          "id": "pragmatic",
+          "word": "pragmatic",
+          "pos": "adjective",
+          "tier": "foundation",
+          "ipa": "/præɡˈmæt.ɪk/",
+          "respell": "prag·MAT·ik",
+          "definition": "Guided by what will actually work in practice rather than by theory or ideals.",
+          "nuance": "Pragmatic is not the opposite of principled, it is the opposite of doctrinaire: it says you are measuring the choice by results. It is exactly right when you are explaining why the imperfect option is the one you are taking.",
+          "etymology": "From Greek pragma, a deed or a thing done, from prassein, to do. A pragmatic judgment is one measured by what actually gets done.",
+          "examples": {
+            "conversational": "I am being pragmatic about the car: it is ugly and it starts every morning.",
+            "professional": "The pragmatic move is to ship the smaller version in June and keep the rest for the next release.",
+            "elevated": "Being pragmatic is not the same as having no principles; it is knowing which principle is actually at stake today."
+          },
+          "collocations": [
+            "a pragmatic approach",
+            "a pragmatic decision",
+            "purely pragmatic",
+            "pragmatic about the timeline"
+          ],
+          "nearSynonyms": [
+            {
+              "word": "practical",
+              "distinction": "very close, but pragmatic adds a willingness to trade the ideal for the workable"
+            },
+            {
+              "word": "realistic",
+              "distinction": "about expectations rather than about method"
+            },
+            {
+              "word": "sensible",
+              "distinction": "plainer and warmer, with no philosophy behind it"
+            },
+            {
+              "word": "expedient",
+              "distinction": "careful: it hints at what suits you rather than what is right"
+            }
+          ],
+          "registerNote": "Safe and usually flattering in business, but it can be cover for quietly abandoning a principle, so if you call a decision pragmatic, be ready to name what you traded away."
+        },
+        {
+          "id": "judicious",
+          "word": "judicious",
+          "pos": "adjective",
+          "tier": "distinction",
+          "ipa": "/dʒuˈdɪʃ.əs/",
+          "respell": "joo·DISH·us",
+          "definition": "Showing good judgment: careful, well weighed and sensibly measured.",
+          "nuance": "Judicious praises the weighing itself rather than the outcome, which is why it survives a decision that turns out badly. It sits beautifully on quantities and restraint: a judicious amount, a judicious silence, a judicious use of other people's time.",
+          "etymology": "From Latin judicium, judgment, from judex, a judge (jus, law, plus dicere, to say). Somebody judicious decides the way a good judge would.",
+          "examples": {
+            "conversational": "That was a judicious amount of honesty. Any more and he would have stopped listening.",
+            "professional": "A judicious reading of the contract says we are covered, and I still want the lawyer to confirm it.",
+            "elevated": "The judicious speaker leaves one good argument unspoken, so the room has somewhere to arrive on its own."
+          },
+          "collocations": [
+            "a judicious choice",
+            "judicious use of",
+            "a judicious mix",
+            "judicious silence"
+          ],
+          "nearSynonyms": [
+            {
+              "word": "prudent",
+              "distinction": "looks ahead at risk and provides for it, where judicious weighs the choice in front of you"
+            },
+            {
+              "word": "wise",
+              "distinction": "grander and about life as a whole rather than a single decision"
+            },
+            {
+              "word": "discreet",
+              "distinction": "about what you reveal, not about how you decide"
+            },
+            {
+              "word": "sensible",
+              "distinction": "plain and everyday, and it praises the outcome more than the weighing"
+            }
+          ],
+          "registerNote": "Quiet high praise and safe in any register, but do not confuse it with judicial, which means belonging to the courts, and applied to your own choices it sounds smug, so use it about other people's."
+        },
+        {
+          "id": "circumspect",
+          "word": "circumspect",
+          "pos": "adjective",
+          "tier": "flourish",
+          "ipa": "/ˈsɚ.kəmˌspɛkt/",
+          "respell": "SUR·kum·spekt",
+          "definition": "Careful to consider every circumstance and possible consequence before acting.",
+          "nuance": "Circumspect is watchfulness, not fear: the circumspect person is looking around, not backing away. It covers conduct and speech both, and it is the polite word for somebody who is deliberately giving very little away.",
+          "etymology": "From Latin circumspicere, to look around (circum, around, plus specere, to look). The picture is a man turning his head both ways before he steps into the road.",
+          "examples": {
+            "conversational": "Be circumspect about what you tell him. He repeats things without meaning any harm.",
+            "professional": "We are being circumspect until the audit closes, and I would rather explain a delay than a loss.",
+            "elevated": "Circumspect is not timid: the man who looks around before stepping out arrives more often than the man who runs."
+          },
+          "collocations": [
+            "circumspect about",
+            "remain circumspect",
+            "unusually circumspect",
+            "circumspect in his dealings"
+          ],
+          "nearSynonyms": [
+            {
+              "word": "cautious",
+              "distinction": "plainer, and it can suggest timidity rather than attention"
+            },
+            {
+              "word": "wary",
+              "distinction": "expects one specific danger and is watching for it"
+            },
+            {
+              "word": "prudent",
+              "distinction": "about consequences and provision, and more openly approving"
+            },
+            {
+              "word": "guarded",
+              "distinction": "about what you disclose rather than how you act"
+            }
+          ],
+          "registerNote": "In a room that prizes decisiveness, 'we should be circumspect' can be heard as stalling, so name the specific thing you are watching for; as a description of a person it can also imply quietly that they are hard to read."
+        }
+      ],
+      "passage": {
+        "title": "Why we waited",
+        "setting": "Explaining a slow decision to an impatient business partner",
+        "text": "You want to move this week, and I understand why. I am being pragmatic, not timid: the money is real, and so is the risk of paying it twice. The judicious call is to sign the smaller contract now and hold the rest until their audit closes. I am circumspect about this one supplier, not about the plan itself. Give me two weeks. If their books come back clean, I will move faster than you will like.",
+        "deliveryCue": "Concede first and mean it, keep your pace level through the middle, then say the last sentence lightly, almost as a joke."
+      },
+      "epigram": "Pragmatic asks what will work, judicious asks what it will cost, circumspect asks what else is in the road."
+    },
+    {
+      "day": 29,
+      "theme": "Rare and excellent",
+      "themeLine": "Three levels of praise: unlike anything else, complete in its mastery, and with no equal anywhere in the field.",
+      "words": [
+        {
+          "id": "singular",
+          "word": "singular",
+          "pos": "adjective",
+          "tier": "foundation",
+          "ipa": "/ˈsɪŋ.ɡjə.lɚ/",
+          "respell": "SING·gyuh·ler",
+          "definition": "So exceptional or out of the ordinary that nothing else is quite like it.",
+          "nuance": "Singular praises unlikeness rather than rank: it says there is no second example, not that this one scored highest. Attach it to something you can name, a singular achievement or a singular talent, and the praise lands cleanly.",
+          "etymology": "From Latin singularis, alone or one of a kind, from singulus, single. The grammar sense and the praise sense grow from the same idea of standing alone.",
+          "examples": {
+            "conversational": "Meeting him was a singular experience, and I still cannot describe it properly.",
+            "professional": "Her contribution to that recovery was singular, and the record should say so plainly.",
+            "elevated": "A singular career is not built by being better on the common path; it is built by declining that path early."
+          },
+          "collocations": [
+            "a singular achievement",
+            "singular talent",
+            "singular distinction",
+            "a singular experience"
+          ],
+          "nearSynonyms": [
+            {
+              "word": "unique",
+              "distinction": "strictly the only one of its kind, where singular can simply mean remarkable"
+            },
+            {
+              "word": "exceptional",
+              "distinction": "a ranking word: above the standard, rather than unlike anything else"
+            },
+            {
+              "word": "extraordinary",
+              "distinction": "beyond the ordinary and louder about it"
+            },
+            {
+              "word": "peculiar",
+              "distinction": "the odd sense of singular with none of the praise attached"
+            }
+          ],
+          "registerNote": "It carries a second edge, since singular also means strange or peculiar, so 'a singular man' can read as a raised eyebrow; attach it to an achievement or a talent and the compliment is unmistakable."
+        },
+        {
+          "id": "consummate",
+          "word": "consummate",
+          "pos": "adjective",
+          "tier": "distinction",
+          "ipa": "/ˈkɑn.sə.mət/",
+          "respell": "KON·suh·mit",
+          "definition": "Complete and perfect in skill or degree: as accomplished at the thing as it is possible to be.",
+          "nuance": "Consummate says nothing is missing: the skill is finished, not merely high. It is at its best directly in front of a noun, as in a consummate professional or a consummate host, and it can also mark degree, as in consummate skill.",
+          "etymology": "From Latin consummare, to sum up or complete, from com-, together, and summa, the sum or total. A consummate professional is one in whom the total is complete.",
+          "examples": {
+            "conversational": "He is a consummate host: you never see the work, and you never want to leave.",
+            "professional": "She handled a hostile room with consummate skill, and not one person left feeling dismissed.",
+            "elevated": "The consummate professional is not the one who never fails; it is the one whose failures still look like the work of a professional."
+          },
+          "collocations": [
+            "a consummate professional",
+            "consummate skill",
+            "consummate ease",
+            "a consummate diplomat"
+          ],
+          "nearSynonyms": [
+            {
+              "word": "accomplished",
+              "distinction": "skilled, without the claim that nothing is missing"
+            },
+            {
+              "word": "masterly",
+              "distinction": "very high skill; note that masterful can instead mean domineering"
+            },
+            {
+              "word": "expert",
+              "distinction": "plain and technical, about knowledge rather than finish"
+            },
+            {
+              "word": "supreme",
+              "distinction": "about rank at the top rather than completeness of mastery"
+            }
+          ],
+          "registerNote": "Heteronym warning: the adjective is KON·suh·mit and belongs in front of a noun, while the verb is KON·suh·mayt, to bring to completion and most often said of a marriage, so the ending matters (you will also hear the adjective as kun·SUM·it, which is equally standard)."
+        },
+        {
+          "id": "peerless",
+          "word": "peerless",
+          "pos": "adjective",
+          "tier": "flourish",
+          "ipa": "/ˈpɪr.ləs/",
+          "respell": "PEER·lus",
+          "definition": "Having no equal: better than anything else of its kind.",
+          "nuance": "Peerless is an absolute, so it takes no degrees and nothing is more peerless than anything else. It works best on a craft, a record or a reputation, where the claim can actually be tested against everyone else in the field.",
+          "etymology": "From peer in its older sense of an equal (from Latin par, equal, as in par and parity) plus -less: having no equal. The peers of a realm were so called because they were equals of one another.",
+          "examples": {
+            "conversational": "For pepperpot at short notice, my aunt is peerless.",
+            "professional": "In sheer preparation he is peerless, and it is why we have never lost on the paperwork.",
+            "elevated": "Peerless is a verdict other people reach slowly, and it is spoiled the moment you claim it for yourself."
+          },
+          "collocations": [
+            "peerless craftsmanship",
+            "a peerless record",
+            "peerless in his field",
+            "a peerless reputation"
+          ],
+          "nearSynonyms": [
+            {
+              "word": "unrivaled",
+              "distinction": "nobody competes successfully, where peerless says nobody is even in the class"
+            },
+            {
+              "word": "matchless",
+              "distinction": "near twin, a little more poetic and old-fashioned"
+            },
+            {
+              "word": "incomparable",
+              "distinction": "beyond comparison, and often used of beauty or charm"
+            },
+            {
+              "word": "unequaled",
+              "distinction": "the plainest of the four and the easiest to say without ceremony"
+            }
+          ],
+          "registerNote": "A superlative with nothing above it, so it burns out if spent often: keep it for one or two things a year, and about your own work it reads as advertising, so attach it to a craft, a record or somebody else."
+        }
+      ],
+      "passage": {
+        "title": "The introduction",
+        "setting": "Introducing a guest speaker at a professional association evening",
+        "text": "I will keep this short, because you came for her and not for me. Her career has been singular: not simply successful, but unlike anyone else's in this field. She is a consummate teacher, and I say that as a man who sat in her workshop eleven years ago and still uses what he learned there on a Tuesday morning. In one thing she is peerless, and it is not the thing you expect. She listens. Please welcome her.",
+        "deliveryCue": "Warm and unhurried. Put a real pause before 'She listens' and let the room get there a moment before you do."
+      },
+      "epigram": "A singular thing does not ask to be compared, which is exactly what makes it singular."
+    },
+    {
+      "day": 30,
+      "theme": "The finish line",
+      "themeLine": "Endings have three shapes: the climb that peaks, the quiet untying afterwards, and the moment a thing becomes its ideal form.",
+      "words": [
+        {
+          "id": "culminate",
+          "word": "culminate",
+          "pos": "verb",
+          "tier": "foundation",
+          "ipa": "/ˈkʌl.məˌneɪt/",
+          "respell": "KUL·muh·nayt",
+          "definition": "To reach the highest or decisive point that everything before it was building toward.",
+          "nuance": "Culminate needs a climb behind it: it is not a synonym for end, it says the ending was the peak of a process. In use it nearly always takes 'in', and what follows should be the high point rather than the anticlimax.",
+          "etymology": "From Late Latin culminare, to crown, from culmen, a summit or ridge. It began as an astronomer's word for a star reaching its highest point in the sky.",
+          "examples": {
+            "conversational": "Three years of evening classes culminated in a license and a very ordinary Tuesday.",
+            "professional": "The pilot phase culminates in a decision at the March board, so every date works backward from there.",
+            "elevated": "Careers rarely culminate where the photographs are taken; they culminate on some ordinary afternoon only you can identify."
+          },
+          "collocations": [
+            "culminate in",
+            "the culminating point",
+            "a culminating event",
+            "culminate in a decision"
+          ],
+          "nearSynonyms": [
+            {
+              "word": "conclude",
+              "distinction": "merely ends, where culminate ends at a peak"
+            },
+            {
+              "word": "climax",
+              "distinction": "the dramatic and emotional peak, and more often a noun"
+            },
+            {
+              "word": "peak",
+              "distinction": "plain, and usually about a level reached rather than an event"
+            },
+            {
+              "word": "finish",
+              "distinction": "neutral about height: it says only that the thing stopped"
+            }
+          ],
+          "registerNote": "Use it only when there really was a build, since calling a quiet ending a culmination overstates it and people notice; the standard preposition is 'in', as in culminated in a signed contract, not 'with'."
+        },
+        {
+          "id": "denouement",
+          "word": "denouement",
+          "pos": "noun",
+          "tier": "distinction",
+          "ipa": "/ˌdeɪ.nuˈmɑ̃/",
+          "respell": "day·noo·MAHN",
+          "definition": "The final unwinding of a story or a complicated affair, after the tension has broken.",
+          "nuance": "The denouement is not the climax: it is what comes after it, when the consequences get sorted out and everybody learns where they stand. Keep it for the settling of an affair that genuinely had a knot in it.",
+          "etymology": "From French denouement, an untying, from denouer, to untie, and behind that Latin nodus, a knot. The knot is tied through the whole story, and the denouement is where it comes undone.",
+          "examples": {
+            "conversational": "The argument was the easy part. The denouement took the rest of the year.",
+            "professional": "We are past the crisis and into the denouement: the invoices, the apology letter and the review.",
+            "elevated": "Every negotiation has a denouement, and it is usually where you find out what the other side actually wanted."
+          },
+          "collocations": [
+            "the denouement of the story",
+            "a quiet denouement",
+            "reach the denouement",
+            "the denouement of the affair"
+          ],
+          "nearSynonyms": [
+            {
+              "word": "conclusion",
+              "distinction": "the plain ending, with no sense of a knot being untied"
+            },
+            {
+              "word": "resolution",
+              "distinction": "the working out of the conflict; the denouement is what follows it"
+            },
+            {
+              "word": "outcome",
+              "distinction": "the result alone, stripped of the process"
+            },
+            {
+              "word": "aftermath",
+              "distinction": "what follows, usually of something bad, and without anything being resolved"
+            }
+          ],
+          "registerNote": "It belongs to stories and to affairs with real tension in them, so a routine last week of work is not a denouement; say it in the French shape, day·noo·MAHN, rather than sounding the ending as 'ment'."
+        },
+        {
+          "id": "apotheosis",
+          "word": "apotheosis",
+          "pos": "noun",
+          "tier": "flourish",
+          "ipa": "/əˌpɑ.θiˈoʊ.səs/",
+          "respell": "uh·pah·thee·OH·sis",
+          "definition": "The highest form something can take: the moment or example in which a thing becomes the perfect version of its kind.",
+          "nuance": "Apotheosis is more than a peak: it says the thing reached its ideal form, which is why it suits a performance, a career or a design rather than a sales quarter. The older sense, being raised to the rank of a god, is still audible underneath and gives the word its size.",
+          "etymology": "From Greek apotheoun, to make a god of, from apo- plus theos, a god. Roman emperors were voted an apotheosis after death, and the word kept the idea of rising into a final, perfect form.",
+          "examples": {
+            "conversational": "That last concert was the apotheosis of everything he had been doing for thirty years.",
+            "professional": "This building is the apotheosis of the firm's whole approach, and it should be the one we show first.",
+            "elevated": "Every craft has an apotheosis, and the discipline is recognizing it in somebody else's work without needing it to be yours."
+          },
+          "collocations": [
+            "the apotheosis of",
+            "represent the apotheosis",
+            "the apotheosis of a career",
+            "an apotheosis of the form"
+          ],
+          "nearSynonyms": [
+            {
+              "word": "culmination",
+              "distinction": "the high point of a process, where apotheosis says the thing became its ideal"
+            },
+            {
+              "word": "epitome",
+              "distinction": "the perfect example, with none of the sense of ascent"
+            },
+            {
+              "word": "pinnacle",
+              "distinction": "the top of a climb: about height rather than perfection"
+            },
+            {
+              "word": "quintessence",
+              "distinction": "the purest essence of a kind, more abstract and less triumphant"
+            }
+          ],
+          "registerNote": "The largest word in this volume and the easiest to overspend: it needs something genuinely exemplary under it or it sounds like showing off, so use it once, deliberately, and keep the sentence around it plain."
+        }
+      ],
+      "passage": {
+        "title": "Last day",
+        "setting": "Closing words to the team on the final day of a long project",
+        "text": "Fourteen months, and it comes down to this room. Let me be honest about what today is. It does not culminate in a signature. It culminated three weeks ago, in a quiet fix that nobody in this room saw and only two of you understood. Today is the denouement: the part where the knot comes undone and everybody breathes. I will not call it an apotheosis. I will call it good work, finished on time, by people who stopped competing with each other in month two.",
+        "deliveryCue": "Slow from the first line. Let the pause after 'only two of you understood' do the work, and end flat and warm, with no flourish."
+      },
+      "epigram": "Nothing culminates by accident: an ending is only a peak if everything before it was climbing."
+    }
+  ]
+}

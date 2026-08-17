@@ -1,0 +1,14 @@
+{
+  "name": "wordhoard",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Wordhoard Volume I: the daily 06:45 America/Guyana lesson email, sent from the GoalEdge VPS.",
+  "scripts": {
+    "send": "node send.mjs",
+    "render": "RENDER_ONLY=1 node send.mjs"
+  },
+  "dependencies": {
+    "nodemailer": "^6.9.16"
+  }
+}
