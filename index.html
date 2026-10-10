@@ -82,7 +82,7 @@ button {
   cursor: pointer;
 }
 
-.tab, .chip, .btn, .speak, .card-head .headword, .journal__row {
+.tab, .chip, .btn, .speak, .voice, .card-head .headword, .journal__row {
   transition: color 160ms ease, border-color 160ms ease, background-color 160ms ease, opacity 160ms ease;
 }
 
@@ -308,6 +308,10 @@ button {
 }
 .speak:hover { color: var(--vellum); border-color: var(--rule); }
 .speak svg { width: 21px; height: 21px; display: block; }
+.speak.is-playing { color: var(--gilt); border-color: var(--rule); }
+.speak.is-playing path + path { animation: sounding 1.2s ease-in-out infinite; }
+.speak.is-playing path + path + path { animation-delay: .25s; }
+@keyframes sounding { 50% { opacity: .15; } }
 
 .plate__head {
   display: flex;
@@ -355,7 +359,8 @@ button {
 
 @media (prefers-reduced-motion: reduce) {
   .gild { animation: none; color: var(--gilt); }
-  .tab, .chip, .btn, .speak, .card-head .headword, .journal__row { transition: none; }
+  .speak.is-playing path { animation: none; }
+  .tab, .chip, .btn, .speak, .voice, .card-head .headword, .journal__row { transition: none; }
 }
 
 /* ---------- passage ---------- */
@@ -626,6 +631,33 @@ button {
 .about ul { margin: .2rem 0 1rem; padding-left: 1.1rem; }
 .about li { margin-top: .3rem; }
 
+.about .voices {
+  display: grid;
+  gap: .5rem;
+  margin: .4rem 0 1rem;
+  padding: 0;
+  list-style: none;
+}
+.about .voices li { margin: 0; }
+.voice {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: .15rem 1rem;
+  width: 100%;
+  min-height: 44px;
+  padding: .65rem 1rem;
+  text-align: left;
+  border: 1px solid var(--rule);
+  border-radius: 2px;
+}
+.voice:hover { border-color: var(--vellum); }
+.voice__name { font-family: var(--display); font-weight: 600; font-size: 1.05rem; }
+.voice__note { color: var(--slate); font-style: italic; font-size: .95rem; }
+.voice[aria-pressed="true"] { border-color: var(--gilt); background: var(--panel); }
+.voice[aria-pressed="true"] .voice__name { color: var(--gilt); }
+
 /* ---------- notices, footer ---------- */
 
 .notice {
@@ -692,6 +724,7 @@ button {
   'use strict';
 
   var MASTERED_KEY = 'wh.mastered';
+  var VOICE_KEY = 'wh.voice';
 
   var state = {
     view: 'today',
@@ -703,11 +736,17 @@ button {
     open: {},
     hoard: { q: '', sort: 'day', tier: 'all' },
     practice: { mode: 'define', hideMastered: false, current: null, revealed: false },
-    mastered: readMastered()
+    mastered: readMastered(),
+    voices: null,
+    voice: null
   };
 
   var canSpeak = ('speechSynthesis' in window);
-  var speakingKey = null;
+  var player = null;
+  var playingKey = null;
+  var clipKey = null;      // the clip loaded in player, null once the device voice has taken over
+  var deviceTimer = null;  // the pending device-voice start
+  var deviceWatch = null;  // clears a device utterance that never starts
 
   /* ---------- small helpers ---------- */
 
@@ -790,6 +829,67 @@ button {
 
   /* ---------- speech ---------- */
 
+  // Every headword and passage is a recorded clip in audio/<voice>/, made by
+  // audio.mjs and spoken from the lexicon's IPA. The device's own speech
+  // engine is only the fallback, for a clip that will not play.
+
+  function voiceById(id) {
+    var list = (state.voices && state.voices.voices) || [];
+    for (var i = 0; i < list.length; i++) {
+      if (list[i].id === id) return list[i];
+    }
+    return null;
+  }
+
+  function readVoice() {
+    try {
+      return window.localStorage.getItem(VOICE_KEY);
+    } catch (err) {
+      console.warn('wordhoard: could not read ' + VOICE_KEY, err);
+      return null;
+    }
+  }
+
+  function saveVoice() {
+    try {
+      window.localStorage.setItem(VOICE_KEY, state.voice);
+    } catch (err) {
+      console.warn('wordhoard: could not save ' + VOICE_KEY, err);
+    }
+  }
+
+  function chooseVoice() {
+    var stored = readVoice();
+    if (voiceById(stored)) return stored;
+    if (!state.voices) return null;
+    return voiceById(state.voices.default) ? state.voices.default : state.voices.voices[0].id;
+  }
+
+  function clipUrl(kind, id) {
+    var base = 'audio/' + encodeURIComponent(state.voice) + '/';
+    if (kind === 'word') return base + 'w/' + encodeURIComponent(id) + '.mp3';
+    if (kind === 'passage') return base + 'p/' + encodeURIComponent(id) + '.mp3';
+    return base + 'sample.mp3';
+  }
+
+  // The speak button for whatever is sounding lights up and reads as pressed.
+  function markPlaying(key) {
+    playingKey = key;
+    Array.prototype.forEach.call(document.querySelectorAll('.speak'), function (button) {
+      var on = key !== null && button.getAttribute('data-kind') + ':' + button.getAttribute('data-id') === key;
+      button.classList.toggle('is-playing', on);
+      button.setAttribute('aria-pressed', on ? 'true' : 'false');
+    });
+  }
+
+  function stopSpeaking() {
+    window.clearTimeout(deviceTimer);
+    window.clearTimeout(deviceWatch);
+    if (player) player.pause();
+    if (canSpeak) window.speechSynthesis.cancel();
+    markPlaying(null);
+  }
+
   function preferredVoice() {
     var voices = (window.speechSynthesis.getVoices && window.speechSynthesis.getVoices()) || [];
     var tag = function (v) { return String(v.lang || '').replace('_', '-'); };
@@ -803,31 +903,96 @@ button {
     return found;
   }
 
-  function speak(text, rate, key) {
-    if (!canSpeak || !has(text)) return;
+  function speakWithDevice(text, rate, key) {
+    if (!canSpeak || !has(text)) { markPlaying(null); return; }
     var synth = window.speechSynthesis;
-    var wasSpeaking = synth.speaking || synth.pending;
     synth.cancel();
-    if (wasSpeaking && key && key === speakingKey) { speakingKey = null; return; }
     var utterance = new window.SpeechSynthesisUtterance(text);
     utterance.rate = rate;
     var voice = preferredVoice();
     if (voice) { utterance.voice = voice; utterance.lang = voice.lang; }
     else { utterance.lang = 'en-US'; }
-    utterance.onend = function () { speakingKey = null; };
-    speakingKey = key || null;
+    var done = function () {
+      window.clearTimeout(deviceWatch);
+      if (playingKey === key) markPlaying(null);
+    };
+    utterance.onend = done;
+    utterance.onerror = done;
+    // iOS will not start speech outside a tap, and says nothing about it.
+    utterance.onstart = function () { window.clearTimeout(deviceWatch); };
+    markPlaying(key);
     // cancel() followed by speak() in the same tick is dropped by some browsers.
-    window.setTimeout(function () { synth.speak(utterance); }, 20);
+    deviceTimer = window.setTimeout(function () {
+      synth.speak(utterance);
+      deviceWatch = window.setTimeout(done, 1500);
+    }, 20);
+  }
+
+  // Plays the clip for one headword ('word'), passage ('passage') or the
+  // picker's sample line ('sample'). A second tap on whatever is sounding stops it.
+  function speak(kind, id, text, rate) {
+    var key = kind + ':' + id;
+    var wasPlaying = playingKey === key;
+    stopSpeaking();
+    if (wasPlaying) return;
+    if (!voiceById(state.voice)) { speakWithDevice(text, rate, key); return; }
+    if (!player) {
+      player = new window.Audio();
+      player.addEventListener('ended', function () { markPlaying(null); });
+      // A pause the page did not ask for: a call, Siri, headphones out, the lock screen.
+      player.addEventListener('pause', function () {
+        if (player.paused && !player.ended && playingKey !== null && playingKey === clipKey) markPlaying(null);
+      });
+    }
+    var url = clipUrl(kind, id);
+    var fellBack = false;
+    var fallBack = function (err) {
+      if (fellBack || playingKey !== key) return;
+      fellBack = true;
+      clipKey = null;
+      console.warn('wordhoard: could not play ' + url, err);
+      // The sample stands for one recorded voice; the device voice would misrepresent it.
+      if (kind === 'sample') { markPlaying(null); return; }
+      speakWithDevice(text, rate, key);
+    };
+    player.onerror = fallBack;
+    player.src = url;
+    clipKey = key;
+    markPlaying(key);
+    // play() runs inside the tap, which is what lets iOS start the sound.
+    var started = player.play();
+    if (started && typeof started.catch === 'function') started.catch(fallBack);
   }
 
   function speakButton(label, kind, id) {
-    if (!canSpeak) return '';
+    if (!canSpeak && !state.voices) return '';
+    var on = playingKey === kind + ':' + id;
     var icon = '<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">' +
       '<path d="M4 9.2h3.6L13 5v14l-5.4-4.2H4z" fill="currentColor"></path>' +
       '<path d="M16.4 8.7a4.6 4.6 0 0 1 0 6.6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>' +
       '<path d="M18.9 6.2a8.1 8.1 0 0 1 0 11.6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity=".55"></path>' +
       '</svg>';
-    return '<button class="speak" type="button" data-action="speak" data-kind="' + esc(kind) + '" data-id="' + esc(id) + '" aria-label="' + esc(label) + '">' + icon + '</button>';
+    return '<button class="speak' + (on ? ' is-playing' : '') + '" type="button" data-action="speak" data-kind="' + esc(kind) +
+      '" data-id="' + esc(id) + '" aria-label="' + esc(label) + '" aria-pressed="' + (on ? 'true' : 'false') + '">' + icon + '</button>';
+  }
+
+  // Shown once audio/voices.json lists more than one voice.
+  function voicePickerHtml() {
+    var list = (state.voices && state.voices.voices) || [];
+    if (list.length < 2) return '';
+    var out = '<h3>The voice</h3>';
+    out += '<p>Every word and passage here is recorded in each of these voices. Pick the one you would rather ' +
+      'learn from, and it reads you a line from Day 1.</p>';
+    out += '<ul class="voices">';
+    list.forEach(function (voice) {
+      var chosen = voice.id === state.voice;
+      out += '<li><button class="voice" type="button" data-action="voice" data-voice="' + esc(voice.id) +
+        '" aria-pressed="' + (chosen ? 'true' : 'false') + '">' +
+        '<span class="voice__name">' + esc(voice.name) + '</span>' +
+        '<span class="voice__note">' + esc(voice.note) + '</span></button></li>';
+    });
+    out += '</ul>';
+    return out;
   }
 
   /* ---------- word rendering ---------- */
@@ -1211,6 +1376,7 @@ button {
     out += '<p>Each day carries a short passage written in the first person, set as a little speech: a toast, ' +
       'an objection, a pitch, a story at dinner. It is there to be spoken, not skimmed. Saying a word out loud ' +
       'is what moves it from recognized to available.</p>';
+    out += voicePickerHtml();
     out += '<h3>The daily email</h3>';
     out += '<p>An email arrives at 06:45 Guyana time with the day\'s three words, the passage, and a few words ' +
       'called back from the hoard for review at one, three, seven and twenty-one days. Everything the email ' +
@@ -1314,11 +1480,24 @@ button {
       var id = trigger.getAttribute('data-id');
       if (kind === 'word') {
         var word = wordById(id);
-        if (word) speak(word.word, 0.9, 'word:' + id);
+        if (word) speak('word', id, word.word, 0.9);
       } else {
         var day = dayByNumber(Number(id));
-        if (day && day.passage) speak(day.passage.text, 0.92, 'passage:' + id);
+        if (day && day.passage) speak('passage', id, day.passage.text, 0.92);
       }
+      return;
+    }
+
+    if (action === 'voice') {
+      var chosen = trigger.getAttribute('data-voice');
+      if (!voiceById(chosen)) return;
+      state.voice = chosen;
+      saveVoice();
+      Array.prototype.forEach.call(document.querySelectorAll('[data-action="voice"]'), function (button) {
+        button.setAttribute('aria-pressed', button.getAttribute('data-voice') === chosen ? 'true' : 'false');
+      });
+      var first = dayByNumber(1);
+      speak('sample', chosen, first ? first.epigram : '', 0.92);
       return;
     }
 
@@ -1424,18 +1603,58 @@ button {
     render();
   }
 
+  // Without the voice list the page still works: every speak button falls
+  // back to the device's own voice.
+  async function loadVoices() {
+    try {
+      var response = await fetch('audio/voices.json');
+      if (!response.ok) throw new Error('audio/voices.json returned HTTP ' + response.status);
+      var file = await response.json();
+      if (!file || !file.voices || !file.voices.length) throw new Error('audio/voices.json lists no voices');
+      return file;
+    } catch (err) {
+      console.warn('wordhoard: no recorded voices, using the device voice', err);
+      return null;
+    }
+  }
+
   async function load() {
     notice('Opening the hoard.');
+    var voices = loadVoices();
     try {
       var response = await fetch('lexicon.json');
       if (!response.ok) throw new Error('lexicon.json returned HTTP ' + response.status);
       var lex = await response.json();
+      state.voices = await voices;
+      state.voice = chooseVoice();
       start(lex);
     } catch (err) {
       console.error('wordhoard: could not open lexicon.json', err);
       notice('The hoard could not be opened. Reload the page, or open the site through its address rather than from a local file.');
     }
   }
+
+  /* ---------- staying current ---------- */
+
+  // A copy of this page kept open on a phone's home screen goes on running the
+  // code it first loaded, and a relaunch can come from the browser's cache.
+  // Each time it comes back into view it asks the site when the page last
+  // changed, and reloads if that is newer than the copy it is running.
+  var docTime = Date.parse(document.lastModified);
+
+  function reloadIfStale() {
+    if (!isFinite(docTime)) return;
+    fetch(window.location.pathname, { method: 'HEAD', cache: 'no-store' })
+      .then(function (response) {
+        var served = Date.parse(response.headers.get('last-modified') || '');
+        if (response.ok && isFinite(served) && served > docTime + 1000) window.location.reload();
+      })
+      .catch(function () {});
+  }
+
+  document.addEventListener('visibilitychange', function () {
+    if (document.visibilityState === 'visible') reloadIfStale();
+  });
 
   load();
 }());

@@ -1,0 +1,6 @@
+{
+  "default": "heart",
+  "voices": [
+    { "id": "heart", "name": "Heart", "note": "The voice that reads Claude to you", "engine": "kokoro", "model": "af_heart" }
+  ]
+}

@@ -23,9 +23,10 @@ import { existsSync, readFileSync, readdirSync, statSync } from 'node:fs';
 import { spawnSync } from 'node:child_process';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { clipPlan, PIPELINE } from './audio-plan.mjs';
 
 const ROOT = dirname(fileURLToPath(import.meta.url));
-const CHECK_COUNT = 12;
+const CHECK_COUNT = 13;
 const MAX_DETAIL_LINES = 15;
 
 const MIDDOT = '·';
@@ -1188,6 +1189,65 @@ check(12, () => {
     if (/Date\.UTC\s*\(\s*(guyanaToday|startDate)/.test(target.text)) {
       problems.push(`${target.rel} calls Date.UTC on a date string, which returns NaN`);
     }
+  }
+  return problems;
+});
+
+/* ------------------------------------------------------------------ */
+/* V13: recorded audio (added 2026-10-10, beyond spec 001)             */
+/* ------------------------------------------------------------------ */
+
+// Every speak button plays a recorded clip. A clip that is missing, or was
+// recorded from words or IPA that have since changed, fails here: run
+// node audio.mjs on the Mac to record it again.
+check(13, () => {
+  const problems = [];
+  const voiceFile = readJsonFile('audio/voices.json');
+  if (voiceFile.missing) return ['audio/voices.json does not exist'];
+  if (voiceFile.parseError) return [`audio/voices.json is not valid JSON: ${voiceFile.parseError}`];
+  const voices = voiceFile.value && Array.isArray(voiceFile.value.voices) ? voiceFile.value.voices : [];
+  if (voices.length === 0) return ['audio/voices.json lists no voices'];
+  const ids = new Set();
+  for (const voice of voices) {
+    if (!/^[a-z0-9-]+$/.test(String(voice.id))) problems.push(`voice id ${JSON.stringify(voice.id)} is not a plain lowercase slug`);
+    if (ids.has(voice.id)) problems.push(`voice id ${voice.id} appears twice`);
+    ids.add(voice.id);
+    if (voice.engine !== 'kokoro') problems.push(`voice ${voice.id} has unknown engine ${JSON.stringify(voice.engine)}`);
+    for (const field of ['name', 'note', 'model']) {
+      if (!isFilledString(voice[field])) problems.push(`voice ${voice.id} has no ${field}`);
+    }
+  }
+  if (!ids.has(voiceFile.value.default)) problems.push(`default voice ${JSON.stringify(voiceFile.value.default)} is not in the list`);
+
+  const lexicon = readJsonFile('lexicon.json');
+  if (lexicon.missing || lexicon.parseError) return problems.concat(['lexicon.json cannot be read, so the clips cannot be checked']);
+  const manifestFile = readJsonFile('audio/manifest.json');
+  if (manifestFile.missing) return problems.concat(['audio/manifest.json does not exist: run node audio.mjs']);
+  const manifest = manifestFile.value || {};
+  if (manifest.pipeline !== PIPELINE) problems.push(`audio/manifest.json is from pipeline ${manifest.pipeline}, expected ${PIPELINE}: run node audio.mjs`);
+  const clips = manifest.clips || {};
+  let missing = 0;
+  let stale = 0;
+  for (const clip of clipPlan(lexicon.value, voiceFile.value)) {
+    // A headword clip must be spoken from the lexicon's IPA, never the voice's guess.
+    if (clip.kind === 'word' && !clip.input.includes('](/')) {
+      problems.push(`${clip.path} is not spoken from the lexicon's IPA (the plan found no headword in it)`);
+    }
+    const full = join(ROOT, clip.path);
+    if (!existsSync(full) || statSync(full).size < 2000) {
+      missing += 1;
+      problems.push(`${clip.path} is missing or empty`);
+    } else if (clips[clip.path] !== clip.hash) {
+      stale += 1;
+      problems.push(`${clip.path} was recorded from different text or IPA than the lexicon now holds`);
+    }
+  }
+  if (missing + stale > 0) problems.unshift(`${missing} clips missing and ${stale} stale: run node audio.mjs`);
+
+  const html = readTextFile('index.html');
+  if (html !== null) {
+    if (!html.includes("fetch('audio/voices.json')")) problems.push('index.html does not fetch audio/voices.json');
+    if (!html.includes("'wh.voice'")) problems.push('index.html does not keep the voice choice under wh.voice');
   }
   return problems;
 });
