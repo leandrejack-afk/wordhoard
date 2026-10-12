@@ -1,0 +1,452 @@
+{
+  "articulate": {
+    "setting": "Asking a supplier for a straight answer",
+    "text": "An articulate no is worth more to me than a muddled yes: the no shows me where the wall is, and the yes lets me find it in the dark.",
+    "borrow": "An articulate no is worth more"
+  },
+  "eloquent": {
+    "setting": "Replying to an angry email the next morning",
+    "text": "Your email was eloquent, and I suspect it was written after midnight, so I will answer the parts that will still be true at breakfast.",
+    "borrow": "Your email was eloquent"
+  },
+  "mellifluous": {
+    "setting": "A story at a family reunion",
+    "text": "My grandmother kept a mellifluous voice for strangers on the telephone and another one entirely for grandsons who had trailed mud across her kitchen floor.",
+    "borrow": "a mellifluous voice for strangers"
+  },
+  "discerning": {
+    "setting": "A toast to the hosts at a dinner party",
+    "text": "To our hosts, whose taste in wine is discerning and whose taste in friends, judging by this table, is rather more generous.",
+    "borrow": "whose taste in wine is discerning"
+  },
+  "astute": {
+    "setting": "Teaching a young salesperson about timing",
+    "text": "An astute seller prices by the clouds, not by the fruit: the last mangoes of the day go cheap, and he is home, cart empty, before the rain.",
+    "borrow": "An astute seller prices by the clouds"
+  },
+  "perspicacious": {
+    "setting": "Chatting with a colleague over lunch",
+    "text": "The woman who orders our stationery is the most perspicacious person in the building: she knows who is leaving weeks before their manager does, because they stop asking for pens.",
+    "borrow": "the most perspicacious person in the building"
+  },
+  "contend": {
+    "setting": "Reminiscing with old housemates",
+    "text": "Our old landlord contended that any problem in the house could be cured by a good night's sleep and a coat of paint, and he was right about the sleep.",
+    "borrow": "contended that any problem in the house"
+  },
+  "demur": {
+    "setting": "At the table before a contract is signed",
+    "text": "May I demur at one clause before we sign? After that, I promise to be agreeable company for the rest of the day.",
+    "borrow": "May I demur at one clause"
+  },
+  "remonstrate": {
+    "setting": "Admitting a small folly to a friend",
+    "text": "For most of an afternoon I remonstrated with the front desk over a minibar charge of a few dollars, and only later thought to put a price on the afternoon.",
+    "borrow": "I remonstrated with the front desk"
+  },
+  "composure": {
+    "setting": "A tribute at a hospital fundraiser",
+    "text": "Good nurses keep their composure for the family and lose it, if they must, in the car at the end of the shift.",
+    "borrow": "keep their composure for the family"
+  },
+  "equanimity": {
+    "setting": "A eulogy for a family friend",
+    "text": "He had a promotion and a flood in one week and met them with the same equanimity: on both evenings, he went out to check the gutters.",
+    "borrow": "met them with the same equanimity"
+  },
+  "aplomb": {
+    "setting": "Praising a speaker at a conference",
+    "text": "When the projector died, she set down the remote and gave the talk from memory, with an aplomb that suggested the slides had been the problem all along.",
+    "borrow": "with an aplomb that suggested"
+  },
+  "compelling": {
+    "setting": "Cautioning a team against a tidy explanation",
+    "text": "The boy's account of the broken window was compelling in every detail, and it held up beautifully until the neighbor came by to return his ball.",
+    "borrow": "compelling in every detail"
+  },
+  "cogent": {
+    "setting": "Conceding a point in a heated debate",
+    "text": "Your argument is cogent, and I have been hunting for the flaw in it since lunch and found nothing but my own reluctance.",
+    "borrow": "Your argument is cogent"
+  },
+  "incontrovertible": {
+    "setting": "A dry aside in a budget review",
+    "text": "The only incontrovertible figure in that forecast was the date on the cover, and I would still have someone check it.",
+    "borrow": "The only incontrovertible figure in that forecast"
+  },
+  "concise": {
+    "setting": "Holding up an example of good email",
+    "text": "Her reply was concise: two sentences, the first to thank us and the second to make our next meeting unnecessary.",
+    "borrow": "Her reply was concise: two sentences"
+  },
+  "lucid": {
+    "setting": "Recommending a writer to a busy editor",
+    "text": "He writes the way a good mechanic talks, lucid and unhurried, pointing at the part that is broken and leaving the rest of the engine alone.",
+    "borrow": "lucid and unhurried"
+  },
+  "pellucid": {
+    "setting": "Talking about first impressions over a drink",
+    "text": "From the bank on a bright day, a pellucid river and a shallow one look exactly alike, and so, for a year or two, do people.",
+    "borrow": "a pellucid river and a shallow one"
+  },
+  "commend": {
+    "setting": "Launch party for a finished report",
+    "text": "Before we raise a glass to the names on the report, let me commend the people who stayed until midnight so that those names could go home at six.",
+    "borrow": "let me commend the people who stayed"
+  },
+  "laudable": {
+    "setting": "Teasing a friend about a birthday cake",
+    "text": "The cake was laudable in its ambition, and the children ate the icing with great loyalty and left the rest for the birds.",
+    "borrow": "laudable in its ambition"
+  },
+  "exemplary": {
+    "setting": "Explaining an office habit to a newcomer",
+    "text": "He retired ten years ago, and his work was so exemplary that half the office still folds a letter his way without knowing whose way it is.",
+    "borrow": "his work was so exemplary that"
+  },
+  "demeanor": {
+    "setting": "Telling a travel story to friends",
+    "text": "The pilot's demeanor at the gate was so cheerful that I began, for the first time in years, to worry about the weather.",
+    "borrow": "The pilot's demeanor at the gate"
+  },
+  "disposition": {
+    "setting": "Joking about yourself with a new team",
+    "text": "Whatever mood I arrive in, my disposition overrules it by lunch, and my staff have learned to save their requests for the afternoon.",
+    "borrow": "my disposition overrules it by lunch"
+  },
+  "countenance": {
+    "setting": "A character sketch in a letter",
+    "text": "He had the countenance of a man who had been told a long joke and was waiting, with great patience, to see whether it would improve.",
+    "borrow": "He had the countenance of a man"
+  },
+  "diligent": {
+    "setting": "Teaching a new manager to read references",
+    "text": "When a reference calls a senior candidate diligent and moves straight on to punctuality, pick up the phone and ask what the letter left out.",
+    "borrow": "calls a senior candidate diligent"
+  },
+  "meticulous": {
+    "setting": "A wedding story told years later",
+    "text": "Her seating plan was meticulous, and its one error put the bride's feuding uncles at the same table, where they ended a twenty-year quarrel before dessert.",
+    "borrow": "Her seating plan was meticulous"
+  },
+  "assiduous": {
+    "setting": "The first line of an overdue email",
+    "text": "Forgive my silence: I have been assiduous about everything except my correspondence, which has waited, very politely, since August.",
+    "borrow": "assiduous about everything except my correspondence"
+  },
+  "initiate": {
+    "setting": "Debriefing after an internal review",
+    "text": "In the end it was the most junior clerk who initiated the inquiry, and the most senior people who had known about the problem longest.",
+    "borrow": "the most junior clerk who initiated the inquiry"
+  },
+  "inception": {
+    "setting": "A firm's anniversary speech",
+    "text": "On the wall behind my desk hangs the first invoice this firm ever sent, in the month of its inception, and it is still the only one anyone paid early.",
+    "borrow": "in the month of its inception"
+  },
+  "nascent": {
+    "setting": "A best man's toast at a wedding",
+    "text": "I was present for their nascent romance, which consisted largely of him pretending to like jazz, and I am pleased to report that he still does.",
+    "borrow": "I was present for their nascent romance"
+  },
+  "promising": {
+    "setting": "Over lunch with a gifted colleague who drifts",
+    "text": "Ten years is a long time to be promising; at some point, people stop wanting the forecast and start asking for the weather.",
+    "borrow": "a long time to be promising"
+  },
+  "sanguine": {
+    "setting": "Telling friends about a rough flight home",
+    "text": "Over the intercom the captain sounded entirely sanguine about the storm, and I have never been fonder of a man I could not see.",
+    "borrow": "sounded entirely sanguine about the storm"
+  },
+  "propitious": {
+    "setting": "Accepting an award with honest modesty",
+    "text": "We launched in the one propitious month of the decade, and I have spent the years since accepting compliments that belong to the tide.",
+    "borrow": "the one propitious month of the decade"
+  },
+  "frugal": {
+    "setting": "A tribute at a grandfather's ninetieth birthday",
+    "text": "My grandfather was frugal enough to reuse envelopes and generous enough that none of them ever reached us empty.",
+    "borrow": "frugal enough to reuse envelopes"
+  },
+  "prudent": {
+    "setting": "Making an early exit from a celebration",
+    "text": "The prudent guest leaves while the host is still sorry to see him go, which at my uncle's parties is a window of about ten minutes.",
+    "borrow": "The prudent guest leaves"
+  },
+  "munificent": {
+    "setting": "A speech at a hospital's anniversary dinner",
+    "text": "The new wing carries the name of a munificent donor, as it should; the old one was held up for thirty years by nurses whose names are on nothing.",
+    "borrow": "the name of a munificent donor"
+  },
+  "sway": {
+    "setting": "Describing a trial you watched from the gallery",
+    "text": "The jury was swayed, in the end, by the one witness willing to admit she could not remember.",
+    "borrow": "swayed, in the end, by the one witness"
+  },
+  "galvanize": {
+    "setting": "A wry aside after a staff meeting",
+    "text": "Three strategy memos left the office unmoved, and then a rumor about the parking galvanized the whole floor before lunch.",
+    "borrow": "galvanized the whole floor before lunch"
+  },
+  "engender": {
+    "setting": "Advising a friend about a too-eager buyer",
+    "text": "Nothing engenders suspicion faster than a stranger who is in a hurry to be trusted.",
+    "borrow": "Nothing engenders suspicion faster than"
+  },
+  "brevity": {
+    "setting": "A eulogy that is allowed to smile",
+    "text": "He admired brevity in everything but his goodbyes, which could take an hour at the door with his hat already on.",
+    "borrow": "admired brevity in everything but his goodbyes"
+  },
+  "succinct": {
+    "setting": "Recalling the best interview answer you have heard",
+    "text": "I asked her why she wanted the job and got the most succinct answer I have ever heard: the pay, the people and the work, in that order.",
+    "borrow": "the most succinct answer I have ever heard"
+  },
+  "laconic": {
+    "setting": "Narrating a story about a fishing village",
+    "text": "When the sea took his boat, the old fisherman stayed laconic: the sea had wanted it more, he said, and went to ask about another.",
+    "borrow": "stayed laconic: the sea had wanted it more"
+  },
+  "inquisitive": {
+    "setting": "A farewell card for a retiring colleague",
+    "text": "You were inquisitive about everything except other people's business, which in this office made you very nearly unique.",
+    "borrow": "inquisitive about everything except other people's business"
+  },
+  "erudite": {
+    "setting": "Remembering a self-taught neighbor",
+    "text": "The shopkeeper on our corner left school at twelve and died erudite, having read his way through the town library and argued with most of it.",
+    "borrow": "left school at twelve and died erudite"
+  },
+  "voracious": {
+    "setting": "Chatting with other parents at a school event",
+    "text": "A voracious curiosity is a fine thing in a child, and an expensive one in a child with a screwdriver.",
+    "borrow": "A voracious curiosity is a fine thing"
+  },
+  "steadfast": {
+    "setting": "Raising a glass at a housewarming",
+    "text": "Here is to steadfast friends: the ones who come for the champagne and come back, years later, to carry your sofa down four flights of stairs.",
+    "borrow": "Here is to steadfast friends"
+  },
+  "resolute": {
+    "setting": "Telling how a friend finally quit smoking",
+    "text": "Years of warnings had only made him anxious; his son imitating his cough made him resolute, and he never smoked again.",
+    "borrow": "his son imitating his cough made him resolute"
+  },
+  "intransigent": {
+    "setting": "Laughing about family life with colleagues",
+    "text": "My niece is three and wholly intransigent about the blue cup; I have watched entire boards of directors give way sooner.",
+    "borrow": "wholly intransigent about the blue cup"
+  },
+  "ambiguous": {
+    "setting": "A light moment in a talk on clear instructions",
+    "text": "Our new logo has a bird in it that nobody will admit to wanting, which is what happens when the brief is ambiguous and the designers are keen.",
+    "borrow": "when the brief is ambiguous"
+  },
+  "tenuous": {
+    "setting": "Describing a trip into the interior",
+    "text": "The rope bridge looked tenuous from the bank, worse from the middle, where it was too late to have an opinion.",
+    "borrow": "tenuous from the bank, worse from the middle"
+  },
+  "equivocal": {
+    "setting": "A debrief after checking a candidate's references",
+    "text": "It was a carefully equivocal reference: every sentence true, and not one of them a recommendation.",
+    "borrow": "a carefully equivocal reference"
+  },
+  "fleeting": {
+    "setting": "A father's toast at his daughter's wedding",
+    "text": "Tonight I caught a fleeting glimpse of the six-year-old who refused my hand at the school gate, and then she let go of my arm and walked on without me.",
+    "borrow": "I caught a fleeting glimpse of"
+  },
+  "transient": {
+    "setting": "The opening line of a memoir",
+    "text": "Ours was a mining town with a transient population, men who arrived with one bag and left with two, and only the bartenders ever learned their names.",
+    "borrow": "a mining town with a transient population"
+  },
+  "ephemeral": {
+    "setting": "Watching New Year fireworks with friends",
+    "text": "Fireworks are the most honest art I know: ephemeral, expensive, and over before anyone can argue about what they meant.",
+    "borrow": "ephemeral, expensive, and over before anyone can argue"
+  },
+  "nuance": {
+    "setting": "Encouraging a colleague learning a new language",
+    "text": "In my second language I learned the words in a year and the nuances in a decade, mostly by being rude in a very friendly voice.",
+    "borrow": "and the nuances in a decade"
+  },
+  "tacit": {
+    "setting": "Describing a long dinner with old friends",
+    "text": "By tacit agreement the whole table let our host tell his favorite story once more, and laughed in all the same places.",
+    "borrow": "By tacit agreement the whole table"
+  },
+  "oblique": {
+    "setting": "A tribute to a reserved mentor",
+    "text": "Her compliments were so oblique they took a day to arrive, and then they stayed for years.",
+    "borrow": "so oblique they took a day to arrive"
+  },
+  "ample": {
+    "setting": "A frank word after a difficult meeting",
+    "text": "We gave him ample opportunity to apologize, and he spent every minute of it explaining.",
+    "borrow": "ample opportunity to apologize"
+  },
+  "copious": {
+    "setting": "Telling friends about buying an old house",
+    "text": "Copious rain and an old roof taught us, in one wet season, everything the seller had forgotten to mention.",
+    "borrow": "Copious rain and an old roof"
+  },
+  "plethora": {
+    "setting": "Explaining a locked account to the help desk",
+    "text": "I now have a plethora of passwords, which keeps my accounts perfectly safe, mostly from me.",
+    "borrow": "a plethora of passwords"
+  },
+  "integrity": {
+    "setting": "Over drinks, comparing notes on new suppliers",
+    "text": "The people who announce their integrity in the first meeting are, in my experience, the ones whose invoices I end up reading twice.",
+    "borrow": "announce their integrity in the first meeting"
+  },
+  "candor": {
+    "setting": "Reviewing a colleague's plan before launch",
+    "text": "Let me offer a little candor while it is still advice, because a week after the launch the same words become an autopsy.",
+    "borrow": "a little candor while it is still advice"
+  },
+  "probity": {
+    "setting": "Toasting the treasurer at his retirement dinner",
+    "text": "For thirty years he kept the books of this club, and his probity was so complete that by the end the auditors came mostly for the sandwiches.",
+    "borrow": "his probity was so complete"
+  },
+  "obstinate": {
+    "setting": "Briefing a colleague before a tough meeting",
+    "text": "You will find him obstinate long after the figures have turned, defending his forecast the way some men defend a shortcut that has made them late for years.",
+    "borrow": "obstinate long after the figures have turned"
+  },
+  "recalcitrant": {
+    "setting": "A collections update to the finance committee",
+    "text": "Our most recalcitrant debtor has now sent us a fruit basket, two apologies and not one cent of the money the court ordered.",
+    "borrow": "Our most recalcitrant debtor"
+  },
+  "truculent": {
+    "setting": "Handing over a difficult supplier account",
+    "text": "Their manager was truculent on the phone and charming in person, so I learned to do my negotiating in his office and my complaining in writing.",
+    "borrow": "truculent on the phone and charming in person"
+  },
+  "alleviate": {
+    "setting": "A condolence note to a colleague's family",
+    "text": "No letter will alleviate what your family is carrying, so I will tell you one small thing instead: he greeted me on my first day and stayed late on my worst.",
+    "borrow": "alleviate what your family is carrying"
+  },
+  "mitigate": {
+    "setting": "Advising a junior after a costly slip",
+    "text": "Call the client tonight; an apology mitigates almost any mistake if it reaches him before the story does.",
+    "borrow": "an apology mitigates almost any mistake"
+  },
+  "obviate": {
+    "setting": "Justifying a legal bill to a business partner",
+    "text": "Yes, the lawyer is expensive, but his whole job is to write a contract so clear that it obviates the need for him later.",
+    "borrow": "obviates the need for him later"
+  },
+  "wry": {
+    "setting": "Replying when your old form is replaced",
+    "text": "I read your note about the new reporting form with a wry smile, having designed the old one.",
+    "borrow": "a wry smile, having designed the old one"
+  },
+  "droll": {
+    "setting": "Describing a taxi ride to visiting friends",
+    "text": "Our driver had a droll habit of greeting each pothole by name, like relatives he had long ago stopped expecting to improve.",
+    "borrow": "a droll habit of greeting each pothole"
+  },
+  "irreverent": {
+    "setting": "Talking shop with a fellow board member",
+    "text": "Every board needs one irreverent member to ask why we still stand when the chairman enters, and every board is secretly relieved when he sends his apologies.",
+    "borrow": "Every board needs one irreverent member"
+  },
+  "salient": {
+    "setting": "Briefing your director on a vendor's report",
+    "text": "The report ran to sixty pages, and the salient fact was in a footnote on page forty, which is where people put the things they hope you will not read.",
+    "borrow": "the salient fact was in a footnote"
+  },
+  "incisive": {
+    "setting": "Crediting a critic at a project debrief",
+    "text": "Her criticism of the plan was incisive in the surgical sense: one clean cut, exactly where it was needed, and the patient was up and walking by lunch.",
+    "borrow": "incisive in the surgical sense"
+  },
+  "germane": {
+    "setting": "Chairing a budget meeting gone off course",
+    "text": "Your point about the coffee machine is a fair one, and I will gladly take it up at a meeting where it is germane to something.",
+    "borrow": "a meeting where it is germane to something"
+  },
+  "vexed": {
+    "setting": "Telling friends how the house got built",
+    "text": "The architect was vexed by our endless changes and showed it only by drawing each new window slightly smaller than we had asked.",
+    "borrow": "vexed by our endless changes"
+  },
+  "indignant": {
+    "setting": "Training new staff at the front counter",
+    "text": "A customer who is merely angry can be calmed in a minute; the indignant one, who speaks softly and takes notes, is already writing to your manager.",
+    "borrow": "indignant one, who speaks softly and takes notes"
+  },
+  "umbrage": {
+    "setting": "Teasing yourself at a birthday party",
+    "text": "I took umbrage at the young man who offered me his seat on the bus, for roughly as long as it took me to sit down.",
+    "borrow": "I took umbrage at the young man"
+  },
+  "refine": {
+    "setting": "Updating the steering group on a late project",
+    "text": "We have refined the estimate every Friday since March, and it now sits almost exactly where the quietest person in the room put it on the first day.",
+    "borrow": "We have refined the estimate every Friday"
+  },
+  "hone": {
+    "setting": "An anecdote for visitors to the market",
+    "text": "The best fishmonger in the market honed her knife and her opinions every morning, and either one could take your finger off.",
+    "borrow": "honed her knife and her opinions every morning"
+  },
+  "burgeon": {
+    "setting": "Coaching a new manager on a young team",
+    "text": "A young team will not burgeon under a manager who digs it up every Monday to see how the roots are coming along.",
+    "borrow": "will not burgeon under a manager"
+  },
+  "pragmatic": {
+    "setting": "Answering a question at the annual review",
+    "text": "We made the pragmatic choice and hired the firm that answers its phone rather than the one with the famous name, which I am sure looks lovely on a letterhead.",
+    "borrow": "We made the pragmatic choice"
+  },
+  "judicious": {
+    "setting": "Thanking a colleague after a tense meeting",
+    "text": "Your judicious silence, when their director misread our own numbers back to us, spared him embarrassment and spared us an enemy.",
+    "borrow": "Your judicious silence"
+  },
+  "circumspect": {
+    "setting": "Chatting with friends about the neighborhood",
+    "text": "Our neighbor was so circumspect that in two years we learned only his name and his opinion of the traffic, while he somehow learned everything about us.",
+    "borrow": "Our neighbor was so circumspect"
+  },
+  "singular": {
+    "setting": "A eulogy for a musician friend",
+    "text": "He was never the best pianist in the city, only the singular one, the one you could pick out from the street with every window shut.",
+    "borrow": "only the singular one"
+  },
+  "consummate": {
+    "setting": "Admiring the other side after a deal",
+    "text": "They sent a consummate negotiator, who gave up three things we had never wanted, slowly and with visible pain, and we thanked him for each one.",
+    "borrow": "They sent a consummate negotiator"
+  },
+  "peerless": {
+    "setting": "Recommending a tailor to a friend",
+    "text": "The tailor on the corner is peerless at lapels and hopeless at deadlines, so order the suit in March if the wedding is in June.",
+    "borrow": "peerless at lapels and hopeless at deadlines"
+  },
+  "culminate": {
+    "setting": "A cricket story at the club bar",
+    "text": "His innings culminated in a six over the pavilion roof, and the ball, as far as anyone knows, is still at large.",
+    "borrow": "culminated in a six over the pavilion roof"
+  },
+  "denouement": {
+    "setting": "A family story told at a reunion",
+    "text": "After three weeks of silence between my aunts, the denouement came over a pot of soup, with nobody admitting anything and everybody taking seconds.",
+    "borrow": "the denouement came over a pot of soup"
+  },
+  "apotheosis": {
+    "setting": "Raising a glass to a generous host",
+    "text": "If tonight is not the apotheosis of the dinner party, it is near enough that none of us will dare to have you over in return.",
+    "borrow": "the apotheosis of the dinner party"
+  }
+}

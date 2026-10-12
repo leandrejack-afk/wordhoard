@@ -45,7 +45,12 @@
               "distinction": "only means it hangs together logically, a much lower bar"
             }
           ],
-          "registerNote": "Say the adjective flat, ar·TIK·yuh·lit, and the verb long, ar·TIK·yuh·late, or the compliment lands as a stumble. Praise the argument or the sentence rather than expressing surprise that the person can speak, since calling someone articulate has a long history as a backhanded compliment."
+          "registerNote": "Say the adjective flat, ar·TIK·yuh·lit, and the verb long, ar·TIK·yuh·late, or the compliment lands as a stumble. Praise the argument or the sentence rather than expressing surprise that the person can speak, since calling someone articulate has a long history as a backhanded compliment.",
+          "line": {
+            "setting": "Asking a supplier for a straight answer",
+            "text": "An articulate no is worth more to me than a muddled yes: the no shows me where the wall is, and the yes lets me find it in the dark.",
+            "borrow": "An articulate no is worth more"
+          }
         },
         {
           "id": "eloquent",
@@ -82,7 +87,12 @@
               "distinction": "the same skill with a suspicion of flattery attached"
             }
           ],
-          "registerNote": "Calling your own remarks eloquent sounds vain, so let others award it; and in a hard negotiation, praising an opponent's eloquence is often heard as a polite way of saying the substance was thin."
+          "registerNote": "Calling your own remarks eloquent sounds vain, so let others award it; and in a hard negotiation, praising an opponent's eloquence is often heard as a polite way of saying the substance was thin.",
+          "line": {
+            "setting": "Replying to an angry email the next morning",
+            "text": "Your email was eloquent, and I suspect it was written after midnight, so I will answer the parts that will still be true at breakfast.",
+            "borrow": "Your email was eloquent"
+          }
         },
         {
           "id": "mellifluous",
@@ -119,7 +129,12 @@
               "distinction": "deep and resonant: full rather than sweet"
             }
           ],
-          "registerNote": "Keep it for sound. Calling a report or an argument mellifluous reads as praise for the packaging and a quiet dismissal of the contents."
+          "registerNote": "Keep it for sound. Calling a report or an argument mellifluous reads as praise for the packaging and a quiet dismissal of the contents.",
+          "line": {
+            "setting": "A story at a family reunion",
+            "text": "My grandmother kept a mellifluous voice for strangers on the telephone and another one entirely for grandsons who had trailed mud across her kitchen floor.",
+            "borrow": "a mellifluous voice for strangers"
+          }
         }
       ],
       "passage": {
@@ -170,7 +185,12 @@
               "distinction": "about deciding well, not about telling good from ordinary"
             }
           ],
-          "registerNote": "Safe and flattering in any register. The only misfire is using it for luck: call a decision discerning when it was really fortunate and whoever knows the story will hear it."
+          "registerNote": "Safe and flattering in any register. The only misfire is using it for luck: call a decision discerning when it was really fortunate and whoever knows the story will hear it.",
+          "line": {
+            "setting": "A toast to the hosts at a dinner party",
+            "text": "To our hosts, whose taste in wine is discerning and whose taste in friends, judging by this table, is rather more generous.",
+            "borrow": "whose taste in wine is discerning"
+          }
         },
         {
           "id": "astute",
@@ -207,7 +227,12 @@
               "distinction": "deeper penetration into what is true, less concerned with tactics"
             }
           ],
-          "registerNote": "Fine in any professional room, but it praises tactical sense rather than character, so a pause after \"an astute man\" can turn the compliment into a warning."
+          "registerNote": "Fine in any professional room, but it praises tactical sense rather than character, so a pause after \"an astute man\" can turn the compliment into a warning.",
+          "line": {
+            "setting": "Teaching a young salesperson about timing",
+            "text": "An astute seller prices by the clouds, not by the fruit: the last mangoes of the day go cheap, and he is home, cart empty, before the rain.",
+            "borrow": "An astute seller prices by the clouds"
+          }
         },
         {
           "id": "perspicacious",
@@ -244,7 +269,12 @@
               "distinction": "adds age and accumulated wisdom rather than speed of sight"
             }
           ],
-          "registerNote": "A showpiece: one per conversation at most, and never about yourself, or you sound like a man admiring his own eyesight. Do not confuse it with perspicuous, which means clearly expressed."
+          "registerNote": "A showpiece: one per conversation at most, and never about yourself, or you sound like a man admiring his own eyesight. Do not confuse it with perspicuous, which means clearly expressed.",
+          "line": {
+            "setting": "Chatting with a colleague over lunch",
+            "text": "The woman who orders our stationery is the most perspicacious person in the building: she knows who is leaving weeks before their manager does, because they stop asking for pens.",
+            "borrow": "the most perspicacious person in the building"
+          }
         }
       ],
       "passage": {
@@ -295,7 +325,12 @@
               "distinction": "states it flatly, with no invitation to reply"
             }
           ],
-          "registerNote": "In a formal room, \"I would contend\" is a courteous way to disagree; over dinner it can sound like you are addressing a tribunal."
+          "registerNote": "In a formal room, \"I would contend\" is a courteous way to disagree; over dinner it can sound like you are addressing a tribunal.",
+          "line": {
+            "setting": "Reminiscing with old housemates",
+            "text": "Our old landlord contended that any problem in the house could be cured by a good night's sleep and a coat of paint, and he was right about the sleep.",
+            "borrow": "contended that any problem in the house"
+          }
         },
         {
           "id": "demur",
@@ -332,7 +367,12 @@
               "distinction": "a bodily refusal to go further: stubborn rather than polite"
             }
           ],
-          "registerNote": "Do not confuse it with demure, which means modest and reserved and is an entirely different word. And because demurring is so mild, it can read as evasion in a room that needed a straight no."
+          "registerNote": "Do not confuse it with demure, which means modest and reserved and is an entirely different word. And because demurring is so mild, it can read as evasion in a room that needed a straight no.",
+          "line": {
+            "setting": "At the table before a contract is signed",
+            "text": "May I demur at one clause before we sign? After that, I promise to be agreeable company for the rest of the day.",
+            "borrow": "May I demur at one clause"
+          }
         },
         {
           "id": "remonstrate",
@@ -369,7 +409,12 @@
               "distinction": "close to identical in meaning and even more formal"
             }
           ],
-          "registerNote": "Bookish, and slightly old-fashioned in speech: it fits a written account or a deliberately formal moment. It also implies something was genuinely wrong, so it sounds heavy for small disagreements."
+          "registerNote": "Bookish, and slightly old-fashioned in speech: it fits a written account or a deliberately formal moment. It also implies something was genuinely wrong, so it sounds heavy for small disagreements.",
+          "line": {
+            "setting": "Admitting a small folly to a friend",
+            "text": "For most of an afternoon I remonstrated with the front desk over a minibar charge of a few dollars, and only later thought to put a price on the afternoon.",
+            "borrow": "I remonstrated with the front desk"
+          }
         }
       ],
       "passage": {
@@ -420,7 +465,12 @@
               "distinction": "the plain state, with no suggestion that anything was testing it"
             }
           ],
-          "registerNote": "Safe in any register, with one catch: saying a man kept his composure implies there was something to lose, so it can quietly remind the room that he was rattled."
+          "registerNote": "Safe in any register, with one catch: saying a man kept his composure implies there was something to lose, so it can quietly remind the room that he was rattled.",
+          "line": {
+            "setting": "A tribute at a hospital fundraiser",
+            "text": "Good nurses keep their composure for the family and lose it, if they must, in the car at the end of the shift.",
+            "borrow": "keep their composure for the family"
+          }
         },
         {
           "id": "equanimity",
@@ -457,7 +507,12 @@
               "distinction": "implies endurance of pain, and carries a whole philosophy behind it"
             }
           ],
-          "registerNote": "Formal and faintly philosophical: it fits a eulogy, a reference letter or a considered remark, and it sounds arch applied to small annoyances like traffic."
+          "registerNote": "Formal and faintly philosophical: it fits a eulogy, a reference letter or a considered remark, and it sounds arch applied to small annoyances like traffic.",
+          "line": {
+            "setting": "A eulogy for a family friend",
+            "text": "He had a promotion and a flood in one week and met them with the same equanimity: on both evenings, he went out to check the gutters.",
+            "borrow": "met them with the same equanimity"
+          }
         },
         {
           "id": "aplomb",
@@ -494,7 +549,12 @@
               "distinction": "confidence in yourself, which need not show as grace at all"
             }
           ],
-          "registerNote": "It praises style as much as substance, so keep it for a performance carried off well: aplomb about a grim situation sounds flippant."
+          "registerNote": "It praises style as much as substance, so keep it for a performance carried off well: aplomb about a grim situation sounds flippant.",
+          "line": {
+            "setting": "Praising a speaker at a conference",
+            "text": "When the projector died, she set down the remote and gave the talk from memory, with an aplomb that suggested the slides had been the problem all along.",
+            "borrow": "with an aplomb that suggested"
+          }
         }
       ],
       "passage": {
@@ -545,7 +605,12 @@
               "distinction": "holds attention only, with no claim on your judgment"
             }
           ],
-          "registerNote": "Safe everywhere, but marketing copy has worn it thin: a compelling opportunity sounds like a brochure, so keep it for arguments and evidence."
+          "registerNote": "Safe everywhere, but marketing copy has worn it thin: a compelling opportunity sounds like a brochure, so keep it for arguments and evidence.",
+          "line": {
+            "setting": "Cautioning a team against a tidy explanation",
+            "text": "The boy's account of the broken window was compelling in every detail, and it held up beautifully until the neighbor came by to return his ball.",
+            "borrow": "compelling in every detail"
+          }
         },
         {
           "id": "cogent",
@@ -582,7 +647,12 @@
               "distinction": "free of error, which is a lower bar than driving to a conclusion"
             }
           ],
-          "registerNote": "It belongs to arguments, papers and reasoning, not to people: a cogent man is a misfire, and in casual talk it can sound like you are grading a friend's homework."
+          "registerNote": "It belongs to arguments, papers and reasoning, not to people: a cogent man is a misfire, and in casual talk it can sound like you are grading a friend's homework.",
+          "line": {
+            "setting": "Conceding a point in a heated debate",
+            "text": "Your argument is cogent, and I have been hunting for the flaw in it since lunch and found nothing but my own reluctance.",
+            "borrow": "Your argument is cogent"
+          }
         },
         {
           "id": "incontrovertible",
@@ -619,7 +689,12 @@
               "distinction": "often used of impressions and feelings as much as of facts"
             }
           ],
-          "registerNote": "A heavy word, and it invites someone to try: use it only when you can put the document on the table, because a single exception makes you look careless."
+          "registerNote": "A heavy word, and it invites someone to try: use it only when you can put the document on the table, because a single exception makes you look careless.",
+          "line": {
+            "setting": "A dry aside in a budget review",
+            "text": "The only incontrovertible figure in that forecast was the date on the cover, and I would still have someone check it.",
+            "borrow": "The only incontrovertible figure in that forecast"
+          }
         }
       ],
       "passage": {
@@ -670,7 +745,12 @@
               "distinction": "short to the point of coldness, and often heard as rude"
             }
           ],
-          "registerNote": "Safe in any register. The one trap is applying it to a man's manner rather than his words: he was very concise can be heard as he was cold."
+          "registerNote": "Safe in any register. The one trap is applying it to a man's manner rather than his words: he was very concise can be heard as he was cold.",
+          "line": {
+            "setting": "Holding up an example of good email",
+            "text": "Her reply was concise: two sentences, the first to thank us and the second to make our next meeting unnecessary.",
+            "borrow": "Her reply was concise: two sentences"
+          }
         },
         {
           "id": "lucid",
@@ -707,7 +787,12 @@
               "distinction": "hangs together, which is not the same as giving light"
             }
           ],
-          "registerNote": "Calling a person lucid, rather than their writing, can suggest you were surprised to find them making sense, since the word also means clear-headed after a period of confusion."
+          "registerNote": "Calling a person lucid, rather than their writing, can suggest you were surprised to find them making sense, since the word also means clear-headed after a period of confusion.",
+          "line": {
+            "setting": "Recommending a writer to a busy editor",
+            "text": "He writes the way a good mechanic talks, lucid and unhurried, pointing at the part that is broken and leaving the rest of the engine alone.",
+            "borrow": "lucid and unhurried"
+          }
         },
         {
           "id": "pellucid",
@@ -744,7 +829,12 @@
               "distinction": "clear and untroubled, used more often of water and eyes"
             }
           ],
-          "registerNote": "A literary word: fine when writing about writing, and in an ordinary meeting it sounds like you swallowed a review. Save it for the times you mean the clarity was beautiful."
+          "registerNote": "A literary word: fine when writing about writing, and in an ordinary meeting it sounds like you swallowed a review. Save it for the times you mean the clarity was beautiful.",
+          "line": {
+            "setting": "Talking about first impressions over a drink",
+            "text": "From the bank on a bright day, a pellucid river and a shallow one look exactly alike, and so, for a year or two, do people.",
+            "borrow": "a pellucid river and a shallow one"
+          }
         }
       ],
       "passage": {
@@ -795,7 +885,12 @@
               "distinction": "points at a future use rather than praising a past performance"
             }
           ],
-          "registerNote": "Commendation flows downward and sideways, so commending your own boss can sound presumptuous: thank them instead, and save commend for people whose work you can vouch for."
+          "registerNote": "Commendation flows downward and sideways, so commending your own boss can sound presumptuous: thank them instead, and save commend for people whose work you can vouch for.",
+          "line": {
+            "setting": "Launch party for a finished report",
+            "text": "Before we raise a glass to the names on the report, let me commend the people who stayed until midnight so that those names could go home at six.",
+            "borrow": "let me commend the people who stayed"
+          }
         },
         {
           "id": "laudable",
@@ -832,7 +927,12 @@
               "distinction": "the plain English twin, with no faint-praise shadow"
             }
           ],
-          "registerNote": "Watch the faint-praise trap: laudable followed by but is heard as a polite dismissal, so when you mean it fully, name the part that worked."
+          "registerNote": "Watch the faint-praise trap: laudable followed by but is heard as a polite dismissal, so when you mean it fully, name the part that worked.",
+          "line": {
+            "setting": "Teasing a friend about a birthday cake",
+            "text": "The cake was laudable in its ambition, and the children ate the icing with great loyalty and left the rest for the birds.",
+            "borrow": "laudable in its ambition"
+          }
         },
         {
           "id": "exemplary",
@@ -869,7 +969,12 @@
               "distinction": "unusual, and unusual is not automatically good"
             }
           ],
-          "registerNote": "It sets a bar you may have to defend later, so use it where a record backs you. Note also the legal sense: exemplary damages are punitive and have nothing to do with praise."
+          "registerNote": "It sets a bar you may have to defend later, so use it where a record backs you. Note also the legal sense: exemplary damages are punitive and have nothing to do with praise.",
+          "line": {
+            "setting": "Explaining an office habit to a newcomer",
+            "text": "He retired ten years ago, and his work was so exemplary that half the office still folds a letter his way without knowing whose way it is.",
+            "borrow": "his work was so exemplary that"
+          }
         }
       ],
       "passage": {
@@ -920,7 +1025,12 @@
               "distinction": "the temperament underneath, not the surface you can see"
             }
           ],
-          "registerNote": "Safe in any register, but it describes the surface only, so a pleasant demeanor in a reference letter is usually read as praise with nothing behind it."
+          "registerNote": "Safe in any register, but it describes the surface only, so a pleasant demeanor in a reference letter is usually read as praise with nothing behind it.",
+          "line": {
+            "setting": "Telling a travel story to friends",
+            "text": "The pilot's demeanor at the gate was so cheerful that I began, for the first time in years, to worry about the weather.",
+            "borrow": "The pilot's demeanor at the gate"
+          }
         },
         {
           "id": "disposition",
@@ -957,7 +1067,12 @@
               "distinction": "the surface a stranger sees, not the grain underneath"
             }
           ],
-          "registerNote": "It claims to know what a person is really like, so in a written judgment it is safer about yourself than about a colleague. Keep the legal sense in mind too, since the disposition of a matter means its settlement."
+          "registerNote": "It claims to know what a person is really like, so in a written judgment it is safer about yourself than about a colleague. Keep the legal sense in mind too, since the disposition of a matter means its settlement.",
+          "line": {
+            "setting": "Joking about yourself with a new team",
+            "text": "Whatever mood I arrive in, my disposition overrules it by lunch, and my staff have learned to save their requests for the afternoon.",
+            "borrow": "my disposition overrules it by lunch"
+          }
         },
         {
           "id": "countenance",
@@ -994,7 +1109,12 @@
               "distinction": "equally literary, but about the cast of a face more than its mood"
             }
           ],
-          "registerNote": "Deliberately literary as a noun: it suits a written portrait or a formal address and is a costume in ordinary talk. Do not let the verb collide with it, since I cannot countenance this means I will not tolerate it."
+          "registerNote": "Deliberately literary as a noun: it suits a written portrait or a formal address and is a costume in ordinary talk. Do not let the verb collide with it, since I cannot countenance this means I will not tolerate it.",
+          "line": {
+            "setting": "A character sketch in a letter",
+            "text": "He had the countenance of a man who had been told a long joke and was waiting, with great patience, to see whether it would improve.",
+            "borrow": "He had the countenance of a man"
+          }
         }
       ],
       "passage": {
@@ -1045,7 +1165,12 @@
               "distinction": "about precision in detail rather than steadiness over time"
             }
           ],
-          "registerNote": "Safe everywhere, though in a reference for a senior person diligent on its own can read as damning: it praises effort and says nothing at all about judgment."
+          "registerNote": "Safe everywhere, though in a reference for a senior person diligent on its own can read as damning: it praises effort and says nothing at all about judgment.",
+          "line": {
+            "setting": "Teaching a new manager to read references",
+            "text": "When a reference calls a senior candidate diligent and moves straight on to punctuality, pick up the phone and ask what the letter left out.",
+            "borrow": "calls a senior candidate diligent"
+          }
         },
         {
           "id": "meticulous",
@@ -1082,7 +1207,12 @@
               "distinction": "fussy about taste and cleanliness, and often unflattering"
             }
           ],
-          "registerNote": "Praise for work, not for habits: calling a colleague meticulous about his desk sounds like a complaint, and meticulous said slowly is often heard as slow."
+          "registerNote": "Praise for work, not for habits: calling a colleague meticulous about his desk sounds like a complaint, and meticulous said slowly is often heard as slow.",
+          "line": {
+            "setting": "A wedding story told years later",
+            "text": "Her seating plan was meticulous, and its one error put the bride's feuding uncles at the same table, where they ended a twenty-year quarrel before dessert.",
+            "borrow": "Her seating plan was meticulous"
+          }
         },
         {
           "id": "assiduous",
@@ -1119,7 +1249,12 @@
               "distinction": "a close twin, even more formal, from the same idea of steady application"
             }
           ],
-          "registerNote": "Formal and old-fashioned enough that people notice it. Applied to attention paid to a person it can sound like polite mockery, as in an assiduous suitor."
+          "registerNote": "Formal and old-fashioned enough that people notice it. Applied to attention paid to a person it can sound like polite mockery, as in an assiduous suitor.",
+          "line": {
+            "setting": "The first line of an overdue email",
+            "text": "Forgive my silence: I have been assiduous about everything except my correspondence, which has waited, very politely, since August.",
+            "borrow": "assiduous about everything except my correspondence"
+          }
         }
       ],
       "passage": {
@@ -1170,7 +1305,12 @@
               "distinction": "starts something, usually trouble, and puts the blame on you"
             }
           ],
-          "registerNote": "Business writing has worn it out, so initiating a conversation where you could simply call the man sounds inflated. Note the pronunciation shift too: the noun and adjective, an initiate, end flat, i·NISH·ee·it."
+          "registerNote": "Business writing has worn it out, so initiating a conversation where you could simply call the man sounds inflated. Note the pronunciation shift too: the noun and adjective, an initiate, end flat, i·NISH·ee·it.",
+          "line": {
+            "setting": "Debriefing after an internal review",
+            "text": "In the end it was the most junior clerk who initiated the inquiry, and the most senior people who had known about the problem longest.",
+            "borrow": "the most junior clerk who initiated the inquiry"
+          }
         },
         {
           "id": "inception",
@@ -1207,7 +1347,12 @@
               "distinction": "the start of an undertaking, and lives mostly in from the outset"
             }
           ],
-          "registerNote": "Formal register: it belongs in a report or a board minute. Applied to small things it turns comic, since a conversation has a start and not an inception."
+          "registerNote": "Formal register: it belongs in a report or a board minute. Applied to small things it turns comic, since a conversation has a start and not an inception.",
+          "line": {
+            "setting": "A firm's anniversary speech",
+            "text": "On the wall behind my desk hangs the first invoice this firm ever sent, in the month of its inception, and it is still the only one anyone paid early.",
+            "borrow": "in the month of its inception"
+          }
         },
         {
           "id": "nascent",
@@ -1244,7 +1389,12 @@
               "distinction": "young and inexperienced, with a hint of wobble to it"
             }
           ],
-          "registerNote": "Both NAY·sunt and NASS·unt are standard, so choose one and keep to it. And because the word insists the thing is very young, using it about your own two-year-old business sounds like an excuse."
+          "registerNote": "Both NAY·sunt and NASS·unt are standard, so choose one and keep to it. And because the word insists the thing is very young, using it about your own two-year-old business sounds like an excuse.",
+          "line": {
+            "setting": "A best man's toast at a wedding",
+            "text": "I was present for their nascent romance, which consisted largely of him pretending to like jazz, and I am pleased to report that he still does.",
+            "borrow": "I was present for their nascent romance"
+          }
         }
       ],
       "passage": {
@@ -1296,7 +1446,12 @@
               "distinction": "about the effect on morale rather than the potential itself"
             }
           ],
-          "registerNote": "Safe in any register, but never use it about finished work: calling a completed report promising is faint praise, and it tells the writer you found potential where you wanted results."
+          "registerNote": "Safe in any register, but never use it about finished work: calling a completed report promising is faint praise, and it tells the writer you found potential where you wanted results.",
+          "line": {
+            "setting": "Over lunch with a gifted colleague who drifts",
+            "text": "Ten years is a long time to be promising; at some point, people stop wanting the forecast and start asking for the weather.",
+            "borrow": "a long time to be promising"
+          }
         },
         {
           "id": "sanguine",
@@ -1338,7 +1493,12 @@
               "distinction": "about mood and energy rather than expectation"
             }
           ],
-          "registerNote": "Slightly bookish but at home in a meeting. Older writing uses sanguine for blood-red or bloodthirsty, so keep it attached to a mood or an expectation and the modern sense stays clear."
+          "registerNote": "Slightly bookish but at home in a meeting. Older writing uses sanguine for blood-red or bloodthirsty, so keep it attached to a mood or an expectation and the modern sense stays clear.",
+          "line": {
+            "setting": "Telling friends about a rough flight home",
+            "text": "Over the intercom the captain sounded entirely sanguine about the storm, and I have never been fonder of a man I could not see.",
+            "borrow": "sounded entirely sanguine about the storm"
+          }
         },
         {
           "id": "propitious",
@@ -1380,7 +1540,12 @@
               "distinction": "about arriving at the right moment rather than about conditions"
             }
           ],
-          "registerNote": "Formal and faintly ceremonial. It belongs in a speech, a proposal or a written case; in ordinary talk, a good moment says the same thing without the robes."
+          "registerNote": "Formal and faintly ceremonial. It belongs in a speech, a proposal or a written case; in ordinary talk, a good moment says the same thing without the robes.",
+          "line": {
+            "setting": "Accepting an award with honest modesty",
+            "text": "We launched in the one propitious month of the decade, and I have spent the years since accepting compliments that belong to the tide.",
+            "borrow": "the one propitious month of the decade"
+          }
         }
       ],
       "passage": {
@@ -1436,7 +1601,12 @@
               "distinction": "plainly an insult about meanness"
             }
           ],
-          "registerNote": "Safe in any register and generally a compliment. If you actually mean that someone is mean with money, the words are stingy or parsimonious, and both are insults; do not reach for frugal to soften them."
+          "registerNote": "Safe in any register and generally a compliment. If you actually mean that someone is mean with money, the words are stingy or parsimonious, and both are insults; do not reach for frugal to soften them.",
+          "line": {
+            "setting": "A tribute at a grandfather's ninetieth birthday",
+            "text": "My grandfather was frugal enough to reuse envelopes and generous enough that none of them ever reached us empty.",
+            "borrow": "frugal enough to reuse envelopes"
+          }
         },
         {
           "id": "prudent",
@@ -1478,7 +1648,12 @@
               "distinction": "broader and more moral, with no particular link to risk"
             }
           ],
-          "registerNote": "Safe in any register, and useful precisely because it lets you refuse a risk without sounding nervous. Used too often about spending, it can start to sound like a polite word for no."
+          "registerNote": "Safe in any register, and useful precisely because it lets you refuse a risk without sounding nervous. Used too often about spending, it can start to sound like a polite word for no.",
+          "line": {
+            "setting": "Making an early exit from a celebration",
+            "text": "The prudent guest leaves while the host is still sorry to see him go, which at my uncle's parties is a window of about ten minutes.",
+            "borrow": "The prudent guest leaves"
+          }
         },
         {
           "id": "munificent",
@@ -1520,7 +1695,12 @@
               "distinction": "free-handed in the older sense, and now easily misread"
             }
           ],
-          "registerNote": "Praise register only. Munificent is what you call another person's giving, in a toast or a letter of thanks; used about your own it is boasting."
+          "registerNote": "Praise register only. Munificent is what you call another person's giving, in a toast or a letter of thanks; used about your own it is boasting.",
+          "line": {
+            "setting": "A speech at a hospital's anniversary dinner",
+            "text": "The new wing carries the name of a munificent donor, as it should; the old one was held up for thirty years by nurses whose names are on nothing.",
+            "borrow": "the name of a munificent donor"
+          }
         }
       ],
       "passage": {
@@ -1576,7 +1756,12 @@
               "distinction": "about affection and trust as much as about reasoning"
             }
           ],
-          "registerNote": "Safe in any register. Note that easily swayed is a criticism, meaning no firm view of one's own, and that the noun sway (as in hold sway) means dominion rather than motion."
+          "registerNote": "Safe in any register. Note that easily swayed is a criticism, meaning no firm view of one's own, and that the noun sway (as in hold sway) means dominion rather than motion.",
+          "line": {
+            "setting": "Describing a trial you watched from the gallery",
+            "text": "The jury was swayed, in the end, by the one witness willing to admit she could not remember.",
+            "borrow": "swayed, in the end, by the one witness"
+          }
         },
         {
           "id": "galvanize",
@@ -1618,7 +1803,12 @@
               "distinction": "a single prod toward one specific action"
             }
           ],
-          "registerNote": "Safe in any register, but it says the group was doing nothing until something shocked it. Said to a team that has been working hard, it lands as an insult."
+          "registerNote": "Safe in any register, but it says the group was doing nothing until something shocked it. Said to a team that has been working hard, it lands as an insult.",
+          "line": {
+            "setting": "A wry aside after a staff meeting",
+            "text": "Three strategy memos left the office unmoved, and then a rumor about the parking galvanized the whole floor before lunch.",
+            "borrow": "galvanized the whole floor before lunch"
+          }
         },
         {
           "id": "engender",
@@ -1660,7 +1850,12 @@
               "distinction": "more physical, and usually reserved for bad outcomes"
             }
           ],
-          "registerNote": "Formal and written-sounding, and it must take an abstract object: you engender confidence, you do not engender a report. In casual speech, build or create carries the same meaning with less starch."
+          "registerNote": "Formal and written-sounding, and it must take an abstract object: you engender confidence, you do not engender a report. In casual speech, build or create carries the same meaning with less starch.",
+          "line": {
+            "setting": "Advising a friend about a too-eager buyer",
+            "text": "Nothing engenders suspicion faster than a stranger who is in a hurry to be trusted.",
+            "borrow": "Nothing engenders suspicion faster than"
+          }
         }
       ],
       "passage": {
@@ -1716,7 +1911,12 @@
               "distinction": "the formal twin of conciseness, common in editing"
             }
           ],
-          "registerNote": "Safe in any register. The word has a second life in the brevity of human life, which is why it can sound faintly elegiac when it stands alone at the end of a sentence."
+          "registerNote": "Safe in any register. The word has a second life in the brevity of human life, which is why it can sound faintly elegiac when it stands alone at the end of a sentence.",
+          "line": {
+            "setting": "A eulogy that is allowed to smile",
+            "text": "He admired brevity in everything but his goodbyes, which could take an hour at the door with his hat already on.",
+            "borrow": "admired brevity in everything but his goodbyes"
+          }
         },
         {
           "id": "succinct",
@@ -1758,7 +1958,12 @@
               "distinction": "short and possibly curt, with an edge to it"
             }
           ],
-          "registerNote": "Safe in any register and a genuine compliment. Asking someone to be succinct while they are already speaking is heard as a rebuke, so say it before they start or not at all."
+          "registerNote": "Safe in any register and a genuine compliment. Asking someone to be succinct while they are already speaking is heard as a rebuke, so say it before they start or not at all.",
+          "line": {
+            "setting": "Recalling the best interview answer you have heard",
+            "text": "I asked her why she wanted the job and got the most succinct answer I have ever heard: the pay, the people and the work, in that order.",
+            "borrow": "the most succinct answer I have ever heard"
+          }
         },
         {
           "id": "laconic",
@@ -1800,7 +2005,12 @@
               "distinction": "unwilling to say what one thinks, which is about disclosure rather than length"
             }
           ],
-          "registerNote": "Mildly literary and never quite neutral: calling someone laconic suggests they are holding something back. Use succinct when you mean to praise, and keep laconic for describing a manner."
+          "registerNote": "Mildly literary and never quite neutral: calling someone laconic suggests they are holding something back. Use succinct when you mean to praise, and keep laconic for describing a manner.",
+          "line": {
+            "setting": "Narrating a story about a fishing village",
+            "text": "When the sea took his boat, the old fisherman stayed laconic: the sea had wanted it more, he said, and went to ask about another.",
+            "borrow": "stayed laconic: the sea had wanted it more"
+          }
         }
       ],
       "passage": {
@@ -1856,7 +2066,12 @@
               "distinction": "plainly negative, and about other people's business"
             }
           ],
-          "registerNote": "Warm praise when it points at ideas and work. Turned on a person's private life it means prying, so keep the object of the curiosity in the sentence: inquisitive about the numbers, not simply inquisitive."
+          "registerNote": "Warm praise when it points at ideas and work. Turned on a person's private life it means prying, so keep the object of the curiosity in the sentence: inquisitive about the numbers, not simply inquisitive.",
+          "line": {
+            "setting": "A farewell card for a retiring colleague",
+            "text": "You were inquisitive about everything except other people's business, which in this office made you very nearly unique.",
+            "borrow": "inquisitive about everything except other people's business"
+          }
         },
         {
           "id": "erudite",
@@ -1898,7 +2113,12 @@
               "distinction": "about a domain, with no implication of study behind it"
             }
           ],
-          "registerNote": "Praise you give to others and never to yourself. Applied to a simple explanation it reads as sarcasm, and applied to your own memo it reads as a boast."
+          "registerNote": "Praise you give to others and never to yourself. Applied to a simple explanation it reads as sarcasm, and applied to your own memo it reads as a boast.",
+          "line": {
+            "setting": "Remembering a self-taught neighbor",
+            "text": "The shopkeeper on our corner left school at twelve and died erudite, having read his way through the town library and argued with most of it.",
+            "borrow": "left school at twelve and died erudite"
+          }
         },
         {
           "id": "voracious",
@@ -1940,7 +2160,12 @@
               "distinction": "wants more than a fair share, and is a moral charge"
             }
           ],
-          "registerNote": "Keep it on reading, learning and curiosity, where the hunger flatters. Applied to an appetite for money, food or power it edges toward greed, and listeners hear the criticism even when you did not intend one."
+          "registerNote": "Keep it on reading, learning and curiosity, where the hunger flatters. Applied to an appetite for money, food or power it edges toward greed, and listeners hear the criticism even when you did not intend one.",
+          "line": {
+            "setting": "Chatting with other parents at a school event",
+            "text": "A voracious curiosity is a fine thing in a child, and an expensive one in a child with a screwdriver.",
+            "borrow": "A voracious curiosity is a fine thing"
+          }
         }
       ],
       "passage": {
@@ -1996,7 +2221,12 @@
               "distinction": "carries a promise kept, and often a moral weight"
             }
           ],
-          "registerNote": "Warm and slightly old-fashioned, in a way that reads as sincere rather than stiff. It suits people, not positions: a policy is firm, a friend is steadfast."
+          "registerNote": "Warm and slightly old-fashioned, in a way that reads as sincere rather than stiff. It suits people, not positions: a policy is firm, a friend is steadfast.",
+          "line": {
+            "setting": "Raising a glass at a housewarming",
+            "text": "Here is to steadfast friends: the ones who come for the champagne and come back, years later, to carry your sofa down four flights of stairs.",
+            "borrow": "Here is to steadfast friends"
+          }
         },
         {
           "id": "resolute",
@@ -2038,7 +2268,12 @@
               "distinction": "about the force with which a view is stated"
             }
           ],
-          "registerNote": "A compliment, and a useful way to close a topic in a meeting: we are resolute on the date ends the discussion without accusing anyone of anything."
+          "registerNote": "A compliment, and a useful way to close a topic in a meeting: we are resolute on the date ends the discussion without accusing anyone of anything.",
+          "line": {
+            "setting": "Telling how a friend finally quit smoking",
+            "text": "Years of warnings had only made him anxious; his son imitating his cough made him resolute, and he never smoked again.",
+            "borrow": "his son imitating his cough made him resolute"
+          }
         },
         {
           "id": "intransigent",
@@ -2080,7 +2315,12 @@
               "distinction": "firm about a stated view, without the charge of being unreasonable"
             }
           ],
-          "registerNote": "Strongly negative: it accuses the other side of being unreasonable, not merely firm. Never use it about a client or a counterpart in the room; keep it for the debrief afterwards and say firm or resolute to their face."
+          "registerNote": "Strongly negative: it accuses the other side of being unreasonable, not merely firm. Never use it about a client or a counterpart in the room; keep it for the debrief afterwards and say firm or resolute to their face.",
+          "line": {
+            "setting": "Laughing about family life with colleagues",
+            "text": "My niece is three and wholly intransigent about the blue cup; I have watched entire boards of directors give way sooner.",
+            "borrow": "wholly intransigent about the blue cup"
+          }
         }
       ],
       "passage": {
@@ -2136,7 +2376,12 @@
               "distinction": "hard to understand at all, rather than readable in two ways"
             }
           ],
-          "registerNote": "Safe in any register. Aimed at wording it is a technical objection; aimed at a person's answer it implies evasion, so say the wording is ambiguous when you do not want to accuse anyone."
+          "registerNote": "Safe in any register. Aimed at wording it is a technical objection; aimed at a person's answer it implies evasion, so say the wording is ambiguous when you do not want to accuse anyone.",
+          "line": {
+            "setting": "A light moment in a talk on clear instructions",
+            "text": "Our new logo has a bird in it that nobody will admit to wanting, which is what happens when the brief is ambiguous and the designers are keen.",
+            "borrow": "when the brief is ambiguous"
+          }
         },
         {
           "id": "tenuous",
@@ -2178,7 +2423,12 @@
               "distinction": "about breaking under pressure, not about being thin to begin with"
             }
           ],
-          "registerNote": "Safe in any register and diplomatically useful: it lets you reject an inference without questioning anyone's honesty. Of a relationship it means barely surviving, which is a heavier claim than it sounds."
+          "registerNote": "Safe in any register and diplomatically useful: it lets you reject an inference without questioning anyone's honesty. Of a relationship it means barely surviving, which is a heavier claim than it sounds.",
+          "line": {
+            "setting": "Describing a trip into the interior",
+            "text": "The rope bridge looked tenuous from the bank, worse from the middle, where it was too late to have an opinion.",
+            "borrow": "tenuous from the bank, worse from the middle"
+          }
         },
         {
           "id": "equivocal",
@@ -2220,7 +2470,12 @@
               "distinction": "of evidence only, and with no suggestion of intent"
             }
           ],
-          "registerNote": "Applied to a person it comes close to calling them slippery, so use it about statements and evidence rather than about the speaker. The related verb equivocate is squarely an accusation."
+          "registerNote": "Applied to a person it comes close to calling them slippery, so use it about statements and evidence rather than about the speaker. The related verb equivocate is squarely an accusation.",
+          "line": {
+            "setting": "A debrief after checking a candidate's references",
+            "text": "It was a carefully equivocal reference: every sentence true, and not one of them a recommendation.",
+            "borrow": "a carefully equivocal reference"
+          }
         }
       ],
       "passage": {
@@ -2276,7 +2531,12 @@
               "distinction": "longer and far more neutral"
             }
           ],
-          "registerNote": "Safe in any register and faintly wistful. It suits moments and feelings; a fleeting contract or a fleeting employee reads as a complaint rather than a description."
+          "registerNote": "Safe in any register and faintly wistful. It suits moments and feelings; a fleeting contract or a fleeting employee reads as a complaint rather than a description.",
+          "line": {
+            "setting": "A father's toast at his daughter's wedding",
+            "text": "Tonight I caught a fleeting glimpse of the six-year-old who refused my hand at the school gate, and then she let go of my arm and walked on without me.",
+            "borrow": "I caught a fleeting glimpse of"
+          }
         },
         {
           "id": "transient",
@@ -2318,7 +2578,12 @@
               "distinction": "plain and slightly informal"
             }
           ],
-          "registerNote": "As a noun in American use, a transient is a homeless person, so keep it adjectival when describing people: a transient workforce is fine, the transients is not."
+          "registerNote": "As a noun in American use, a transient is a homeless person, so keep it adjectival when describing people: a transient workforce is fine, the transients is not.",
+          "line": {
+            "setting": "The opening line of a memoir",
+            "text": "Ours was a mining town with a transient population, men who arrived with one bag and left with two, and only the bartenders ever learned their names.",
+            "borrow": "a mining town with a transient population"
+          }
         },
         {
           "id": "ephemeral",
@@ -2360,7 +2625,12 @@
               "distinction": "about fading from sight, and even more literary"
             }
           ],
-          "registerNote": "Literary. It belongs in a toast, an essay or a reflection; in an incident report, the word that will not raise eyebrows is short-lived."
+          "registerNote": "Literary. It belongs in a toast, an essay or a reflection; in an incident report, the word that will not raise eyebrows is short-lived.",
+          "line": {
+            "setting": "Watching New Year fireworks with friends",
+            "text": "Fireworks are the most honest art I know: ephemeral, expensive, and over before anyone can argue about what they meant.",
+            "borrow": "ephemeral, expensive, and over before anyone can argue"
+          }
         }
       ],
       "passage": {
@@ -2416,7 +2686,12 @@
               "distinction": "about a series of small steps rather than a single shade"
             }
           ],
-          "registerNote": "Safe in any register. The fashionable adjective (a nuanced take) has worn thin, but the noun stays precise, and that view lacks nuance is a courteous way to raise a difference without calling anyone wrong."
+          "registerNote": "Safe in any register. The fashionable adjective (a nuanced take) has worn thin, but the noun stays precise, and that view lacks nuance is a courteous way to raise a difference without calling anyone wrong.",
+          "line": {
+            "setting": "Encouraging a colleague learning a new language",
+            "text": "In my second language I learned the words in a year and the nuances in a decade, mostly by being rude in a very friendly voice.",
+            "borrow": "and the nuances in a decade"
+          }
         },
         {
           "id": "tacit",
@@ -2458,7 +2733,12 @@
               "distinction": "the everyday version, with less legal weight"
             }
           ],
-          "registerNote": "Safe in any register, but tacit approval assigns responsibility: it says a person let something happen and is answerable for it. Use it carefully about people who were never actually asked."
+          "registerNote": "Safe in any register, but tacit approval assigns responsibility: it says a person let something happen and is answerable for it. Use it carefully about people who were never actually asked.",
+          "line": {
+            "setting": "Describing a long dinner with old friends",
+            "text": "By tacit agreement the whole table let our host tell his favorite story once more, and laughed in all the same places.",
+            "borrow": "By tacit agreement the whole table"
+          }
         },
         {
           "id": "oblique",
@@ -2500,7 +2780,12 @@
               "distinction": "refers to something without naming it, and without the sideways manner"
             }
           ],
-          "registerNote": "Safe in any register. Of a person's manner it edges toward a complaint that they are hard to pin down, so pair it with a warm word when you mean to praise the tact."
+          "registerNote": "Safe in any register. Of a person's manner it edges toward a complaint that they are hard to pin down, so pair it with a warm word when you mean to praise the tact.",
+          "line": {
+            "setting": "A tribute to a reserved mentor",
+            "text": "Her compliments were so oblique they took a day to arrive, and then they stayed for years.",
+            "borrow": "so oblique they took a day to arrive"
+          }
         }
       ],
       "passage": {
@@ -2556,7 +2841,12 @@
               "distinction": "about the giver's intent as much as about the amount"
             }
           ],
-          "registerNote": "Safe in any register, though of a person's build (an ample figure) it is a euphemism for large. Keep it on time, space, evidence and opportunity and it stays neutral."
+          "registerNote": "Safe in any register, though of a person's build (an ample figure) it is a euphemism for large. Keep it on time, space, evidence and opportunity and it stays neutral.",
+          "line": {
+            "setting": "A frank word after a difficult meeting",
+            "text": "We gave him ample opportunity to apologize, and he spent every minute of it explaining.",
+            "borrow": "ample opportunity to apologize"
+          }
         },
         {
           "id": "copious",
@@ -2598,7 +2888,12 @@
               "distinction": "about the sheer bulk of writing rather than quantity in general"
             }
           ],
-          "registerNote": "Safe in any register, but it pairs with things that are produced, not with people: copious notes is right, copious friends is not."
+          "registerNote": "Safe in any register, but it pairs with things that are produced, not with people: copious notes is right, copious friends is not.",
+          "line": {
+            "setting": "Telling friends about buying an old house",
+            "text": "Copious rain and an old roof taught us, in one wet season, everything the seller had forgotten to mention.",
+            "borrow": "Copious rain and an old roof"
+          }
         },
         {
           "id": "plethora",
@@ -2640,7 +2935,12 @@
               "distinction": "a rich outpouring, and usually admiring"
             }
           ],
-          "registerNote": "Do not use it to mean simply many: it means too many, and anyone who knows the word will hear a criticism you did not intend. Reserve it for abundance that is genuinely the problem."
+          "registerNote": "Do not use it to mean simply many: it means too many, and anyone who knows the word will hear a criticism you did not intend. Reserve it for abundance that is genuinely the problem.",
+          "line": {
+            "setting": "Explaining a locked account to the help desk",
+            "text": "I now have a plethora of passwords, which keeps my accounts perfectly safe, mostly from me.",
+            "borrow": "a plethora of passwords"
+          }
         }
       ],
       "passage": {
@@ -2696,7 +2996,12 @@
               "distinction": "one specific test of integrity, resistance to being bought"
             }
           ],
-          "registerNote": "Safe in every register, but announcing your own integrity invites people to look for the exception, so let others use the word about you; note the second, non-moral sense as well, where the integrity of a hull or a data set means soundness, nothing broken."
+          "registerNote": "Safe in every register, but announcing your own integrity invites people to look for the exception, so let others use the word about you; note the second, non-moral sense as well, where the integrity of a hull or a data set means soundness, nothing broken.",
+          "line": {
+            "setting": "Over drinks, comparing notes on new suppliers",
+            "text": "The people who announce their integrity in the first meeting are, in my experience, the ones whose invoices I end up reading twice.",
+            "borrow": "announce their integrity in the first meeting"
+          }
         },
         {
           "id": "candor",
@@ -2738,7 +3043,12 @@
               "distinction": "describes manner, not motive; you can be direct and still evasive"
             }
           ],
-          "registerNote": "Welcome in professional rooms, though 'with all due candor' is heard as a warning shot, so prefer the plain 'may I be candid' unless you want the temperature to rise; the adjective is candid, and candour is only the British spelling of the noun."
+          "registerNote": "Welcome in professional rooms, though 'with all due candor' is heard as a warning shot, so prefer the plain 'may I be candid' unless you want the temperature to rise; the adjective is candid, and candour is only the British spelling of the noun.",
+          "line": {
+            "setting": "Reviewing a colleague's plan before launch",
+            "text": "Let me offer a little candor while it is still advice, because a week after the launch the same words become an autopsy.",
+            "borrow": "a little candor while it is still advice"
+          }
         },
         {
           "id": "probity",
@@ -2780,7 +3090,12 @@
               "distinction": "general and personal, where probity implies a public standard"
             }
           ],
-          "registerNote": "Formal to the point of ceremony: it fits an audit committee, a eulogy or a reference letter, and sounds stiff about a friend, so keep it for honesty that involves money, office or public trust."
+          "registerNote": "Formal to the point of ceremony: it fits an audit committee, a eulogy or a reference letter, and sounds stiff about a friend, so keep it for honesty that involves money, office or public trust.",
+          "line": {
+            "setting": "Toasting the treasurer at his retirement dinner",
+            "text": "For thirty years he kept the books of this club, and his probity was so complete that by the end the auditors came mostly for the sandwiches.",
+            "borrow": "his probity was so complete"
+          }
         }
       ],
       "passage": {
@@ -2836,7 +3151,12 @@
               "distinction": "describes the hardness without accusing the person of poor judgment"
             }
           ],
-          "registerNote": "Negative charge: it accuses a person of being unreasonable, so never say it to a client or counterpart's face and be careful in writing that may be forwarded; about yourself or your own side it can work as a wry half-compliment."
+          "registerNote": "Negative charge: it accuses a person of being unreasonable, so never say it to a client or counterpart's face and be careful in writing that may be forwarded; about yourself or your own side it can work as a wry half-compliment.",
+          "line": {
+            "setting": "Briefing a colleague before a tough meeting",
+            "text": "You will find him obstinate long after the figures have turned, defending his forecast the way some men defend a shortcut that has made them late for years.",
+            "borrow": "obstinate long after the figures have turned"
+          }
         },
         {
           "id": "recalcitrant",
@@ -2878,7 +3198,12 @@
               "distinction": "bookish twin, common of materials and of illness that will not respond"
             }
           ],
-          "registerNote": "Strongly negative and faintly official, which is why it lands hard on paper: 'recalcitrant' in an email about a colleague reads as a disciplinary word, so never to someone's face, and about a client only in a document you would be content for them to read."
+          "registerNote": "Strongly negative and faintly official, which is why it lands hard on paper: 'recalcitrant' in an email about a colleague reads as a disciplinary word, so never to someone's face, and about a client only in a document you would be content for them to read.",
+          "line": {
+            "setting": "A collections update to the finance committee",
+            "text": "Our most recalcitrant debtor has now sent us a fruit basket, two apologies and not one cent of the money the court ordered.",
+            "borrow": "Our most recalcitrant debtor"
+          }
         },
         {
           "id": "truculent",
@@ -2919,7 +3244,12 @@
               "distinction": "broadest, and in a sales context it can even be praise"
             }
           ],
-          "registerNote": "The heaviest of the three and close to calling somebody a bully, so it is safest in the past tense about a situation rather than the present tense about a person in the room, and never to a client or counterpart's face."
+          "registerNote": "The heaviest of the three and close to calling somebody a bully, so it is safest in the past tense about a situation rather than the present tense about a person in the room, and never to a client or counterpart's face.",
+          "line": {
+            "setting": "Handing over a difficult supplier account",
+            "text": "Their manager was truculent on the phone and charming in person, so I learned to do my negotiating in his office and my complaining in writing.",
+            "borrow": "truculent on the phone and charming in person"
+          }
         }
       ],
       "passage": {
@@ -2975,7 +3305,12 @@
               "distinction": "aims at severity or risk rather than at suffering"
             }
           ],
-          "registerNote": "Slightly formal for casual talk, where 'ease' or 'take the edge off' sounds more natural, so save it for writing and meetings; it also needs a burden as its object, since you alleviate pain or pressure, not a task."
+          "registerNote": "Slightly formal for casual talk, where 'ease' or 'take the edge off' sounds more natural, so save it for writing and meetings; it also needs a burden as its object, since you alleviate pain or pressure, not a task.",
+          "line": {
+            "setting": "A condolence note to a colleague's family",
+            "text": "No letter will alleviate what your family is carrying, so I will tell you one small thing instead: he greeted me on my first day and stayed late on my worst.",
+            "borrow": "alleviate what your family is carrying"
+          }
         },
         {
           "id": "mitigate",
@@ -3017,7 +3352,12 @@
               "distinction": "the plainest of the group and the safest in conversation"
             }
           ],
-          "registerNote": "Standard business and legal register, and it can sound bureaucratic in a personal conversation; know one trap too, that the phrase for weighing against something is 'militate against', not 'mitigate against', which careful readers count as an error."
+          "registerNote": "Standard business and legal register, and it can sound bureaucratic in a personal conversation; know one trap too, that the phrase for weighing against something is 'militate against', not 'mitigate against', which careful readers count as an error.",
+          "line": {
+            "setting": "Advising a junior after a costly slip",
+            "text": "Call the client tonight; an apology mitigates almost any mistake if it reaches him before the story does.",
+            "borrow": "an apology mitigates almost any mistake"
+          }
         },
         {
           "id": "obviate",
@@ -3058,7 +3398,12 @@
               "distinction": "removes the thing itself, not the requirement to do it"
             }
           ],
-          "registerNote": "Formal, and commonly misused as a grand word for 'make easier', which is the one thing it does not mean; it is nearly always followed by 'the need for' and sounds best in writing or a prepared remark rather than in quick conversation."
+          "registerNote": "Formal, and commonly misused as a grand word for 'make easier', which is the one thing it does not mean; it is nearly always followed by 'the need for' and sounds best in writing or a prepared remark rather than in quick conversation.",
+          "line": {
+            "setting": "Justifying a legal bill to a business partner",
+            "text": "Yes, the lawyer is expensive, but his whole job is to write a contract so clear that it obviates the need for him later.",
+            "borrow": "obviates the need for him later"
+          }
         }
       ],
       "passage": {
@@ -3114,7 +3459,12 @@
               "distinction": "implies mischief and something deliberately concealed"
             }
           ],
-          "registerNote": "Safe in any register and one of the few compliments about humor that does not sound stiff, but keep it for small, private amusement, since a wry line is not a joke and wry is the wrong word for broad comedy."
+          "registerNote": "Safe in any register and one of the few compliments about humor that does not sound stiff, but keep it for small, private amusement, since a wry line is not a joke and wry is the wrong word for broad comedy.",
+          "line": {
+            "setting": "Replying when your old form is replaced",
+            "text": "I read your note about the new reporting form with a wry smile, having designed the old one.",
+            "borrow": "a wry smile, having designed the old one"
+          }
         },
         {
           "id": "droll",
@@ -3155,7 +3505,12 @@
               "distinction": "plain and general, with none of the quaintness"
             }
           ],
-          "registerNote": "Faintly old-fashioned and British in flavor, and said flatly it becomes a put-down, since 'how droll' is what people say when a joke has failed; mean it warmly or leave it alone."
+          "registerNote": "Faintly old-fashioned and British in flavor, and said flatly it becomes a put-down, since 'how droll' is what people say when a joke has failed; mean it warmly or leave it alone.",
+          "line": {
+            "setting": "Describing a taxi ride to visiting friends",
+            "text": "Our driver had a droll habit of greeting each pothole by name, like relatives he had long ago stopped expecting to improve.",
+            "borrow": "a droll habit of greeting each pothole"
+          }
         },
         {
           "id": "irreverent",
@@ -3196,7 +3551,12 @@
               "distinction": "literally about sacred things, and a real charge rather than a style"
             }
           ],
-          "registerNote": "Usually a compliment about a person's humor and a complaint about their conduct at a funeral, a court or a place of worship, where irreverence is a genuine offense, so read the room's ceremonies before you puncture them."
+          "registerNote": "Usually a compliment about a person's humor and a complaint about their conduct at a funeral, a court or a place of worship, where irreverence is a genuine offense, so read the room's ceremonies before you puncture them.",
+          "line": {
+            "setting": "Talking shop with a fellow board member",
+            "text": "Every board needs one irreverent member to ask why we still stand when the chairman enters, and every board is secretly relieved when he sends his apologies.",
+            "borrow": "Every board needs one irreverent member"
+          }
         }
       ],
       "passage": {
@@ -3252,7 +3612,12 @@
               "distinction": "obvious to everyone, sometimes unfortunately so"
             }
           ],
-          "registerNote": "Safe and useful in meetings, and one of the few formal words that shortens a discussion instead of lengthening it, but it means most important, so do not attach it to a minor detail, and note that it does not mean valid or true."
+          "registerNote": "Safe and useful in meetings, and one of the few formal words that shortens a discussion instead of lengthening it, but it means most important, so do not attach it to a minor detail, and note that it does not mean valid or true.",
+          "line": {
+            "setting": "Briefing your director on a vendor's report",
+            "text": "The report ran to sixty pages, and the salient fact was in a footnote on page forty, which is where people put the things they hope you will not read.",
+            "borrow": "the salient fact was in a footnote"
+          }
         },
         {
           "id": "incisive",
@@ -3294,7 +3659,12 @@
               "distinction": "plain, and said of a person it can suggest harshness"
             }
           ],
-          "registerNote": "High praise in a professional room, but the edge is real: an incisive question can expose someone in public, so aim it at the argument and not at the person holding it."
+          "registerNote": "High praise in a professional room, but the edge is real: an incisive question can expose someone in public, so aim it at the argument and not at the person holding it.",
+          "line": {
+            "setting": "Crediting a critic at a project debrief",
+            "text": "Her criticism of the plan was incisive in the surgical sense: one clean cut, exactly where it was needed, and the patient was up and walking by lunch.",
+            "borrow": "incisive in the surgical sense"
+          }
         },
         {
           "id": "germane",
@@ -3335,7 +3705,12 @@
               "distinction": "used of rules and cases rather than of arguments"
             }
           ],
-          "registerNote": "Formal, at home in meetings, committees and legal talk, and nearly always followed by 'to'; it does not mean important, since a point can be germane and still minor, and it has nothing to do with Germany."
+          "registerNote": "Formal, at home in meetings, committees and legal talk, and nearly always followed by 'to'; it does not mean important, since a point can be germane and still minor, and it has nothing to do with Germany.",
+          "line": {
+            "setting": "Chairing a budget meeting gone off course",
+            "text": "Your point about the coffee machine is a fair one, and I will gladly take it up at a meeting where it is germane to something.",
+            "borrow": "a meeting where it is germane to something"
+          }
         }
       ],
       "passage": {
@@ -3390,7 +3765,12 @@
               "distinction": "has an actual grievance behind it, not only an irritation"
             }
           ],
-          "registerNote": "Mild and safe at work, and useful precisely because it understates, but note the local ear: in Guyana and much of the Caribbean 'vex' in everyday speech means plain angry, so 'vexed' can land harder at home than the bookish sense intends."
+          "registerNote": "Mild and safe at work, and useful precisely because it understates, but note the local ear: in Guyana and much of the Caribbean 'vex' in everyday speech means plain angry, so 'vexed' can land harder at home than the bookish sense intends.",
+          "line": {
+            "setting": "Telling friends how the house got built",
+            "text": "The architect was vexed by our endless changes and showed it only by drawing each new window slightly smaller than we had asked.",
+            "borrow": "vexed by our endless changes"
+          }
         },
         {
           "id": "indignant",
@@ -3431,7 +3811,12 @@
               "distinction": "nursed quietly over time, where indignation is open and immediate"
             }
           ],
-          "registerNote": "It claims the moral high ground, so performing it over a small slight reads as self-importance; play it rarely, aim it at the act rather than at yourself, and it keeps its force."
+          "registerNote": "It claims the moral high ground, so performing it over a small slight reads as self-importance; play it rarely, aim it at the act rather than at yourself, and it keeps its force.",
+          "line": {
+            "setting": "Training new staff at the front counter",
+            "text": "A customer who is merely angry can be calmed in a minute; the indignant one, who speaks softly and takes notes, is already writing to your manager.",
+            "borrow": "indignant one, who speaks softly and takes notes"
+          }
         },
         {
           "id": "umbrage",
@@ -3472,7 +3857,12 @@
               "distinction": "carries a moral claim, where umbrage is about personal pride"
             }
           ],
-          "registerNote": "It lives almost entirely inside 'take umbrage at', so do not stretch it into other shapes; said of another person it comes with a raised eyebrow, which makes it safest about yourself unless you mean to call somebody touchy."
+          "registerNote": "It lives almost entirely inside 'take umbrage at', so do not stretch it into other shapes; said of another person it comes with a raised eyebrow, which makes it safest about yourself unless you mean to call somebody touchy.",
+          "line": {
+            "setting": "Teasing yourself at a birthday party",
+            "text": "I took umbrage at the young man who offered me his seat on the bus, for roughly as long as it took me to sit down.",
+            "borrow": "I took umbrage at the young man"
+          }
         }
       ],
       "passage": {
@@ -3528,7 +3918,12 @@
               "distinction": "claims a finish line that refine never claims"
             }
           ],
-          "registerNote": "Safe everywhere, with one caution about the adjective: calling a person refined is a comment on class and manners that can sound condescending, so keep refine for drafts, processes and estimates."
+          "registerNote": "Safe everywhere, with one caution about the adjective: calling a person refined is a comment on class and manners that can sound condescending, so keep refine for drafts, processes and estimates.",
+          "line": {
+            "setting": "Updating the steering group on a late project",
+            "text": "We have refined the estimate every Friday since March, and it now sits almost exactly where the quietest person in the room put it on the first day.",
+            "borrow": "We have refined the estimate every Friday"
+          }
         },
         {
           "id": "hone",
@@ -3570,7 +3965,12 @@
               "distinction": "removes what is coarse, where honing puts on the edge"
             }
           ],
-          "registerNote": "Know the trap: 'hone in on' is widely judged an error for 'home in on', which comes from homing pigeons closing on a target, so keep hone for edges, skills and arguments and say 'home in on' when you mean closing in."
+          "registerNote": "Know the trap: 'hone in on' is widely judged an error for 'home in on', which comes from homing pigeons closing on a target, so keep hone for edges, skills and arguments and say 'home in on' when you mean closing in.",
+          "line": {
+            "setting": "An anecdote for visitors to the market",
+            "text": "The best fishmonger in the market honed her knife and her opinions every morning, and either one could take your finger off.",
+            "borrow": "honed her knife and her opinions every morning"
+          }
         },
         {
           "id": "burgeon",
@@ -3611,7 +4011,12 @@
               "distinction": "loud, commercial and sudden, and about volume rather than beginnings"
             }
           ],
-          "registerNote": "Careful users object to burgeon used to mean simply grow large: a long-established company does not burgeon into a giant, it expands, so keep the word for the early visible surge and use plain 'growing' in casual talk."
+          "registerNote": "Careful users object to burgeon used to mean simply grow large: a long-established company does not burgeon into a giant, it expands, so keep the word for the early visible surge and use plain 'growing' in casual talk.",
+          "line": {
+            "setting": "Coaching a new manager on a young team",
+            "text": "A young team will not burgeon under a manager who digs it up every Monday to see how the roots are coming along.",
+            "borrow": "will not burgeon under a manager"
+          }
         }
       ],
       "passage": {
@@ -3666,7 +4071,12 @@
               "distinction": "careful: it hints at what suits you rather than what is right"
             }
           ],
-          "registerNote": "Safe and usually flattering in business, but it can be cover for quietly abandoning a principle, so if you call a decision pragmatic, be ready to name what you traded away."
+          "registerNote": "Safe and usually flattering in business, but it can be cover for quietly abandoning a principle, so if you call a decision pragmatic, be ready to name what you traded away.",
+          "line": {
+            "setting": "Answering a question at the annual review",
+            "text": "We made the pragmatic choice and hired the firm that answers its phone rather than the one with the famous name, which I am sure looks lovely on a letterhead.",
+            "borrow": "We made the pragmatic choice"
+          }
         },
         {
           "id": "judicious",
@@ -3707,7 +4117,12 @@
               "distinction": "plain and everyday, and it praises the outcome more than the weighing"
             }
           ],
-          "registerNote": "Quiet high praise and safe in any register, but do not confuse it with judicial, which means belonging to the courts, and applied to your own choices it sounds smug, so use it about other people's."
+          "registerNote": "Quiet high praise and safe in any register, but do not confuse it with judicial, which means belonging to the courts, and applied to your own choices it sounds smug, so use it about other people's.",
+          "line": {
+            "setting": "Thanking a colleague after a tense meeting",
+            "text": "Your judicious silence, when their director misread our own numbers back to us, spared him embarrassment and spared us an enemy.",
+            "borrow": "Your judicious silence"
+          }
         },
         {
           "id": "circumspect",
@@ -3748,7 +4163,12 @@
               "distinction": "about what you disclose rather than how you act"
             }
           ],
-          "registerNote": "In a room that prizes decisiveness, 'we should be circumspect' can be heard as stalling, so name the specific thing you are watching for; as a description of a person it can also imply quietly that they are hard to read."
+          "registerNote": "In a room that prizes decisiveness, 'we should be circumspect' can be heard as stalling, so name the specific thing you are watching for; as a description of a person it can also imply quietly that they are hard to read.",
+          "line": {
+            "setting": "Chatting with friends about the neighborhood",
+            "text": "Our neighbor was so circumspect that in two years we learned only his name and his opinion of the traffic, while he somehow learned everything about us.",
+            "borrow": "Our neighbor was so circumspect"
+          }
         }
       ],
       "passage": {
@@ -3803,7 +4223,12 @@
               "distinction": "the odd sense of singular with none of the praise attached"
             }
           ],
-          "registerNote": "It carries a second edge, since singular also means strange or peculiar, so 'a singular man' can read as a raised eyebrow; attach it to an achievement or a talent and the compliment is unmistakable."
+          "registerNote": "It carries a second edge, since singular also means strange or peculiar, so 'a singular man' can read as a raised eyebrow; attach it to an achievement or a talent and the compliment is unmistakable.",
+          "line": {
+            "setting": "A eulogy for a musician friend",
+            "text": "He was never the best pianist in the city, only the singular one, the one you could pick out from the street with every window shut.",
+            "borrow": "only the singular one"
+          }
         },
         {
           "id": "consummate",
@@ -3844,7 +4269,12 @@
               "distinction": "about rank at the top rather than completeness of mastery"
             }
           ],
-          "registerNote": "Heteronym warning: the adjective is KON·suh·mit and belongs in front of a noun, while the verb is KON·suh·mayt, to bring to completion and most often said of a marriage, so the ending matters (you will also hear the adjective as kun·SUM·it, which is equally standard)."
+          "registerNote": "Heteronym warning: the adjective is KON·suh·mit and belongs in front of a noun, while the verb is KON·suh·mayt, to bring to completion and most often said of a marriage, so the ending matters (you will also hear the adjective as kun·SUM·it, which is equally standard).",
+          "line": {
+            "setting": "Admiring the other side after a deal",
+            "text": "They sent a consummate negotiator, who gave up three things we had never wanted, slowly and with visible pain, and we thanked him for each one.",
+            "borrow": "They sent a consummate negotiator"
+          }
         },
         {
           "id": "peerless",
@@ -3885,7 +4315,12 @@
               "distinction": "the plainest of the four and the easiest to say without ceremony"
             }
           ],
-          "registerNote": "A superlative with nothing above it, so it burns out if spent often: keep it for one or two things a year, and about your own work it reads as advertising, so attach it to a craft, a record or somebody else."
+          "registerNote": "A superlative with nothing above it, so it burns out if spent often: keep it for one or two things a year, and about your own work it reads as advertising, so attach it to a craft, a record or somebody else.",
+          "line": {
+            "setting": "Recommending a tailor to a friend",
+            "text": "The tailor on the corner is peerless at lapels and hopeless at deadlines, so order the suit in March if the wedding is in June.",
+            "borrow": "peerless at lapels and hopeless at deadlines"
+          }
         }
       ],
       "passage": {
@@ -3940,7 +4375,12 @@
               "distinction": "neutral about height: it says only that the thing stopped"
             }
           ],
-          "registerNote": "Use it only when there really was a build, since calling a quiet ending a culmination overstates it and people notice; the standard preposition is 'in', as in culminated in a signed contract, not 'with'."
+          "registerNote": "Use it only when there really was a build, since calling a quiet ending a culmination overstates it and people notice; the standard preposition is 'in', as in culminated in a signed contract, not 'with'.",
+          "line": {
+            "setting": "A cricket story at the club bar",
+            "text": "His innings culminated in a six over the pavilion roof, and the ball, as far as anyone knows, is still at large.",
+            "borrow": "culminated in a six over the pavilion roof"
+          }
         },
         {
           "id": "denouement",
@@ -3981,7 +4421,12 @@
               "distinction": "what follows, usually of something bad, and without anything being resolved"
             }
           ],
-          "registerNote": "It belongs to stories and to affairs with real tension in them, so a routine last week of work is not a denouement; say it in the French shape, day·noo·MAHN, rather than sounding the ending as 'ment'."
+          "registerNote": "It belongs to stories and to affairs with real tension in them, so a routine last week of work is not a denouement; say it in the French shape, day·noo·MAHN, rather than sounding the ending as 'ment'.",
+          "line": {
+            "setting": "A family story told at a reunion",
+            "text": "After three weeks of silence between my aunts, the denouement came over a pot of soup, with nobody admitting anything and everybody taking seconds.",
+            "borrow": "the denouement came over a pot of soup"
+          }
         },
         {
           "id": "apotheosis",
@@ -4022,7 +4467,12 @@
               "distinction": "the purest essence of a kind, more abstract and less triumphant"
             }
           ],
-          "registerNote": "The largest word in this volume and the easiest to overspend: it needs something genuinely exemplary under it or it sounds like showing off, so use it once, deliberately, and keep the sentence around it plain."
+          "registerNote": "The largest word in this volume and the easiest to overspend: it needs something genuinely exemplary under it or it sounds like showing off, so use it once, deliberately, and keep the sentence around it plain.",
+          "line": {
+            "setting": "Raising a glass to a generous host",
+            "text": "If tonight is not the apotheosis of the dinner party, it is near enough that none of us will dare to have you over in return.",
+            "borrow": "the apotheosis of the dinner party"
+          }
         }
       ],
       "passage": {
