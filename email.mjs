@@ -61,7 +61,16 @@ export function subjectFor(days, n) {
     : `Wordhoard · Day ${n}: Review from the hoard`;
 }
 
-export function buildEmail(lexicon, n) {
+/**
+ * Where the recorded clips live on the site, for the email's listen links.
+ * Each word has w/<id>.mp3 (the word) and l/<id>.mp3 (its line to borrow).
+ */
+export function audioBase(lexicon, voice) {
+  return new URL(`audio/${voice || "heart"}/`, lexicon.siteUrl).href;
+}
+
+export function buildEmail(lexicon, n, options = {}) {
+  const audio = audioBase(lexicon, options.voice);
   const days = lexicon.days || [];
   const lastDay = days.reduce((max, d) => Math.max(max, d.day), 0);
   if (lastDay < 1) {
@@ -71,7 +80,7 @@ export function buildEmail(lexicon, n) {
   if (!entry && n <= lastDay) {
     throw new Error(`lexicon.json has no day ${n}`);
   }
-  return entry ? contentEmail(lexicon, entry, n) : reviewEmail(lexicon, n);
+  return entry ? contentEmail(lexicon, entry, n, audio) : reviewEmail(lexicon, n, audio);
 }
 
 /* ---------- HTML pieces ---------- */
@@ -124,11 +133,38 @@ function respellLine(respell) {
   return `<div style="font-family:${FONT};font-size:14px;line-height:1.4;">${respellHtml(respell)}</div>`;
 }
 
+function clipLinks(audio, word) {
+  const links = [{ label: "Hear it", href: `${audio}w/${encodeURIComponent(word.id)}.mp3` }];
+  if (word.line && word.line.text) {
+    links.push({ label: "Hear it in a sentence", href: `${audio}l/${encodeURIComponent(word.id)}.mp3` });
+  }
+  return links;
+}
+
+/** One tap plays the recorded clip in the phone's browser. */
+function listenLinks(audio, word) {
+  const sep = `<span style="color:${P.rule};">&nbsp; · &nbsp;</span>`;
+  const html = clipLinks(audio, word)
+    .map((l) => `<a href="${esc(l.href)}" style="color:${P.ink};text-decoration:underline;text-decoration-color:${P.rule};">${esc(l.label)}</a>`)
+    .join(sep);
+  return `<div style="font-family:${FONT};font-size:13px;line-height:1.5;letter-spacing:.02em;">${html}</div>`;
+}
+
+/** The line to borrow, with its reusable phrase underlined. */
+function lineHtml(line) {
+  const text = String(line.text || "");
+  const at = line.borrow ? text.indexOf(line.borrow) : -1;
+  const body = at < 0
+    ? esc(text)
+    : `${esc(text.slice(0, at))}<span style="text-decoration:underline;text-decoration-color:${P.gold};">${esc(line.borrow)}</span>${esc(text.slice(at + line.borrow.length))}`;
+  return body;
+}
+
 function marginalia(label, text, italic) {
   return `<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="width:100%;border-collapse:collapse;"><tr><td style="width:2px;background:${P.rule};font-size:1px;line-height:1px;">&nbsp;</td><td style="padding-left:12px;">${eyebrow(label)}${gap(3)}<div style="font-family:${FONT};font-size:15px;line-height:1.6;color:${P.ink};${italic ? "font-style:italic;" : ""}">${esc(text)}</div></td></tr></table>`;
 }
 
-function wordCard(word) {
+function wordCard(word, audio) {
   const blocks = [
     doubleRule(),
     gap(15),
@@ -137,11 +173,19 @@ function wordCard(word) {
     `<div style="font-family:${FONT};font-size:27px;line-height:1.15;color:${P.gold};">${esc(word.word)}</div>`,
     gap(6),
     respellLine(word.respell),
+    gap(6),
+    listenLinks(audio, word),
     gap(13),
     para(word.definition, 16, P.ink),
   ];
   if (word.nuance) {
     blocks.push(gap(9), para(word.nuance, 14, P.slate));
+  }
+  if (word.line && word.line.text) {
+    blocks.push(
+      gap(14),
+      `<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="width:100%;border-collapse:collapse;"><tr><td style="width:2px;background:${P.rule};font-size:1px;line-height:1px;">&nbsp;</td><td style="padding-left:12px;">${eyebrow("A line to borrow")}${gap(3)}<div style="font-family:${FONT};font-size:13px;line-height:1.5;font-style:italic;color:${P.slate};">${esc(word.line.setting)}</div>${gap(3)}<div style="font-family:${FONT};font-size:16px;line-height:1.6;font-style:italic;color:${P.ink};">${lineHtml(word.line)}</div></td></tr></table>`,
+    );
   }
   const example = word.examples && word.examples.professional;
   if (example) {
@@ -177,25 +221,30 @@ function passageBlock(passage) {
   ].join("");
 }
 
-function reviewEntry(pick) {
+function reviewEntry(pick, audio) {
   return [
     `<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="width:100%;border-collapse:collapse;"><tr><td style="padding:0;">`,
     `<div style="font-family:${FONT};font-size:19px;line-height:1.25;color:${P.gold};">${esc(pick.word.word)}</div>`,
     gap(4),
     respellLine(pick.word.respell),
+    gap(4),
+    listenLinks(audio, pick.word),
     `</td><td align="right" valign="top" style="padding:0;font-family:${FONT};font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:${P.slate};white-space:nowrap;">Day ${pick.day}</td></tr></table>`,
     gap(18),
   ].join("");
 }
 
-function reviewSection(label, picks) {
+function reviewSection(label, picks, audio, listenHref) {
   if (!picks.length) return "";
   return [
     doubleRule(),
     gap(15),
     eyebrow(label),
     gap(14),
-    picks.map(reviewEntry).join(""),
+    listenHref
+      ? `<div style="font-family:${FONT};font-size:14px;line-height:1.5;"><a href="${esc(listenHref)}" style="color:${P.ink};text-decoration:underline;text-decoration-color:${P.gold};">Listen to all ${picks.length === 6 ? "six" : picks.length}, each word and then its line</a></div>${gap(16)}`
+      : "",
+    picks.map((pick) => reviewEntry(pick, audio)).join(""),
     para(RECALL_LINE, 13.5, P.slate, "font-style:italic;"),
     gap(26),
   ].join("");
@@ -269,7 +318,7 @@ ${inner}
 
 /* ---------- whole emails ---------- */
 
-function contentEmail(lexicon, entry, n) {
+function contentEmail(lexicon, entry, n, audio) {
   const days = lexicon.days || [];
   const subject = subjectFor(days, n);
   const inner = [
@@ -281,9 +330,9 @@ function contentEmail(lexicon, entry, n) {
     gap(7),
     para(entry.themeLine, 15, P.slate, "font-style:italic;"),
     gap(26),
-    (entry.words || []).map(wordCard).join(""),
+    (entry.words || []).map((word) => wordCard(word, audio)).join(""),
     entry.passage ? passageBlock(entry.passage) : "",
-    reviewSection("From the hoard", reviewForDay(days, n)),
+    reviewSection("From the hoard", reviewForDay(days, n), audio),
     epigramBlock(entry.epigram),
     footer(lexicon.siteUrl, n),
   ].join("");
@@ -291,7 +340,7 @@ function contentEmail(lexicon, entry, n) {
   return {
     subject,
     html: page(subject, entry.themeLine || entry.theme, inner),
-    text: contentText(lexicon, entry, n),
+    text: contentText(lexicon, entry, n, audio),
   };
 }
 
@@ -313,7 +362,7 @@ function welcomeBlock() {
   ].join("");
 }
 
-function reviewEmail(lexicon, n) {
+function reviewEmail(lexicon, n, audio) {
   const days = lexicon.days || [];
   const subject = subjectFor(days, n);
   const picks = postVolumeReview(days, n);
@@ -327,14 +376,14 @@ function reviewEmail(lexicon, n) {
     gap(8),
     para(welcome, 15.5, P.ink),
     gap(26),
-    reviewSection("From the hoard", picks),
+    reviewSection("From the hoard", picks, audio, `${lexicon.siteUrl}#listen`),
     footer(lexicon.siteUrl, n),
   ].join("");
 
   return {
     subject,
     html: page(subject, "Six from the hoard to summon back.", inner),
-    text: reviewText(lexicon, picks, n),
+    text: reviewText(lexicon, picks, n, audio),
   };
 }
 
@@ -356,7 +405,11 @@ function wrapText(text, width) {
   return out.join("\n");
 }
 
-function contentText(lexicon, entry, n) {
+function clipLinesText(audio, word) {
+  return clipLinks(audio, word).map((l) => `  ${l.label}: ${l.href}`);
+}
+
+function contentText(lexicon, entry, n, audio) {
   const days = lexicon.days || [];
   const lines = [`WORDHOARD · Day ${n} of 30`, entry.theme, ""];
   if (n === 1) {
@@ -366,8 +419,10 @@ function contentText(lexicon, entry, n) {
 
   (entry.words || []).forEach((word, i) => {
     lines.push(`${i + 1}. ${String(word.word).toUpperCase()}  (${word.respell})  · ${word.tier}, ${word.pos}`);
+    lines.push(...clipLinesText(audio, word));
     lines.push(wrapText(word.definition, 72));
     if (word.nuance) lines.push(wrapText(word.nuance, 72));
+    if (word.line && word.line.text) lines.push(`A line to borrow: ${wrapText(word.line.text, 72)}`);
     const example = word.examples && word.examples.professional;
     if (example) lines.push(`Say it: ${wrapText(example, 72)}`);
     if (word.registerNote) lines.push(`Register: ${wrapText(word.registerNote, 72)}`);
@@ -386,6 +441,7 @@ function contentText(lexicon, entry, n) {
     lines.push("FROM THE HOARD");
     picks.forEach((pick) => {
       lines.push(`- ${pick.word.word}  (${pick.word.respell})  · Day ${pick.day}`);
+      lines.push(...clipLinesText(audio, pick.word));
     });
     lines.push(wrapText(RECALL_LINE, 72), "");
   }
@@ -395,7 +451,7 @@ function contentText(lexicon, entry, n) {
   return lines.join("\n");
 }
 
-function reviewText(lexicon, picks, n) {
+function reviewText(lexicon, picks, n, audio) {
   const lines = [
     `WORDHOARD · Day ${n} · Volume I complete`,
     "",
@@ -405,9 +461,11 @@ function reviewText(lexicon, picks, n) {
     ),
     "",
     "FROM THE HOARD",
+    `Listen to all six: ${lexicon.siteUrl}#listen`,
   ];
   picks.forEach((pick) => {
     lines.push(`- ${pick.word.word}  (${pick.word.respell})  · Day ${pick.day}`);
+    lines.push(...clipLinesText(audio, pick.word));
   });
   lines.push(wrapText(RECALL_LINE, 72), "");
   lines.push(...footerText(lexicon.siteUrl, n));

@@ -82,7 +82,7 @@ button {
   cursor: pointer;
 }
 
-.tab, .chip, .btn, .speak, .voice, .card-head .headword, .journal__row {
+.tab, .chip, .btn, .speak, .say-line, .voice, .card-head .headword, .journal__row {
   transition: color 160ms ease, border-color 160ms ease, background-color 160ms ease, opacity 160ms ease;
 }
 
@@ -295,6 +295,62 @@ button {
 
 .register { margin: .3rem 0 0; color: var(--slate); }
 
+/* A line to borrow: the word heard in use. */
+.line { margin-top: 1.5rem; padding: 1.1rem 0 0 1rem; border-left: 1px solid var(--rule); }
+.line__setting { margin: .1rem 0 0; font-style: italic; font-size: .95rem; color: var(--slate); }
+.line__text { margin: .45rem 0 .9rem; font-size: 1.2rem; line-height: 1.6; font-style: italic; }
+.line__text mark {
+  background: none;
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: var(--gilt);
+  text-decoration-thickness: 1px;
+  text-underline-offset: .22em;
+}
+
+.say-line {
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  min-height: 44px;
+  padding: 0 1rem 0 .75rem;
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  font-family: var(--display);
+  font-weight: 600;
+  font-size: .7rem;
+  letter-spacing: .13em;
+  text-transform: uppercase;
+  color: var(--slate);
+  white-space: nowrap;
+}
+.say-line:hover { color: var(--vellum); border-color: var(--vellum); }
+.say-line svg { width: 18px; height: 18px; display: block; flex: none; }
+.say-line.is-playing { color: var(--gilt); border-color: var(--gilt); }
+.say-line.is-playing path + path { animation: sounding 1.2s ease-in-out infinite; }
+.say-line.is-playing path + path + path { animation-delay: .25s; }
+
+.examples .ex-row { display: flex; align-items: flex-start; justify-content: space-between; gap: .5rem; }
+.examples .ex-row > div { min-width: 0; }
+.examples .speak { width: 40px; height: 40px; margin-top: -.15rem; }
+.examples .speak svg { width: 18px; height: 18px; }
+
+.listen {
+  margin: 2rem 0 0;
+  padding: 1.1rem 1.2rem 1.2rem;
+  border: 1px solid var(--rule);
+  border-radius: 2px;
+  background: var(--panel);
+}
+.listen__head { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: .6rem 1rem; }
+.listen__head .eyebrow { margin: 0; }
+.listen__now { margin: .9rem 0 0; min-height: 1.6em; }
+.listen__now:empty { display: none; }
+.listen__word { display: block; font-family: var(--display); font-weight: 600; font-size: 1.45rem; color: var(--gilt); }
+.listen__line { display: block; margin-top: .3rem; font-style: italic; font-size: 1.08rem; }
+.listen.is-cued { border-color: var(--gilt); }
+.card.is-current { border-top-color: var(--gilt); }
+
 .speak {
   display: inline-flex;
   align-items: center;
@@ -325,10 +381,12 @@ button {
 
 .card-foot {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: flex-start;
-  gap: 1rem;
+  justify-content: space-between;
+  gap: .4rem 1rem;
 }
+.card-foot__sound { display: inline-flex; align-items: center; gap: .4rem; }
 
 /* ---------- day view ---------- */
 
@@ -359,8 +417,8 @@ button {
 
 @media (prefers-reduced-motion: reduce) {
   .gild { animation: none; color: var(--gilt); }
-  .speak.is-playing path { animation: none; }
-  .tab, .chip, .btn, .speak, .voice, .card-head .headword, .journal__row { transition: none; }
+  .speak.is-playing path, .say-line.is-playing path { animation: none; }
+  .tab, .chip, .btn, .speak, .say-line, .voice, .card-head .headword, .journal__row { transition: none; }
 }
 
 /* ---------- passage ---------- */
@@ -747,6 +805,9 @@ button {
   var clipKey = null;      // the clip loaded in player, null once the device voice has taken over
   var deviceTimer = null;  // the pending device-voice start
   var deviceWatch = null;  // clears a device utterance that never starts
+  var queue = null;        // "Listen to all": { items, at, total }, null when idle
+  var queueTimer = null;   // the pause between two clips of the queue
+  var EXAMPLE_REGISTERS = ['conversational', 'professional', 'elevated'];
 
   /* ---------- small helpers ---------- */
 
@@ -869,13 +930,15 @@ button {
     var base = 'audio/' + encodeURIComponent(state.voice) + '/';
     if (kind === 'word') return base + 'w/' + encodeURIComponent(id) + '.mp3';
     if (kind === 'passage') return base + 'p/' + encodeURIComponent(id) + '.mp3';
+    if (kind === 'line') return base + 'l/' + encodeURIComponent(id) + '.mp3';
+    if (kind === 'example') return base + 'e/' + encodeURIComponent(id) + '.mp3';
     return base + 'sample.mp3';
   }
 
   // The speak button for whatever is sounding lights up and reads as pressed.
   function markPlaying(key) {
     playingKey = key;
-    Array.prototype.forEach.call(document.querySelectorAll('.speak'), function (button) {
+    Array.prototype.forEach.call(document.querySelectorAll('[data-action="speak"]'), function (button) {
       var on = key !== null && button.getAttribute('data-kind') + ':' + button.getAttribute('data-id') === key;
       button.classList.toggle('is-playing', on);
       button.setAttribute('aria-pressed', on ? 'true' : 'false');
@@ -928,20 +991,34 @@ button {
     }, 20);
   }
 
-  // Plays the clip for one headword ('word'), passage ('passage') or the
-  // picker's sample line ('sample'). A second tap on whatever is sounding stops it.
-  function speak(kind, id, text, rate) {
+  // Plays the clip for one headword ('word'), its line to borrow ('line'), one
+  // of its examples ('example'), a passage ('passage') or the picker's sample
+  // line ('sample'). A second tap on whatever is sounding stops it. fromQueue
+  // marks a clip played by "Listen to all", which moves on when it ends.
+  function speak(kind, id, text, rate, fromQueue) {
     var key = kind + ':' + id;
     var wasPlaying = playingKey === key;
+    if (!fromQueue) endQueue();
     stopSpeaking();
-    if (wasPlaying) return;
-    if (!voiceById(state.voice)) { speakWithDevice(text, rate, key); return; }
+    if (wasPlaying && !fromQueue) return;
+    if (!voiceById(state.voice)) {
+      // The queue needs recorded clips; the device voice says one thing at a time.
+      if (fromQueue) { endQueue(); return; }
+      speakWithDevice(text, rate, key);
+      return;
+    }
     if (!player) {
       player = new window.Audio();
-      player.addEventListener('ended', function () { markPlaying(null); });
+      player.addEventListener('ended', function () {
+        markPlaying(null);
+        if (queue) advanceQueue();
+      });
       // A pause the page did not ask for: a call, Siri, headphones out, the lock screen.
       player.addEventListener('pause', function () {
-        if (player.paused && !player.ended && playingKey !== null && playingKey === clipKey) markPlaying(null);
+        if (player.paused && !player.ended && playingKey !== null && playingKey === clipKey) {
+          markPlaying(null);
+          endQueue();
+        }
       });
     }
     var url = clipUrl(kind, id);
@@ -951,6 +1028,8 @@ button {
       fellBack = true;
       clipKey = null;
       console.warn('wordhoard: could not play ' + url, err);
+      // A clip that will not play inside the queue is skipped, not read by the device.
+      if (fromQueue) { markPlaying(null); advanceQueue(); return; }
       // The sample stands for one recorded voice; the device voice would misrepresent it.
       if (kind === 'sample') { markPlaying(null); return; }
       speakWithDevice(text, rate, key);
@@ -964,16 +1043,117 @@ button {
     if (started && typeof started.catch === 'function') started.catch(fallBack);
   }
 
+  var SPEAK_ICON = '<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">' +
+    '<path d="M4 9.2h3.6L13 5v14l-5.4-4.2H4z" fill="currentColor"></path>' +
+    '<path d="M16.4 8.7a4.6 4.6 0 0 1 0 6.6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>' +
+    '<path d="M18.9 6.2a8.1 8.1 0 0 1 0 11.6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity=".55"></path>' +
+    '</svg>';
+
   function speakButton(label, kind, id) {
     if (!canSpeak && !state.voices) return '';
     var on = playingKey === kind + ':' + id;
-    var icon = '<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">' +
-      '<path d="M4 9.2h3.6L13 5v14l-5.4-4.2H4z" fill="currentColor"></path>' +
-      '<path d="M16.4 8.7a4.6 4.6 0 0 1 0 6.6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>' +
-      '<path d="M18.9 6.2a8.1 8.1 0 0 1 0 11.6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity=".55"></path>' +
-      '</svg>';
     return '<button class="speak' + (on ? ' is-playing' : '') + '" type="button" data-action="speak" data-kind="' + esc(kind) +
-      '" data-id="' + esc(id) + '" aria-label="' + esc(label) + '" aria-pressed="' + (on ? 'true' : 'false') + '">' + icon + '</button>';
+      '" data-id="' + esc(id) + '" aria-label="' + esc(label) + '" aria-pressed="' + (on ? 'true' : 'false') + '">' + SPEAK_ICON + '</button>';
+  }
+
+  // The word heard in use: plays its line to borrow.
+  function sayLineButton(word, label) {
+    if (!word.line || !has(word.line.text)) return '';
+    if (!canSpeak && !state.voices) return '';
+    var on = playingKey === 'line:' + word.id;
+    return '<button class="say-line' + (on ? ' is-playing' : '') + '" type="button" data-action="speak" data-kind="line"' +
+      ' data-id="' + esc(word.id) + '" aria-label="Hear ' + esc(word.word) + ' in a sentence" aria-pressed="' +
+      (on ? 'true' : 'false') + '">' + SPEAK_ICON + '<span>' + esc(label) + '</span></button>';
+  }
+
+  /* ---------- listen to all ---------- */
+
+  // Plays each word and then its line to borrow, one after another, showing
+  // the word and the line while they sound.
+  function queueItems(entries) {
+    var items = [];
+    entries.forEach(function (entry) {
+      var word = entry.w;
+      if (!word || !word.line || !has(word.line.text)) return;
+      items.push({ kind: 'word', id: word.id, text: word.word, rate: 0.9, word: word });
+      items.push({ kind: 'line', id: word.id, text: word.line.text, rate: 0.92, word: word });
+    });
+    return items;
+  }
+
+  function listenLabel(count) {
+    var names = ['', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine'];
+    return count === 1 ? 'Listen' : 'Listen to all ' + (names[count] || String(count));
+  }
+
+  function listenPanelHtml(entries) {
+    var count = queueItems(entries).length / 2;
+    if (!count || !state.voices) return '';
+    var playing = queue !== null;
+    return '<section class="listen" id="listen" aria-label="Hear the words in use">' +
+      '<div class="listen__head"><p class="eyebrow">Hear them in use</p>' +
+      '<button class="btn" type="button" data-action="listen" data-count="' + count + '" aria-pressed="' +
+      (playing ? 'true' : 'false') + '">' + (playing ? 'Stop' : listenLabel(count)) + '</button></div>' +
+      '<p class="listen__now" id="listen-now" aria-live="polite"></p></section>';
+  }
+
+  function showNow(item) {
+    var now = el('listen-now');
+    if (now) {
+      now.innerHTML = item
+        ? '<span class="listen__word">' + esc(item.word.word) + '</span><span class="listen__line">' + esc(item.word.line.text) + '</span>'
+        : '';
+    }
+    var button = document.querySelector('[data-action="listen"]');
+    if (button) {
+      button.setAttribute('aria-pressed', item ? 'true' : 'false');
+      button.textContent = item ? 'Stop' : listenLabel(Number(button.getAttribute('data-count')) || 0);
+    }
+    Array.prototype.forEach.call(document.querySelectorAll('[data-word]'), function (node) {
+      node.classList.toggle('is-current', Boolean(item) && node.getAttribute('data-word') === item.word.id);
+    });
+  }
+
+  function startQueue(entries) {
+    var items = queueItems(entries);
+    if (!items.length) return;
+    endQueue();
+    stopSpeaking();
+    queue = { items: items, at: 0 };
+    playQueueItem();
+  }
+
+  function playQueueItem() {
+    if (!queue) return;
+    var item = queue.items[queue.at];
+    showNow(item);
+    speak(item.kind, item.id, item.text, item.rate, true);
+  }
+
+  function advanceQueue() {
+    if (!queue) return;
+    window.clearTimeout(queueTimer);
+    queue.at += 1;
+    if (queue.at >= queue.items.length) { endQueue(); return; }
+    // A longer breath before the next word than between a word and its line.
+    var gap = queue.items[queue.at].kind === 'word' ? 1300 : 650;
+    queueTimer = window.setTimeout(playQueueItem, gap);
+  }
+
+  function endQueue() {
+    window.clearTimeout(queueTimer);
+    if (!queue) return;
+    queue = null;
+    showNow(null);
+  }
+
+  // The entries the current view would play.
+  function listenEntries() {
+    if (state.view === 'today' && state.today > state.totalDays) return postVolumeReview(state.today);
+    var dayNumber = state.view === 'days' ? state.openDay : state.today;
+    var day = dayByNumber(dayNumber);
+    if (!day) return [];
+    return (day.words || []).map(function (word, i) { return { w: word, day: day.day, theme: day.theme, i: i }; });
   }
 
   // Shown once audio/voices.json lists more than one voice.
@@ -1017,22 +1197,42 @@ button {
     return bits.join(' <span aria-hidden="true">·</span> ');
   }
 
+  // The line to borrow, with the reusable phrase underlined.
+  function markBorrow(text, borrow) {
+    var at = has(borrow) ? text.indexOf(borrow) : -1;
+    if (at < 0) return esc(text);
+    return esc(text.slice(0, at)) + '<mark>' + esc(borrow) + '</mark>' + esc(text.slice(at + borrow.length));
+  }
+
+  function lineHtml(word) {
+    var line = word.line;
+    if (!line || !has(line.text)) return '';
+    var out = '<div class="line"><p class="label">A line to borrow</p>';
+    if (has(line.setting)) out += '<p class="line__setting">' + esc(line.setting) + '</p>';
+    out += '<p class="line__text">' + markBorrow(String(line.text), line.borrow) + '</p>';
+    out += sayLineButton(word, 'Hear it in a sentence');
+    out += '</div>';
+    return out;
+  }
+
   function wordDetailHtml(word) {
     var out = '';
     if (has(word.nuance)) out += '<p class="nuance">' + esc(word.nuance) + '</p>';
+    out += lineHtml(word);
     if (has(word.etymology)) {
       out += '<div class="field"><p class="label">Origin</p><p>' + esc(word.etymology) + '</p></div>';
     }
     var ex = word.examples || {};
     var rows = [
-      ['Conversational', ex.conversational],
-      ['Professional', ex.professional],
-      ['Elevated', ex.elevated]
+      ['Conversational', ex.conversational, 'conversational'],
+      ['Professional', ex.professional, 'professional'],
+      ['Elevated', ex.elevated, 'elevated']
     ].filter(function (row) { return has(row[1]); });
     if (rows.length) {
       out += '<div class="field"><p class="label">In use</p><ul class="examples">';
       rows.forEach(function (row) {
-        out += '<li><span class="ex-label">' + row[0] + '</span><p>' + esc(row[1]) + '</p></li>';
+        out += '<li><div class="ex-row"><div><span class="ex-label">' + row[0] + '</span><p>' + esc(row[1]) + '</p></div>' +
+          speakButton('Hear the ' + row[2] + ' example', 'example', word.id + '-' + row[2]) + '</div></li>';
       });
       out += '</ul></div>';
     }
@@ -1057,7 +1257,7 @@ button {
 
   function wordPlateHtml(entry, gild) {
     var word = entry.w;
-    var out = '<article class="plate">';
+    var out = '<article class="plate" data-word="' + esc(word.id) + '">';
     out += '<div class="plate__inner">';
     out += '<div class="plate__head">';
     out += '<div><h3 class="headword' + (gild ? ' gild' : '') + '">' + esc(word.word) + '</h3>';
@@ -1107,6 +1307,7 @@ button {
     out += '<p class="eyebrow day__eyebrow">Volume I <span aria-hidden="true">·</span> Day ' + day.day + '</p>';
     out += '<h2 class="day__theme">' + esc(day.theme) + '</h2>';
     if (has(day.themeLine)) out += '<p class="day__line">' + esc(day.themeLine) + '</p>';
+    out += listenPanelHtml((day.words || []).map(function (word, i) { return { w: word, day: day.day, i: i }; }));
     out += '<div class="words">';
     (day.words || []).forEach(function (word, i) {
       out += wordPlateHtml({ w: word, day: day.day, theme: day.theme, i: i }, gild);
@@ -1125,7 +1326,7 @@ button {
     var key = context + ':' + word.id;
     var isOpen = state.open[key] === true;
     var panelId = 'panel-' + context + '-' + word.id;
-    var out = '<article class="plate card">';
+    var out = '<article class="plate card" data-word="' + esc(word.id) + '">';
     out += '<div class="plate__inner">';
     out += '<h3><button class="card-head" type="button" data-action="expand" data-key="' + esc(key) +
       '" aria-expanded="' + (isOpen ? 'true' : 'false') + '" aria-controls="' + esc(panelId) + '">';
@@ -1147,7 +1348,8 @@ button {
     out += '<button class="card-more" type="button" data-action="expand" data-key="' + esc(key) +
       '" aria-expanded="' + (isOpen ? 'true' : 'false') + '" aria-controls="' + esc(panelId) + '">' +
       (isOpen ? 'Close' : (context === 'hoard' ? 'Full entry' : 'Reveal the meaning')) + '</button>';
-    out += speakButton('Say the word ' + word.word, 'word', word.id);
+    out += '<span class="card-foot__sound">' + sayLineButton(word, 'In a sentence') +
+      speakButton('Say the word ' + word.word, 'word', word.id) + '</span>';
     out += '</div>';
     out += '</div></article>';
     return out;
@@ -1168,6 +1370,7 @@ button {
     out += '<p class="eyebrow day__eyebrow">Day ' + state.today + ' <span aria-hidden="true">·</span> review</p>';
     out += '<h2 class="day__theme">Volume I complete</h2>';
     out += '<p class="day__line">Thirty days are in. Today is a day for going back: six words drawn from the hoard, meanings hidden until you have tried to summon them.</p>';
+    out += listenPanelHtml(picks);
     out += '<div class="grid review-grid">';
     picks.forEach(function (entry) { out += cardHtml(entry, 'review'); });
     out += '</div>';
@@ -1376,6 +1579,10 @@ button {
     out += '<p>Each day carries a short passage written in the first person, set as a little speech: a toast, ' +
       'an objection, a pitch, a story at dinner. It is there to be spoken, not skimmed. Saying a word out loud ' +
       'is what moves it from recognized to available.</p>';
+    out += '<p>Every word also has a line to borrow: one sentence made to be lifted whole into your own speech, ' +
+      'with the phrase worth keeping underlined. Tap <b>Hear it in a sentence</b> to hear it, and tap beside any ' +
+      'example to hear that too. On a review day, <b>Listen to all</b> plays each word and then its line, ' +
+      'one after another.</p>';
     out += voicePickerHtml();
     out += '<h3>The daily email</h3>';
     out += '<p>An email arrives at 06:45 Guyana time with the day\'s three words, the passage, and a few words ' +
@@ -1467,6 +1674,7 @@ button {
     var action = trigger.getAttribute('data-action');
 
     if (action === 'tab') {
+      endQueue();
       state.view = trigger.getAttribute('data-view');
       state.openDay = null;
       if (state.view === 'practice' && !state.practice.current) nextDrill();
@@ -1481,10 +1689,27 @@ button {
       if (kind === 'word') {
         var word = wordById(id);
         if (word) speak('word', id, word.word, 0.9);
+      } else if (kind === 'line') {
+        var lined = wordById(id);
+        if (lined && lined.line) speak('line', id, lined.line.text, 0.92);
+      } else if (kind === 'example') {
+        EXAMPLE_REGISTERS.some(function (register) {
+          var tail = '-' + register;
+          if (id.slice(-tail.length) !== tail) return false;
+          var owner = wordById(id.slice(0, -tail.length));
+          if (owner && owner.examples && has(owner.examples[register])) speak('example', id, owner.examples[register], 0.92);
+          return true;
+        });
       } else {
         var day = dayByNumber(Number(id));
         if (day && day.passage) speak('passage', id, day.passage.text, 0.92);
       }
+      return;
+    }
+
+    if (action === 'listen') {
+      if (queue) { endQueue(); stopSpeaking(); return; }
+      startQueue(listenEntries());
       return;
     }
 
@@ -1520,6 +1745,7 @@ button {
     }
 
     if (action === 'openday') {
+      endQueue();
       state.openDay = Number(trigger.getAttribute('data-day'));
       render();
       window.scrollTo(0, 0);
@@ -1527,6 +1753,7 @@ button {
     }
 
     if (action === 'backdays') {
+      endQueue();
       state.openDay = null;
       render();
       window.scrollTo(0, 0);
@@ -1601,6 +1828,19 @@ button {
     nextDrill();
     renderChrome();
     render();
+    cueListen();
+  }
+
+  // The email's "listen" link lands here: the panel is brought into view and
+  // marked, ready for the one tap a browser needs before it will play sound.
+  function cueListen() {
+    if (window.location.hash !== '#listen') return;
+    var panel = el('listen');
+    if (!panel) return;
+    panel.classList.add('is-cued');
+    panel.scrollIntoView({ block: 'center' });
+    var button = panel.querySelector('[data-action="listen"]');
+    if (button) button.focus({ preventScroll: true });
   }
 
   // Without the voice list the page still works: every speak button falls

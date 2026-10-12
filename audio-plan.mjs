@@ -177,9 +177,14 @@ export function engineInput(voice, text, words) {
   return /[.!?]["”]?$/.test(marked.trim()) ? marked : `${marked}.`;
 }
 
+// The registers a word's examples come in, in the order the site lists them.
+export const EXAMPLE_REGISTERS = ["conversational", "professional", "elevated"];
+
 export function clipPath(voiceId, kind, id) {
   if (kind === "word") return `audio/${voiceId}/w/${id}.mp3`;
   if (kind === "passage") return `audio/${voiceId}/p/${id}.mp3`;
+  if (kind === "line") return `audio/${voiceId}/l/${id}.mp3`;
+  if (kind === "example") return `audio/${voiceId}/e/${id}.mp3`;
   return `audio/${voiceId}/${SAMPLE_ID}.mp3`;
 }
 
@@ -193,6 +198,14 @@ export function clipPlan(lexicon, voiceFile) {
     const items = [];
     for (const day of days) {
       for (const w of day.words) items.push({ kind: "word", id: w.id, text: w.word, words: [w] });
+      // Each word heard in use: its line to borrow, then its three examples.
+      for (const w of day.words) {
+        if (w.line && w.line.text) items.push({ kind: "line", id: w.id, text: w.line.text, words: [w] });
+        for (const register of EXAMPLE_REGISTERS) {
+          const text = w.examples && w.examples[register];
+          if (text) items.push({ kind: "example", id: `${w.id}-${register}`, text, words: [w] });
+        }
+      }
       if (day.passage && day.passage.text) {
         items.push({ kind: "passage", id: String(day.day), text: day.passage.text, words: day.words });
       }

@@ -82,8 +82,17 @@ if (!overridden && !renderOnly) {
 let subject;
 let html;
 let text;
+// The email's listen links point at the default recorded voice.
+let voice = "heart";
 try {
-  ({ subject, html, text } = buildEmail(lexicon, day));
+  const voices = JSON.parse(await readFile(here("audio/voices.json"), "utf8"));
+  if (voices && voices.default) voice = voices.default;
+} catch (err) {
+  log(`WARN: audio/voices.json unreadable (${err.message}), listen links use the ${voice} voice`);
+}
+
+try {
+  ({ subject, html, text } = buildEmail(lexicon, day, { voice }));
 } catch (err) {
   fail(`Could not compose day ${day}: ${err.message}`);
 }

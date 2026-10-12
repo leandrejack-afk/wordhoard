@@ -9,7 +9,8 @@ Everything ever delivered lives in the hoard: a permanent site where words unloc
 - Site: https://leandrejack-afk.github.io/wordhoard/ (GitHub Pages, this repo's root)
 - Daily sender: `send.mjs` on the GoalEdge VPS at `/home/deploy/wordhoard`, fired by `wordhoard.timer` (systemd, 06:45 America/Guyana, `Persistent=true`)
 - Content: `content/days-*.json`, merged by `node build.mjs` into `lexicon.json`
-- Audio: `audio/<voice>/w/<word>.mp3` and `audio/<voice>/p/<day>.mp3`, recorded by `node audio.mjs`
+- Lines to borrow: `content/lines.json`, one sentence per word (`setting`, `text`, `borrow`, the reusable phrase inside it), merged into each word as `line` by `node build.mjs`
+- Audio: `audio/<voice>/w/<word>.mp3` (the word), `l/<word>.mp3` (its line to borrow), `e/<word>-<register>.mp3` (each example) and `p/<day>.mp3` (the passage), recorded by `node audio.mjs`
 - Checks: `node validate.mjs`
 
 ## The voice
@@ -22,6 +23,10 @@ Each headword is spoken from its IPA in the lexicon rather than the voice's own 
 - Check: `node validate.mjs` fails while any clip is missing or was recorded from older text or IPA.
 - Listen back (optional): `~/.claude/tts/venv/bin/python tools/listen.py` transcribes every clip with whisper and compares each headword's sounds with its IPA through a phoneme recogniser, then lists anything doubtful.
 - Deepgram's Flux and Aura-2 voices were tried on 2026-10-10 and dropped: they read whole passages well but garbled single words.
+
+## Hearing a word in use
+
+Added 2026-10-12 at Leandre's request: "the same way I can click to hear the word pronounced, I would like to have that option of clicking and hearing it being used in an example", in writing he would want to borrow from. Each word has a line to borrow, written for cadence and a turn at the end, with the reusable phrase underlined on the page. The site plays it from the **Hear it in a sentence** button (and **In a sentence** on the hoard and review cards), plays each of the three examples from a button beside it, and on the Today view offers **Listen to all**: each word, then its line, one after another, with the word and line shown as they sound. The daily email links every word to its word clip and its line clip (one tap plays it in the phone's browser) and, on review days, to `#listen` on the site, which brings the Listen to all panel into view. `validate.mjs` V14 checks every line (headword exactly once, the borrowed phrase inside it, length) and that the email carries the links.
 
 ## How a day works
 

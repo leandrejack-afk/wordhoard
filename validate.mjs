@@ -26,7 +26,7 @@ import { fileURLToPath } from 'node:url';
 import { clipPlan, PIPELINE } from './audio-plan.mjs';
 
 const ROOT = dirname(fileURLToPath(import.meta.url));
-const CHECK_COUNT = 13;
+const CHECK_COUNT = 14;
 const MAX_DETAIL_LINES = 15;
 
 const MIDDOT = '·';
@@ -1248,6 +1248,86 @@ check(13, () => {
   if (html !== null) {
     if (!html.includes("fetch('audio/voices.json')")) problems.push('index.html does not fetch audio/voices.json');
     if (!html.includes("'wh.voice'")) problems.push('index.html does not keep the voice choice under wh.voice');
+  }
+  return problems;
+});
+
+/* ------------------------------------------------------------------ */
+/* V14: lines to borrow and their listen links (added 2026-10-12)      */
+/* ------------------------------------------------------------------ */
+
+// Every word carries one line to borrow (content/lines.json, merged by
+// build.mjs): a sentence written to be heard and lifted whole, with the
+// reusable phrase marked in it. The email links each review word to its
+// recorded word and line, and the site plays them.
+const LINE_ENDINGS = { verb: ['', 's', 'es', 'd', 'ed', 'ing'], adjective: ['', 'ly'], noun: ['', 's', 'es'] };
+
+function headwordCount(text, word) {
+  const endings = LINE_ENDINGS[word.pos] || [''];
+  const alternatives = endings.map((e) => escapeRegExp(word.word + e)).join('|');
+  const re = new RegExp(`(?<![\\p{L}\\p{M}])(?:${alternatives})(?![\\p{L}\\p{M}])`, 'giu');
+  return (text.match(re) || []).length;
+}
+
+check(14, () => {
+  if (!lexicon) return NO_LEXICON;
+  const problems = [];
+  const seen = new Map();
+  let withLine = 0;
+  for (const row of CURRICULUM) {
+    for (const word of wordsOf(row.day)) {
+      if (!word || typeof word !== 'object') continue;
+      const label = `day ${row.day} ${word.word}`;
+      const line = word.line;
+      if (!line || typeof line !== 'object') {
+        problems.push(`${label} has no line to borrow: add it to content/lines.json and run node build.mjs`);
+        continue;
+      }
+      withLine += 1;
+      for (const field of ['setting', 'text', 'borrow']) {
+        if (!isFilledString(line[field])) problems.push(`${label} line.${field} is missing or empty`);
+      }
+      if (!isFilledString(line.text) || !isFilledString(line.borrow)) continue;
+      const text = line.text.trim();
+      const words = text.split(/\s+/).length;
+      if (words < 12 || words > 40) problems.push(`${label} line has ${words} words, expected 12 to 40`);
+      if (!/[.?]$/.test(text)) problems.push(`${label} line does not end with a full stop or a question mark`);
+      if (/[0-9]/.test(text)) problems.push(`${label} line contains a digit, which the voice may misread`);
+      const uses = headwordCount(text, word);
+      if (uses !== 1) problems.push(`${label} line uses the headword ${uses} times, expected exactly once`);
+      if (!text.includes(line.borrow)) problems.push(`${label} line.borrow is not an exact part of the line`);
+      else if (headwordCount(line.borrow, word) !== 1) problems.push(`${label} line.borrow does not contain the headword`);
+      const settingWords = String(line.setting || '').trim().split(/\s+/).length;
+      if (settingWords < 2 || settingWords > 10) problems.push(`${label} line.setting has ${settingWords} words, expected 2 to 10`);
+      const previous = seen.get(text.toLowerCase());
+      if (previous) problems.push(`${label} line repeats the line of ${previous}`);
+      else seen.set(text.toLowerCase(), label);
+    }
+  }
+  if (withLine !== 90) problems.unshift(`${withLine} of 90 words have a line to borrow`);
+
+  // The review email links every word to its recorded word and line.
+  const day = 57;
+  const run = runSender(day);
+  const html = run.status === 0 ? readTextFile(join('out', `day-${day}.html`)) : null;
+  if (html === null) {
+    problems.push(`send.mjs could not render day ${day} for the link check (exit ${run.status})`);
+  } else {
+    const base = `${EXPECTED_SITE_URL}audio/heart/`;
+    for (const pick of postVolumePicks(day)) {
+      const id = pick.word && pick.word.id;
+      if (!id) continue;
+      if (!html.includes(`${base}w/${id}.mp3`)) problems.push(`day ${day} email has no link to the word clip for ${id}`);
+      if (!html.includes(`${base}l/${id}.mp3`)) problems.push(`day ${day} email has no link to the line clip for ${id}`);
+    }
+    if (!html.includes(`${EXPECTED_SITE_URL}#listen`)) problems.push(`day ${day} email has no link to listen to all six on the site`);
+  }
+
+  const page = readTextFile('index.html');
+  if (page !== null) {
+    if (!page.includes("'l/'")) problems.push('index.html does not play line clips from audio/<voice>/l/');
+    if (!page.includes("'e/'")) problems.push('index.html does not play example clips from audio/<voice>/e/');
+    if (!page.includes('data-action="listen"')) problems.push('index.html has no Listen to all control');
   }
   return problems;
 });
